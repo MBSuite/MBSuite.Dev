@@ -1,0 +1,145 @@
+{
+  "common": {
+    "brand": "MBSuite",
+    "language": "Language",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "copyright": "All rights reserved"
+  },
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "howItWorks": "How it works"
+  },
+  "hero": {
+    "title": "MBSuite – Accounting for Thai SMEs",
+    "subtitle": "Simple invoicing, receipts and reports for small & medium businesses in Thailand",
+    "ctaPrimary": "Get Started",
+    "ctaSecondary": "View Features"
+  },
+  "benefits": {
+    "title": "Why choose MBSuite",
+    "items": [
+      {
+        "title": "Built for Thai SMEs",
+        "desc": "Designed for small & medium businesses in Thailand"
+      },
+      {
+        "title": "Easy to use",
+        "desc": "No accounting background needed"
+      },
+      {
+        "title": "Save time",
+        "desc": "Less paperwork, more time for your business"
+      },
+      {
+        "title": "Real-time reports",
+        "desc": "Know your numbers in one click"
+      }
+    ]
+  },
+  "features": {
+    "title": "Complete Features",
+    "subtitle": "Everything you need to run your business",
+    "items": [
+      {
+        "title": "Invoices",
+        "desc": "Create, edit and send invoices quickly"
+      },
+      {
+        "title": "Receipts & Tax Invoices",
+        "desc": "Manage payments and documents easily"
+      },
+      {
+        "title": "Journal",
+        "desc": "Keep all transactions organized"
+      },
+      {
+        "title": "Reports & P&L",
+        "desc": "Track income, expenses & profit instantly"
+      },
+      {
+        "title": "Products & Contacts",
+        "desc": "Manage stock, customers & suppliers"
+      },
+      {
+        "title": "Cloud-based",
+        "desc": "Access anywhere, anytime"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How to get started",
+    "steps": [
+      {
+        "title": "Sign up",
+        "desc": "Start your 14-day free trial today"
+      },
+      {
+        "title": "Setup business",
+        "desc": "Add your business info in minutes"
+      },
+      {
+        "title": "Go live",
+        "desc": "Send invoices and manage your business"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Choose your plan",
+    "subtitle": "Fair pricing for Thai SMEs",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "save": "Save more",
+    "perMonth": "THB/month",
+    "perYear": "THB/year",
+    "oneTime": "One-time",
+    "contact": "Perpetual License",
+    "contactDesc": "Buy once, use forever",
+    "freeTrial": "14-day free trial",
+    "buyOut": "Request Perpetual License",
+    "buyOutDesc": "Fill the form to get quote",
+    "ctaSubscribe": "Subscribe",
+    "ctaContact": "Fill Form",
+    "viewGithub": "View on GitHub"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Thai tax compliant?",
+        "a": "Yes, supports standard Thai invoices and receipts"
+      },
+      {
+        "q": "Free trial available?",
+        "a": "Yes, 14-day free trial for subscription plans"
+      },
+      {
+        "q": "Perpetual license available?",
+        "a": "Yes, request via form or check GitHub"
+      },
+      {
+        "q": "Mobile friendly?",
+        "a": "Yes, works on any device via browser"
+      },
+      {
+        "q": "Data backup?",
+        "a": "Yes, automatic backups included"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to start?",
+    "subtitle": "Try MBSuite free for 14 days",
+    "button": "Start Free Trial"
+  },
+  "footer": {
+    "copyright": "© {year} Microtronic Co., Ltd. All rights reserved",
+    "company": "Microtronic (Thailand) Co., Ltd.",
+    "license": "License"
+  }
+}
