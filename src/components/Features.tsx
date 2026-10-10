@@ -1,7 +1,10 @@
 import { useTranslation } from 'react-i18next'
-const inv = new URL('../assets/mockups/mbsuite-invoice-mockup.png', import.meta.url).href
-const rec = new URL('../assets/mockups/mbsuite-receipt-mockup.png', import.meta.url).href
-const rpt = new URL('../assets/mockups/mbsuite-reports-mockup.png', import.meta.url).href
+
+const mockups = {
+  invoice: '/invoice-mockup.svg',
+  receipt: '/receipt-mockup.svg',
+  reports: '/reports-mockup.svg',
+}
 
 export default function Features() {
   const { t } = useTranslation()
@@ -21,9 +24,9 @@ export default function Features() {
           ))}
         </div>
         <div className="mt-10 grid md:grid-cols-3 gap-6">
-          <img src={inv} alt="Invoice" className="w-full rounded shadow" />
-          <img src={rec} alt="Receipt" className="w-full rounded shadow" />
-          <img src={rpt} alt="Reports" className="w-full rounded shadow" />
+          <img src={mockups.invoice} alt="Invoice" className="w-full rounded shadow" />
+          <img src={mockups.receipt} alt="Receipt" className="w-full rounded shadow" />
+          <img src={mockups.reports} alt="Reports" className="w-full rounded shadow" />
         </div>
       </div>
     </section>
