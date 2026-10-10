@@ -1,35 +1,49 @@
-# React + TypeScript + Vite
+# MBSuite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+เว็บไซต์แนะนำ Micro-Business Suite ระบบบัญชีและจัดการธุรกิจสำหรับร้านค้าและ SMEs ไทย สร้างด้วย React และ Vite รองรับเนื้อหาภาษาไทยและภาษาอังกฤษ
 
-Currently, two official plugins are available:
+## ภายในเว็บไซต์
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- แนะนำประโยชน์และฟีเจอร์ของ MBSuite
+- อธิบายขั้นตอนเริ่มต้นใช้งาน
+- แสดงแผนราคาและคำถามที่พบบ่อย
+- สลับภาษาไทย/อังกฤษได้จากเมนูภาษา
+- ลิงก์ไปยัง source code บน [GitHub](https://github.com/MBSuite/Micro-Business-Suite)
 
-## React Compiler
+## เทคโนโลยี
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React 19 และ TypeScript
+- Vite
+- Tailwind CSS
+- i18next และ react-i18next
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## เริ่มต้นใช้งาน
 
-## Expanding the Oxlint configuration
+ต้องติดตั้ง Node.js และ pnpm ก่อน
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+pnpm install
+pnpm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Vite จะแสดง URL สำหรับเปิดเว็บไซต์ในเครื่องหลังเริ่ม dev server
+
+## คำสั่งที่ใช้ได้
+
+```bash
+pnpm run dev      # เปิด development server
+pnpm run build    # ตรวจ TypeScript และ build สำหรับ production
+pnpm run lint     # ตรวจโค้ดด้วย Oxlint
+pnpm run preview  # ดูตัวอย่าง production build ในเครื่อง
+```
+
+## โครงสร้างหลัก
+
+```text
+src/
+├── components/   # ส่วนประกอบของหน้าเว็บไซต์
+├── i18n/         # ข้อความภาษาไทยและภาษาอังกฤษ
+├── assets/       # ภาพประกอบและ mockup
+├── App.tsx       # ประกอบส่วนต่าง ๆ ของหน้า
+└── main.tsx      # จุดเริ่มต้นของแอป
+```
