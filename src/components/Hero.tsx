@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-const heroMockup = new URL('../assets/mockups/mbsuite-hero-mockup.svg', import.meta.url).href
 
 export default function Hero() {
   const { t } = useTranslation()
@@ -30,7 +29,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex justify-center">
-          <img src={heroMockup} alt="MBSuite dashboard" className="w-full max-w-xl rounded shadow" />
+          <img src="/mbsuite-hero-mockup.svg" alt="MBSuite dashboard" className="w-full max-w-xl rounded shadow" />
         </div>
       </div>
     </section>
