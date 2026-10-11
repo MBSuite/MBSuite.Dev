@@ -64,7 +64,7 @@ Last updated: 2026-10-08
 - CHECKOUT_CANCEL_URL:  https://micro-business-suite-mbs9-c3cc.vercel.app/billing/cancel
 
 ### Mockups (4 files)
-- mbsuite-hero-mockup.png
+- mbsuite-hero-mockup.svg
 - mbsuite-invoice-mockup.png
 - mbsuite-receipt-mockup.png
 - mbsuite-reports-mockup.png

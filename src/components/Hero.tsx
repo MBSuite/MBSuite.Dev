@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-const heroMockup = new URL('../assets/mockups/mbsuite-hero-mockup.png', import.meta.url).href
+const heroMockup = new URL('../assets/mockups/mbsuite-hero-mockup.svg', import.meta.url).href
 
 export default function Hero() {
   const { t } = useTranslation()

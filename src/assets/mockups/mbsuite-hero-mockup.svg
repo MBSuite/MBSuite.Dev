@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" fill="none">
+  <defs>
+    <linearGradient id="chart" x1="375" y1="420" x2="760" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="960" height="620" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0F172A" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="24" y="20" width="912" height="572" rx="20" fill="white"/>
+    <path d="M44 20h872a20 20 0 0 1 20 20v44H24V40a20 20 0 0 1 20-20Z" fill="#F8FAFC"/>
+    <circle cx="52" cy="52" r="6" fill="#F87171"/>
+    <circle cx="74" cy="52" r="6" fill="#FBBF24"/>
+    <circle cx="96" cy="52" r="6" fill="#34D399"/>
+    <rect x="328" y="39" width="304" height="26" rx="13" fill="#EEF2F7"/>
+    <text x="480" y="57" text-anchor="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="11">app.mbsuite.dev/dashboard</text>
+
+    <rect x="24" y="84" width="184" height="508" rx="0" fill="#0F2747"/>
+    <path d="M24 104a20 20 0 0 1 20-20h144v508H44a20 20 0 0 1-20-20V104Z" fill="#0F2747"/>
+    <rect x="46" y="108" width="34" height="34" rx="10" fill="#2563EB"/>
+    <path d="M55 126h16M63 118v16" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="90" y="123" fill="white" font-family="Arial, sans-serif" font-size="17" font-weight="700">MBSuite</text>
+    <text x="90" y="139" fill="#9FB4D0" font-family="Arial, sans-serif" font-size="9">BUSINESS MANAGEMENT</text>
+
+    <rect x="40" y="174" width="152" height="40" rx="10" fill="#1E416A"/>
+    <rect x="54" y="187" width="14" height="14" rx="3" stroke="#93C5FD" stroke-width="1.6"/>
+    <path d="M57 197h8M57 193h8" stroke="#93C5FD" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="78" y="199" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="600">ภาพรวม</text>
+
+    <g fill="#A9BCD4" font-family="Arial, sans-serif" font-size="12">
+      <text x="78" y="249">ใบแจ้งหนี้</text>
+      <text x="78" y="293">รายรับ</text>
+      <text x="78" y="337">รายจ่าย</text>
+      <text x="78" y="381">รายงาน</text>
+      <text x="78" y="425">ตั้งค่า</text>
+    </g>
+    <g stroke="#A9BCD4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M56 235h12v15H56zM59 239h6M59 243h6"/>
+      <path d="M62 271v14m-5-5 5 5 5-5"/>
+      <path d="M62 315v14m-5-9 5-5 5 5"/>
+      <path d="M55 365h14M57 361v-5h10v5M58 365v8m4-8v8m4-8v8"/>
+      <circle cx="62" cy="421" r="7"/><path d="M62 410v3m0 16v3m11-11h-3m-16 0h-3"/>
+    </g>
+    <circle cx="62" cy="531" r="15" fill="#284C75"/>
+    <text x="62" y="535" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="700">MB</text>
+    <text x="86" y="529" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="600">บัญชีของฉัน</text>
+    <text x="86" y="544" fill="#9FB4D0" font-family="Arial, sans-serif" font-size="9">ผู้ดูแลระบบ</text>
+
+    <text x="240" y="122" fill="#0F172A" font-family="Arial, sans-serif" font-size="22" font-weight="700">ภาพรวมธุรกิจ</text>
+    <text x="240" y="145" fill="#64748B" font-family="Arial, sans-serif" font-size="11">ยินดีต้อนรับกลับมา นี่คือสรุปธุรกิจของคุณ</text>
+    <rect x="788" y="105" width="124" height="34" rx="8" fill="white" stroke="#E2E8F0"/>
+    <path d="M804 116v13m-4-9h8" stroke="#64748B" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="820" y="127" fill="#334155" font-family="Arial, sans-serif" font-size="10">เดือนนี้</text>
+    <path d="m893 119 4 4 4-4" stroke="#64748B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g>
+      <rect x="240" y="169" width="204" height="112" rx="12" fill="white" stroke="#E2E8F0"/>
+      <rect x="460" y="169" width="204" height="112" rx="12" fill="white" stroke="#E2E8F0"/>
+      <rect x="680" y="169" width="232" height="112" rx="12" fill="white" stroke="#E2E8F0"/>
+      <circle cx="270" cy="200" r="15" fill="#EFF6FF"/>
+      <path d="M264 200h12m-6-6v12" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"/>
+      <circle cx="490" cy="200" r="15" fill="#ECFDF5"/>
+      <path d="m484 200 4 4 8-9" stroke="#059669" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="710" cy="200" r="15" fill="#FFF7ED"/>
+      <path d="M704 196h12m-12 4h8m-8 4h10" stroke="#EA580C" stroke-width="1.6" stroke-linecap="round"/>
+      <g fill="#64748B" font-family="Arial, sans-serif" font-size="10">
+        <text x="295" y="203">รายรับทั้งหมด</text>
+        <text x="515" y="203">กำไรสุทธิ</text>
+        <text x="735" y="203">ใบแจ้งหนี้ค้างชำระ</text>
+      </g>
+      <g fill="#0F172A" font-family="Arial, sans-serif" font-size="21" font-weight="700">
+        <text x="260" y="242">฿128,450</text>
+        <text x="480" y="242">฿86,200</text>
+        <text x="700" y="242">฿24,500</text>
+      </g>
+      <g fill="#059669" font-family="Arial, sans-serif" font-size="9" font-weight="600">
+        <text x="260" y="261">↑ 12.8% จากเดือนก่อน</text>
+        <text x="480" y="261">↑ 8.2% จากเดือนก่อน</text>
+      </g>
+      <text x="700" y="261" fill="#64748B" font-family="Arial, sans-serif" font-size="9">3 รายการรอชำระ</text>
+    </g>
+
+    <rect x="240" y="299" width="430" height="264" rx="12" fill="white" stroke="#E2E8F0"/>
+    <text x="260" y="328" fill="#0F172A" font-family="Arial, sans-serif" font-size="13" font-weight="700">รายรับและรายจ่าย</text>
+    <text x="260" y="346" fill="#64748B" font-family="Arial, sans-serif" font-size="9">สรุปผลการดำเนินงาน 6 เดือนล่าสุด</text>
+    <circle cx="556" cy="326" r="4" fill="#2563EB"/>
+    <text x="566" y="329" fill="#64748B" font-family="Arial, sans-serif" font-size="9">รายรับ</text>
+    <circle cx="615" cy="326" r="4" fill="#CBD5E1"/>
+    <text x="625" y="329" fill="#64748B" font-family="Arial, sans-serif" font-size="9">รายจ่าย</text>
+    <g stroke="#E2E8F0" stroke-width="1">
+      <path d="M278 378h370M278 420h370M278 462h370M278 504h370"/>
+    </g>
+    <g fill="#94A3B8" font-family="Arial, sans-serif" font-size="8">
+      <text x="258" y="381">฿60k</text><text x="258" y="423">฿40k</text>
+      <text x="258" y="465">฿20k</text><text x="266" y="507">฿0</text>
+      <text x="291" y="526">พ.ค.</text><text x="349" y="526">มิ.ย.</text>
+      <text x="407" y="526">ก.ค.</text><text x="465" y="526">ส.ค.</text>
+      <text x="523" y="526">ก.ย.</text><text x="581" y="526">ต.ค.</text>
+    </g>
+    <path d="M300 464 358 441 416 450 474 408 532 420 590 377 638 391" stroke="url(#chart)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M300 484 358 477 416 468 474 470 532 451 590 457 638 442" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="white" stroke="#2563EB" stroke-width="2">
+      <circle cx="300" cy="464" r="4"/><circle cx="358" cy="441" r="4"/><circle cx="416" cy="450" r="4"/>
+      <circle cx="474" cy="408" r="4"/><circle cx="532" cy="420" r="4"/><circle cx="590" cy="377" r="4"/>
+      <circle cx="638" cy="391" r="4"/>
+    </g>
+
+    <rect x="686" y="299" width="226" height="264" rx="12" fill="white" stroke="#E2E8F0"/>
+    <text x="706" y="328" fill="#0F172A" font-family="Arial, sans-serif" font-size="13" font-weight="700">รายการล่าสุด</text>
+    <text x="706" y="346" fill="#64748B" font-family="Arial, sans-serif" font-size="9">กิจกรรมทางการเงิน</text>
+    <g>
+      <circle cx="718" cy="382" r="14" fill="#EFF6FF"/>
+      <path d="M713 382h10m-5-5v10" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="741" y="379" fill="#334155" font-family="Arial, sans-serif" font-size="9" font-weight="600">ชำระใบแจ้งหนี้</text>
+      <text x="741" y="393" fill="#94A3B8" font-family="Arial, sans-serif" font-size="8">บริษัท เอ บิสซิเนส</text>
+      <text x="885" y="384" text-anchor="end" fill="#059669" font-family="Arial, sans-serif" font-size="9" font-weight="700">+฿12,000</text>
+      <path d="M706 411h186" stroke="#F1F5F9"/>
+      <circle cx="718" cy="437" r="14" fill="#FFF7ED"/>
+      <path d="M713 433h10m-10 4h7m-7 4h9" stroke="#EA580C" stroke-width="1.4" stroke-linecap="round"/>
+      <text x="741" y="434" fill="#334155" font-family="Arial, sans-serif" font-size="9" font-weight="600">บันทึกค่าใช้จ่าย</text>
+      <text x="741" y="448" fill="#94A3B8" font-family="Arial, sans-serif" font-size="8">อุปกรณ์สำนักงาน</text>
+      <text x="885" y="439" text-anchor="end" fill="#334155" font-family="Arial, sans-serif" font-size="9" font-weight="700">-฿2,450</text>
+      <path d="M706 466h186" stroke="#F1F5F9"/>
+      <circle cx="718" cy="492" r="14" fill="#ECFDF5"/>
+      <path d="M714 492h8m-4-4v8" stroke="#059669" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="741" y="489" fill="#334155" font-family="Arial, sans-serif" font-size="9" font-weight="600">สร้างใบแจ้งหนี้</text>
+      <text x="741" y="503" fill="#94A3B8" font-family="Arial, sans-serif" font-size="8">คุณ บี • #INV-024</text>
+      <text x="885" y="494" text-anchor="end" fill="#64748B" font-family="Arial, sans-serif" font-size="9" font-weight="700">฿8,900</text>
+    </g>
+    <rect x="706" y="526" width="186" height="22" rx="6" fill="#F8FAFC"/>
+    <text x="799" y="541" text-anchor="middle" fill="#2563EB" font-family="Arial, sans-serif" font-size="9" font-weight="600">ดูรายการทั้งหมด</text>
+  </g>
+</svg>
