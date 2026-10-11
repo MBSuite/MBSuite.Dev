@@ -97,8 +97,14 @@
     "save": "Save more",
     "perMonth": "THB/month",
     "perYear": "THB/year",
+    "oneTime": "One-time",
+    "contact": "Perpetual License",
+    "contactDesc": "Buy once, use forever",
     "freeTrial": "14-day free trial",
-    "ctaSubscribe": "Subscribe"
+    "buyOut": "Request Perpetual License",
+    "buyOutDesc": "Fill the form to get quote",
+    "ctaSubscribe": "Subscribe",
+    "ctaContact": "Fill Form"
   },
   "faq": {
     "title": "Frequently Asked Questions",
