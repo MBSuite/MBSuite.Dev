@@ -3,7 +3,6 @@ import logo from '/logo.png'
 
 export default function Footer() {
   const { t } = useTranslation()
-  const year = new Date().getFullYear()
 
   return (
     <footer className="w-full border-t border-gray-100 py-10">
@@ -14,10 +13,9 @@ export default function Footer() {
             <span className="font-semibold">{t('common.brand')}</span>
           </div>
           <div className="flex flex-col gap-2 text-sm text-gray-600">
-            <a href="https://microtronic.biz" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              {t('footer.company')}
+            <a href="https://microtronic.biz/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              Powered by Microtronic © 2026 Microtronic Co., Ltd.
             </a>
-            <span>{t('footer.copyright').replace('{year}', year.toString())}</span>
           </div>
         </div>
       </div>
