@@ -2,34 +2,47 @@ import { useTranslation } from 'react-i18next'
 
 export default function Hero() {
   const { t } = useTranslation()
+  const tags = t('hero.tags', { returnObjects: true }) as string[]
 
   return (
-    <section className="w-full">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+    <section id="top" className="hero-section">
+      <div className="content-wrap hero-inner">
+        <div className="hero-copy">
+          <div className="hero-eyebrow">{t('hero.eyebrow')}</div>
+          <h1>
             {t('hero.title')}
           </h1>
-          <p className="mt-4 text-gray-600 text-lg">
+          <p>
             {t('hero.subtitle')}
           </p>
-          <div className="mt-8 flex gap-4 flex-wrap">
+          <div className="hero-tags" aria-label={t('hero.highlightsLabel')}>
+            {tags.map((tag) => (
+              <span key={tag} className="hero-tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div className="hero-actions">
             <a
-              href="https://micro-business-suite.vercel.app/"
-              className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700"
+              href="https://micro-business-suite.vercel.app/login"
+              className="button-primary"
             >
               {t('hero.ctaPrimary')}
             </a>
             <a
-              href="#features"
-              className="px-6 py-3 border border-gray-200 rounded hover:bg-gray-50"
+              href="#pricing"
+              className="button-secondary"
             >
               {t('hero.ctaSecondary')}
             </a>
           </div>
         </div>
-        <div className="flex justify-center">
-          <img src="/mbsuite-hero-mockup.svg" alt="MBSuite dashboard" className="w-full max-w-xl rounded shadow" />
+        <div className="hero-visual">
+          <img src="/mbsuite-hero-mockup.svg" alt={t('hero.dashboardAlt')} />
+          <div className="hero-floating-note">
+            <span className="note-check" aria-hidden="true">✓</span>
+            <span>{t('hero.dashboardNote')}</span>
+          </div>
         </div>
       </div>
     </section>

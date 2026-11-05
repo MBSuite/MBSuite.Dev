@@ -10,8 +10,9 @@ export default function LangToggle() {
   return (
     <button
       onClick={toggle}
-      className="px-3 py-1 text-sm border border-gray-200 rounded hover:bg-gray-50"
+      className="language-toggle"
       type="button"
+      aria-label={i18n.language === 'th' ? 'Switch language to English' : 'เปลี่ยนภาษาเป็นไทย'}
     >
       {i18n.language === 'th' ? 'EN' : 'TH'}
     </button>
