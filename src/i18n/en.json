@@ -2,139 +2,235 @@
   "common": {
     "brand": "MBSuite",
     "language": "Language",
-    "getStarted": "Get Started",
-    "learnMore": "Learn More",
+    "getStarted": "View plans",
+    "learnMore": "Learn more",
     "contact": "Contact",
     "email": "Email",
     "phone": "Phone",
     "copyright": "All rights reserved"
   },
   "nav": {
-    "features": "Features",
-    "pricing": "Pricing",
+    "features": "Platform",
+    "pricing": "Plans",
     "faq": "FAQ",
-    "howItWorks": "How it works"
+    "howItWorks": "Getting started",
+    "articles": "Articles",
+    "home": "Home",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "hero": {
-    "title": "MBSuite – Accounting for Thai SMEs",
-    "subtitle": "Simple invoicing, receipts and reports for small & medium businesses in Thailand",
-    "ctaPrimary": "Get Started",
-    "ctaSecondary": "View Features"
+    "eyebrow": "Accounting and business management for SMEs",
+    "title": "Business accounting, made simple and connected",
+    "subtitle": "Manage documents, income, expenses and reports alongside AI tools and automation that help your work flow smoothly.",
+    "tags": [
+      "Accounting and documents",
+      "AI-assisted review",
+      "Flexible licensing"
+    ],
+    "highlightsLabel": "MBSuite highlights",
+    "dashboardAlt": "MBSuite dashboard preview showing income, profit and invoices",
+    "dashboardNote": "See your business at a glance",
+    "ctaPrimary": "Start your 30-day free trial",
+    "ctaSecondary": "View plans"
   },
   "benefits": {
-    "title": "Why choose MBSuite",
+    "kicker": "MBSuite at a glance",
+    "title": "Practical tools for a more organized business",
     "items": [
       {
-        "title": "Built for Thai SMEs",
-        "desc": "Designed for small & medium businesses in Thailand"
+        "title": "AI and automation",
+        "desc": "Review unusual entries and process tax data with less repetitive checking."
       },
       {
-        "title": "Easy to use",
-        "desc": "No accounting background needed"
+        "title": "Google Workspace integration",
+        "desc": "Schedule backups, dashboard updates and business reminders."
       },
       {
-        "title": "Save time",
-        "desc": "Less paperwork, more time for your business"
+        "title": "Flexible licensing",
+        "desc": "Choose an annual subscription or perpetual license to fit your plans."
       },
       {
-        "title": "Real-time reports",
-        "desc": "Know your numbers in one click"
+        "title": "A modular platform",
+        "desc": "Enable only the modules your business needs."
       }
     ]
   },
   "features": {
-    "title": "Complete Features",
-    "subtitle": "Everything you need to run your business",
+    "kicker": "Platform",
+    "title": "The tools you need, connected in one system",
+    "subtitle": "Keep documents, finances, tax tasks and operations moving together, with tools designed to support your business as it grows.",
     "items": [
       {
-        "title": "Invoices",
-        "desc": "Create, edit and send invoices quickly"
+        "title": "Accounting & Documents",
+        "desc": "Invoices, quotations, receipts, auto journal entries, recurring billing in one place"
       },
       {
-        "title": "Receipts & Tax Invoices",
-        "desc": "Manage payments and documents easily"
+        "title": "Tax & Reports",
+        "desc": "Real-time VAT/WHT reports, profit & loss, cash flow"
       },
       {
-        "title": "Journal",
-        "desc": "Keep all transactions organized"
+        "title": "POS Checkout (Add-on)",
+        "desc": "Barcode scan, cart, multi-payment (cash/QR/card), auto stock deduction"
       },
       {
-        "title": "Reports & P&L",
-        "desc": "Track income, expenses & profit instantly"
+        "title": "Sales Analytics (Add-on)",
+        "desc": "Daily/monthly summary, top products, peak hours, payment methods"
       },
       {
-        "title": "Products & Contacts",
-        "desc": "Manage stock, customers & suppliers"
+        "title": "CRM / Members / Loyalty (Add-on)",
+        "desc": "Purchase history, points accrual, member tiers (bronze/silver/gold/platinum)"
       },
       {
-        "title": "Cloud-based",
-        "desc": "Access anywhere, anytime"
+        "title": "Multi-Branch (Add-on)",
+        "desc": "Manage branches and per-branch stock deduction"
+      },
+      {
+        "title": "F&B (Add-on)",
+        "desc": "Table layout, KOT, billing, payment"
+      },
+      {
+        "title": "E-commerce / Delivery (Add-on)",
+        "desc": "Shopee, Lazada, web store, GrabFood, LINE MAN, Foodpanda"
+      },
+      {
+        "title": "Plugins / Add-ons (Plugin Manager)",
+        "desc": "MBSuite = Core; install/uninstall module packs per company"
+      },
+      {
+        "title": "Inventory",
+        "desc": "Stock and categories with QR Code + Barcode"
+      },
+      {
+        "title": "Payments & Receipts",
+        "desc": "Cash, QR, card; print receipts/tax invoices"
+      },
+      {
+        "title": "Security & Access",
+        "desc": "RBAC by role, multi-tenant, perpetual/subscription license"
       }
     ]
   },
   "howItWorks": {
-    "title": "How to get started",
+    "kicker": "Getting started",
+    "title": "Set up MBSuite for the way you work",
+    "subtitle": "Choose a license, configure your system and enable the tools your team needs.",
     "steps": [
       {
-        "title": "Sign up",
-        "desc": "Start your 14-day free trial today"
+        "title": "Choose a license",
+        "desc": "Select an annual subscription or contact us about a perpetual license."
       },
       {
-        "title": "Setup business",
-        "desc": "Add your business info in minutes"
+        "title": "Install and configure",
+        "desc": "Deploy the system and set it up for your business."
       },
       {
-        "title": "Go live",
-        "desc": "Send invoices and manage your business"
+        "title": "Enable your modules",
+        "desc": "Choose the modules you need and start managing your business."
       }
     ]
   },
   "pricing": {
-    "title": "Choose your plan",
-    "subtitle": "Fair pricing for Thai SMEs",
-    "monthly": "Monthly",
-    "yearly": "Yearly",
-    "save": "Save more",
-    "perMonth": "THB/month",
-    "perYear": "THB/year",
+    "kicker": "Plans",
+    "title": "Choose the right way to use MBSuite",
+    "subtitle": "Choose an annual subscription or ask us about perpetual licensing.",
+    "monthly": "Annual subscription",
+    "yearly": "Perpetual license",
+    "save": "Built for long-term use",
+    "perMonth": "THB/year",
+    "perYear": "one-time",
     "oneTime": "One-time",
-    "contact": "Perpetual License",
-    "contactDesc": "Buy once, use forever",
-    "freeTrial": "14-day free trial",
-    "buyOut": "Request Perpetual License",
-    "buyOutDesc": "Fill the form to get quote",
-    "ctaSubscribe": "Subscribe",
-    "ctaContact": "Fill Form"
+    "contact": "Perpetual license",
+    "contactDesc": "Contact our team for licensing and deployment details.",
+    "contactForPrice": "Contact for pricing",
+    "freeTrial": "30-day trial available with subscription",
+    "buyOut": "Ask about a perpetual license",
+    "buyOutDesc": "Fill out the form to request more information.",
+    "ctaSubscribe": "Choose annual subscription",
+    "ctaContact": "Ask about perpetual",
+    "compareNote": "Perpetual licensing excludes annual maintenance. Contact us for details.",
+    "subscriptionFeatures": [
+      "Business accounting and documents",
+      "AI Chat and AI Audit",
+      "Tax processing assistance",
+      "Backups and business dashboards",
+      "Configurable modules",
+      "Tools for tax workflows"
+    ],
+    "perpetualFeatures": [
+      "Includes subscription capabilities",
+      "Perpetual usage license",
+      "Docker deployment support",
+      "No monthly renewal",
+      "Designed for long-term cost planning",
+      "Flexible deployment configuration"
+    ]
+  },
+  "infoContent": {
+    "kicker": "Built for business",
+    "title": "A clearer view of what MBSuite helps you manage",
+    "subtitle": "Bring everyday accounting and business operations together, from routine tasks to long-term planning.",
+    "aiTitle": "Review entries with more confidence",
+    "aiDesc": "Use AI Audit to help review unusual entries, alongside tools for tax processing.",
+    "googleTitle": "Spend less time on manual backups",
+    "googleDesc": "Schedule backups and business summaries through Google Workspace.",
+    "licenseTitle": "Choose how you license",
+    "licenseDesc": "Select an annual subscription or perpetual license to suit your business.",
+    "taxTitle": "Support for Thai tax workflows",
+    "taxDesc": "Prepare tax data and forms, with RD API integration options available."
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "kicker": "FAQ",
+    "title": "Questions about MBSuite?",
+    "subtitle": "Quick answers about the platform, deployment and licensing.",
     "items": [
       {
-        "q": "Thai tax compliant?",
-        "a": "Yes, supports standard Thai invoices and receipts"
+        "q": "Does MBSuite support Thai accounting and tax workflows?",
+        "a": "The platform includes accounting tools and features for preparing Thai tax data and forms, with RD API integration options available."
       },
       {
-        "q": "Free trial available?",
-        "a": "Yes, 14-day free trial for subscription plans"
+        "q": "Does it include AI tools for accounting?",
+        "a": "Yes. AI Chat and AI Audit can help answer questions and review potentially unusual entries, alongside tax processing tools."
       },
       {
-        "q": "Perpetual license available?",
-        "a": "Yes, request via form or check GitHub"
+        "q": "Do I need an annual subscription?",
+        "a": "No. In addition to an annual subscription, perpetual licensing is available. Contact our team for details."
       },
       {
-        "q": "Mobile friendly?",
-        "a": "Yes, works on any device via browser"
+        "q": "Can I install the system myself?",
+        "a": "The system supports Docker deployment and lets you configure modules to fit your business workflows."
       },
       {
-        "q": "Data backup?",
-        "a": "Yes, automatic backups included"
+        "q": "Can backups run automatically?",
+        "a": "You can schedule backups to Google Drive and business summary updates through Google Workspace."
+      },
+      {
+        "q": "Can I enable only selected modules?",
+        "a": "Yes. Choose the modules that fit your business, including sales, expenses, payroll, inventory and AI."
       }
     ]
   },
   "cta": {
-    "title": "Ready to start?",
-    "subtitle": "Try MBSuite free for 14 days",
-    "button": "Start Free Trial"
+    "title": "Ready to bring your business workflows together?",
+    "subtitle": "Choose a plan that fits your business and start managing accounting and operations in one place.",
+    "button": "Start your trial"
+  },
+  "articles": {
+    "kicker": "MBSuite articles",
+    "title": "Accounting and tax insights for every business",
+    "subtitle": "Practical articles about accounting, tax and online accounting software to help businesses manage their finances and records more effectively.",
+    "readMore": "Read article",
+    "viewAll": "View all articles",
+    "backHome": "Back to home",
+    "backToList": "Back to articles",
+    "breadcrumbs": "Breadcrumb",
+    "author": "MBSuite team",
+    "keyTakeaway": "Key takeaway",
+    "disclaimer": "This article provides general information only and is not accounting, tax, legal or business-specific advice. Check current requirements and consult a qualified professional before taking action.",
+    "exploreSuite": "Explore MBSuite plans",
+    "notFound": "We could not find that article."
   },
   "footer": {
     "copyright": "© {year} Microtronic Co., Ltd. All rights reserved",
