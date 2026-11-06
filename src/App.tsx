@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Benefits from './components/Benefits'
 import Features from './components/Features'
+import BusinessFlow from './components/BusinessFlow'
 import HowItWorks from './components/HowItWorks'
 import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
@@ -38,6 +39,7 @@ function App() {
             <Hero />
             <Benefits />
             <Features />
+            <BusinessFlow />
             <InfoContent />
             <ArticlesPreview />
             <HowItWorks />

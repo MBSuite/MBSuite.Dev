@@ -23,8 +23,8 @@
   },
   "hero": {
     "eyebrow": "Accounting and business management for SMEs",
-    "title": "Business accounting, made simple and connected",
-    "subtitle": "Manage documents, income, expenses and reports alongside AI tools and automation that help your work flow smoothly.",
+    "title": "Connect your accounting, documents and operations",
+    "subtitle": "From quotations and invoices to income, expenses and reports, keep everyday work together and get a clearer view of your business.",
     "tags": [
       "Accounting and documents",
       "AI-assisted review",
@@ -33,8 +33,9 @@
     "highlightsLabel": "MBSuite highlights",
     "dashboardAlt": "MBSuite dashboard preview showing income, profit and invoices",
     "dashboardNote": "See your business at a glance",
-    "ctaPrimary": "Start your 30-day free trial",
-    "ctaSecondary": "View plans"
+    "ctaPrimary": "Start your 14-day free trial",
+    "ctaSecondary": "View plans",
+    "trialNote": "14-day trial · 1 user · Create your own company"
   },
   "benefits": {
     "kicker": "MBSuite at a glance",
@@ -113,6 +114,25 @@
       }
     ]
   },
+  "businessFlow": {
+    "kicker": "From daily work to business overview",
+    "title": "Follow the work from sale to summary",
+    "subtitle": "Bring documents, financial entries and reports together so you can review the information you record as work moves forward.",
+    "steps": [
+      {
+        "title": "Prepare customer documents",
+        "desc": "Create quotations, invoices and receipts, and manage sales documents in one system."
+      },
+      {
+        "title": "Track income and expenses",
+        "desc": "Record financial entries and expenses so the information for accounting work stays together."
+      },
+      {
+        "title": "Review business reports",
+        "desc": "Review profit and loss, cash flow and tax reports using the information you have recorded."
+      }
+    ]
+  },
   "howItWorks": {
     "kicker": "Getting started",
     "title": "Set up MBSuite for the way you work",
@@ -145,7 +165,7 @@
     "contact": "Perpetual license",
     "contactDesc": "Contact our team for licensing and deployment details.",
     "contactForPrice": "Contact for pricing",
-    "freeTrial": "30-day trial available with subscription",
+    "freeTrial": "14-day trial · 1 user",
     "buyOut": "Ask about a perpetual license",
     "buyOutDesc": "Fill out the form to request more information.",
     "ctaSubscribe": "Choose annual subscription",
@@ -215,7 +235,7 @@
   "cta": {
     "title": "Ready to bring your business workflows together?",
     "subtitle": "Choose a plan that fits your business and start managing accounting and operations in one place.",
-    "button": "Start your trial"
+    "button": "Start your 14-day free trial"
   },
   "articles": {
     "kicker": "MBSuite articles",

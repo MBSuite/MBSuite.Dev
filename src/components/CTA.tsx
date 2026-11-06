@@ -9,7 +9,7 @@ export default function CTA() {
         <h2>{t('cta.title')}</h2>
         <p>{t('cta.subtitle')}</p>
         <div>
-          <a href="https://micro-business-suite.vercel.app/login" className="button-primary">
+          <a href="https://micro-business-suite-mbs9-c3cc.vercel.app/register" className="button-primary">
             {t('cta.button')}
           </a>
         </div>

@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
           <div className="hero-actions">
             <a
-              href="https://micro-business-suite.vercel.app/login"
+              href="https://micro-business-suite-mbs9-c3cc.vercel.app/register"
               className="button-primary"
             >
               {t('hero.ctaPrimary')}
@@ -36,6 +36,7 @@ export default function Hero() {
               {t('hero.ctaSecondary')}
             </a>
           </div>
+          <p className="hero-trial-note">{t('hero.trialNote')}</p>
         </div>
         <div className="hero-visual">
           <img src="/mbsuite-hero-mockup.svg" alt={t('hero.dashboardAlt')} />

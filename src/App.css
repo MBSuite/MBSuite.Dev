@@ -301,6 +301,12 @@
   margin-top: 30px;
 }
 
+.hero-trial-note {
+  margin: 12px 0 0;
+  color: #72879a;
+  font-size: 0.78rem;
+}
+
 .hero-visual {
   position: relative;
   min-width: 0;
@@ -479,6 +485,52 @@
 
 .info-card h3 {
   margin-top: 14px;
+}
+
+.business-flow-section {
+  background: #fff;
+}
+
+.business-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.business-flow-card {
+  min-height: 210px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(155deg, #fff, #f7fbfd);
+}
+
+.business-flow-step {
+  display: inline-flex;
+  min-width: 42px;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #e9f4fb;
+  color: var(--blue);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.business-flow-card h3 {
+  margin: 20px 0 0;
+  color: var(--ink);
+  font-size: 1.08rem;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.business-flow-card p {
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
 }
 
 .steps-section {
@@ -1179,7 +1231,8 @@
   }
 
   .benefit-grid,
-  .info-grid {
+  .info-grid,
+  .business-flow-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1297,6 +1350,7 @@
 
   .feature-grid,
   .steps-grid,
+  .business-flow-grid,
   .article-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1351,6 +1405,7 @@
   .feature-grid,
   .info-grid,
   .steps-grid,
+  .business-flow-grid,
   .pricing-grid,
   .article-grid {
     grid-template-columns: 1fr;
