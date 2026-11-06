@@ -22,59 +22,59 @@
     "closeMenu": "Close navigation menu"
   },
   "hero": {
-    "eyebrow": "Accounting and business management for SMEs",
-    "title": "Connect your accounting, documents and operations",
-    "subtitle": "From quotations and invoices to income, expenses and reports, keep everyday work together and get a clearer view of your business.",
+    "eyebrow": "Accounting and business management for Thai SMEs",
+    "title": "Manage business documents, finances and accounting in one system",
+    "subtitle": "Move from quotations and invoices to expenses, journals and reports, keeping the business information your team records together.",
     "tags": [
-      "Accounting and documents",
+      "Documents and accounting",
       "AI-assisted review",
-      "Flexible licensing"
+      "Optional business modules"
     ],
     "highlightsLabel": "MBSuite highlights",
-    "dashboardAlt": "MBSuite dashboard preview showing income, profit and invoices",
-    "dashboardNote": "See your business at a glance",
+    "dashboardAlt": "MBSuite dashboard preview",
+    "dashboardNote": "A view of the information recorded in the system",
     "ctaPrimary": "Start your 14-day free trial",
     "ctaSecondary": "View plans",
-    "trialNote": "14-day trial · 1 user · Create your own company"
+    "trialNote": "14-day trial · 1 user · Register and create a company"
   },
   "benefits": {
     "kicker": "MBSuite at a glance",
-    "title": "Practical tools for a more organized business",
+    "title": "Core business tools, with modules for the way you work",
     "items": [
       {
-        "title": "AI and automation",
-        "desc": "Review unusual entries and process tax data with less repetitive checking."
+        "title": "Documents and accounting",
+        "desc": "Manage quotations, invoices, receipts, expenses and journal entries in one system."
       },
       {
-        "title": "Google Workspace integration",
-        "desc": "Schedule backups, dashboard updates and business reminders."
+        "title": "Reports for review",
+        "desc": "Review profit and loss, cash flow and tax summaries based on the entries you record."
       },
       {
-        "title": "Flexible licensing",
-        "desc": "Choose an annual subscription or perpetual license to fit your plans."
+        "title": "Optional modules",
+        "desc": "Add tools for POS, inventory, customer loyalty, branches or food service as needed."
       },
       {
-        "title": "A modular platform",
-        "desc": "Enable only the modules your business needs."
+        "title": "Company and role controls",
+        "desc": "Keep company data separated and set user access by role, with AI tools to answer questions and help review entries."
       }
     ]
   },
   "features": {
     "kicker": "Platform",
-    "title": "The tools you need, connected in one system",
-    "subtitle": "Keep documents, finances, tax tasks and operations moving together, with tools designed to support your business as it grows.",
+    "title": "Accounting and operations tools for small businesses",
+    "subtitle": "Start with documents and expenses, then add sales, inventory or branch tools when your business needs them.",
     "items": [
       {
         "title": "Accounting & Documents",
-        "desc": "Invoices, quotations, receipts, auto journal entries, recurring billing in one place"
+        "desc": "Create quotations, invoices and receipts, record journal entries, and schedule recurring invoices."
       },
       {
         "title": "Tax & Reports",
-        "desc": "Real-time VAT/WHT reports, profit & loss, cash flow"
+        "desc": "Review profit and loss, cash flow and VAT/WHT summaries before preparing tax filings."
       },
       {
         "title": "POS Checkout (Add-on)",
-        "desc": "Barcode scan, cart, multi-payment (cash/QR/card), auto stock deduction"
+        "desc": "Use barcode checkout, manage a cart and record multiple payment types, with stock adjusted from sales."
       },
       {
         "title": "Sales Analytics (Add-on)",
@@ -86,7 +86,7 @@
       },
       {
         "title": "Multi-Branch (Add-on)",
-        "desc": "Manage branches and per-branch stock deduction"
+        "desc": "Manage branches and separate stock records; cross-branch stock is not synchronized in real time."
       },
       {
         "title": "F&B (Add-on)",
@@ -94,11 +94,11 @@
       },
       {
         "title": "E-commerce / Delivery (Add-on)",
-        "desc": "Shopee, Lazada, web store, GrabFood, LINE MAN, Foodpanda"
+        "desc": "Connect Shopee, Lazada, a web store and delivery services after configuring the integrations."
       },
       {
         "title": "Plugins / Add-ons (Plugin Manager)",
-        "desc": "MBSuite = Core; install/uninstall module packs per company"
+        "desc": "Install or remove optional module packs for each company while keeping the core system in place."
       },
       {
         "title": "Inventory",
@@ -110,7 +110,7 @@
       },
       {
         "title": "Security & Access",
-        "desc": "RBAC by role, multi-tenant, perpetual/subscription license"
+        "desc": "Separate company data and set role-based access, with subscription and perpetual licensing options."
       }
     ]
   },
@@ -135,20 +135,20 @@
   },
   "howItWorks": {
     "kicker": "Getting started",
-    "title": "Set up MBSuite for the way you work",
-    "subtitle": "Choose a license, configure your system and enable the tools your team needs.",
+    "title": "Start with a trial, then set up your workflow",
+    "subtitle": "Create a trial account and company, then choose the tools your business needs.",
     "steps": [
       {
-        "title": "Choose a license",
-        "desc": "Select an annual subscription or contact us about a perpetual license."
+        "title": "Create a trial account",
+        "desc": "Register for a 14-day trial for one user and create your company."
       },
       {
-        "title": "Install and configure",
-        "desc": "Deploy the system and set it up for your business."
+        "title": "Set up your company",
+        "desc": "Add company details, users and the basic records you need before creating documents."
       },
       {
-        "title": "Enable your modules",
-        "desc": "Choose the modules you need and start managing your business."
+        "title": "Choose how to continue",
+        "desc": "Select an annual subscription or contact our team about perpetual licensing and optional modules."
       }
     ]
   },
@@ -173,33 +173,48 @@
     "compareNote": "Perpetual licensing excludes annual maintenance. Contact us for details.",
     "subscriptionFeatures": [
       "Business accounting and documents",
-      "AI Chat and AI Audit",
-      "Tax processing assistance",
-      "Backups and business dashboards",
-      "Configurable modules",
-      "Tools for tax workflows"
+      "AI Chat and AI Audit to help review entries",
+      "Profit and loss and cash flow reports",
+      "VAT/WHT summaries for review",
+      "Optional modules for different workflows",
+      "Google Drive connection after account setup"
     ],
     "perpetualFeatures": [
       "Includes subscription capabilities",
       "Perpetual usage license",
-      "Docker deployment support",
+      "Self-hosted deployment with Docker",
       "No monthly renewal",
       "Designed for long-term cost planning",
       "Flexible deployment configuration"
     ]
   },
   "infoContent": {
-    "kicker": "Built for business",
-    "title": "A clearer view of what MBSuite helps you manage",
-    "subtitle": "Bring everyday accounting and business operations together, from routine tasks to long-term planning.",
-    "aiTitle": "Review entries with more confidence",
-    "aiDesc": "Use AI Audit to help review unusual entries, alongside tools for tax processing.",
-    "googleTitle": "Spend less time on manual backups",
-    "googleDesc": "Schedule backups and business summaries through Google Workspace.",
-    "licenseTitle": "Choose how you license",
-    "licenseDesc": "Select an annual subscription or perpetual license to suit your business.",
-    "taxTitle": "Support for Thai tax workflows",
-    "taxDesc": "Prepare tax data and forms, with RD API integration options available."
+    "kicker": "Who MBSuite is for",
+    "title": "Start with the work your business already does",
+    "subtitle": "MBSuite combines accounting tools with optional modules for different business workflows.",
+    "fitNote": "Designed for small businesses and SMEs. Multi-currency operations and real-time cross-branch stock synchronization are not supported.",
+    "items": [
+      {
+        "label": "Services",
+        "title": "Service businesses and consultants",
+        "desc": "Prepare quotations and invoices, record expenses and track withholding tax information."
+      },
+      {
+        "label": "Retail",
+        "title": "Retail and wholesale",
+        "desc": "Manage products, contacts and sales documents, with optional POS and sales reporting."
+      },
+      {
+        "label": "Food and beverage",
+        "title": "Restaurants and cafes",
+        "desc": "Add table, kitchen order, payment and sales document workflows."
+      },
+      {
+        "label": "Branches",
+        "title": "Businesses with multiple locations",
+        "desc": "Manage branch records and separate stock, with optional sales and loyalty tools."
+      }
+    ]
   },
   "faq": {
     "kicker": "FAQ",
@@ -208,11 +223,11 @@
     "items": [
       {
         "q": "Does MBSuite support Thai accounting and tax workflows?",
-        "a": "The platform includes accounting tools and features for preparing Thai tax data and forms, with RD API integration options available."
+        "a": "MBSuite provides reports and tax summaries from recorded entries, and can send some data through the RD API after configuration. Review the data and current requirements before filing; the system does not guarantee automated filing for every tax type."
       },
       {
         "q": "Does it include AI tools for accounting?",
-        "a": "Yes. AI Chat and AI Audit can help answer questions and review potentially unusual entries, alongside tax processing tools."
+        "a": "AI Chat can help answer questions, and AI Audit can flag entries for review. Treat the results as supporting information, not professional advice or confirmation that accounting records are correct."
       },
       {
         "q": "Do I need an annual subscription?",
@@ -220,21 +235,25 @@
       },
       {
         "q": "Can I install the system myself?",
-        "a": "The system supports Docker deployment and lets you configure modules to fit your business workflows."
+        "a": "Docker deployment is available for self-hosting and requires a configured database and application environment. Subscription users can start by registering and creating a company."
       },
       {
-        "q": "Can backups run automatically?",
-        "a": "You can schedule backups to Google Drive and business summary updates through Google Workspace."
+        "q": "How does Google Drive backup work?",
+        "a": "A company administrator must connect the company's Google Drive account and configure the relevant backup or automation first. MBSuite will not send files to Drive until it is connected."
       },
       {
         "q": "Can I enable only selected modules?",
-        "a": "Yes. Choose the modules that fit your business, including sales, expenses, payroll, inventory and AI."
+        "a": "Yes. Optional modules include POS, inventory, CRM and loyalty, branches, food service, promotions, e-commerce and delivery. Some integrations require configuration."
+      },
+      {
+        "q": "Does MBSuite support multiple currencies or real-time stock across branches?",
+        "a": "Multi-currency operations are not supported, and branch stock does not synchronize in real time. Check this fit before choosing MBSuite if either is essential."
       }
     ]
   },
   "cta": {
-    "title": "Ready to bring your business workflows together?",
-    "subtitle": "Choose a plan that fits your business and start managing accounting and operations in one place.",
+    "title": "Bring your business accounting into clearer view",
+    "subtitle": "Create a company, record documents and business entries, then choose the modules that fit your team's workflow.",
     "button": "Start your 14-day free trial"
   },
   "articles": {
