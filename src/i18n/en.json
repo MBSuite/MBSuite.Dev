@@ -7,7 +7,8 @@
     "contact": "Contact",
     "email": "Email",
     "phone": "Phone",
-    "copyright": "All rights reserved"
+    "copyright": "All rights reserved",
+    "skipToContent": "Skip to main content"
   },
   "nav": {
     "features": "Platform",
@@ -15,11 +16,196 @@
     "faq": "FAQ",
     "howItWorks": "Getting started",
     "articles": "Articles",
+    "documents": "Documents",
     "home": "Home",
     "mainNavigation": "Main navigation",
     "mobileNavigation": "Mobile navigation",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu"
+  },
+  "documents": {
+    "breadcrumbs": "Breadcrumb",
+    "backToCenter": "Back to documents",
+    "home": {
+      "kicker": "MBSuite resources",
+      "title": "Choose the document you need",
+      "subtitle": "A getting-started guide for users and a product brochure you can print or save as PDF.",
+      "cards": [
+        {
+          "label": "For users",
+          "title": "Getting-started guide",
+          "description": "Set up an account, prepare company details, create sales documents, record expenses and review reports, with links to relevant areas.",
+          "action": "Open the guide",
+          "href": "/guide"
+        },
+        {
+          "label": "For sharing",
+          "title": "MBSuite brochure",
+          "description": "A concise overview of accounting work, core features, intended business types and important limitations, with print support.",
+          "action": "View the brochure",
+          "href": "/brochure"
+        }
+      ]
+    },
+    "guide": {
+      "shortTitle": "User guide",
+      "kicker": "User guide",
+      "title": "A practical guide to getting started",
+      "subtitle": "Follow the basics from registration to creating documents and reviewing reports. This guide is an introduction, not a substitute for advice from your accounting professional.",
+      "contents": "In this guide",
+      "importantTitle": "Important about accounting and tax data",
+      "importantText": "Check source documents, account classifications and current tax requirements before recording or filing. Reports help organize information; they do not certify its accuracy or guarantee automatic filing for every tax type.",
+      "sections": [
+        {
+          "id": "start",
+          "title": "Create an account and company",
+          "intro": "Start with a trial account to explore the system before choosing how to continue.",
+          "steps": [
+            "Register with your user details and company name. The trial is 14 days for one user.",
+            "Sign in and review your company details before creating documents.",
+            "When the trial ends, contact the team to ask about continued access."
+          ],
+          "links": [
+            { "label": "Register for a trial", "path": "/register" },
+            { "label": "Sign in", "path": "/login" }
+          ]
+        },
+        {
+          "id": "setup",
+          "title": "Prepare basic company records",
+          "intro": "Company and contact details help keep the documents you create complete.",
+          "steps": [
+            "Review your company name, address and tax ID in company settings.",
+            "Add customers and suppliers to your contacts.",
+            "If you sell products, review product names, prices and opening stock before using inventory."
+          ],
+          "links": [
+            { "label": "Company settings", "path": "/settings" },
+            { "label": "Manage contacts", "path": "/contacts" },
+            { "label": "Manage inventory", "path": "/inventory" }
+          ]
+        },
+        {
+          "id": "sales",
+          "title": "Create sales documents and record payments",
+          "intro": "Use quotations and invoices to record sales, then enter payments based on the supporting evidence.",
+          "steps": [
+            "Create a quotation, select a customer and add products or services.",
+            "Review the document details and totals before saving.",
+            "Create an invoice for the sale, record the payment and issue a receipt through the relevant workflow."
+          ],
+          "links": [
+            { "label": "Quotations", "path": "/quotations" },
+            { "label": "Invoices", "path": "/invoices" },
+            { "label": "Payments", "path": "/payments" }
+          ]
+        },
+        {
+          "id": "expenses",
+          "title": "Record expenses and keep evidence",
+          "intro": "Record expenses from the original documents so entries can be reviewed later.",
+          "steps": [
+            "Read the receipt or tax invoice before entering its amount, date and details.",
+            "Choose a category that matches the transaction and attach evidence where supported.",
+            "Check the amount, VAT and withholding tax against the source document before saving."
+          ],
+          "links": [
+            { "label": "Record expenses", "path": "/expenses" },
+            { "label": "Journal entries", "path": "/journals" }
+          ]
+        },
+        {
+          "id": "reports",
+          "title": "Review reports and tax information",
+          "intro": "Use reports to review recorded entries, not as a substitute for source documents or professional advice.",
+          "steps": [
+            "Choose a period in the profit and loss or cash flow report.",
+            "Compare report totals with source documents and actual receipts or payments.",
+            "Use tax reports as preparation data, and check current requirements before filing."
+          ],
+          "note": "Profit may be calculated on an accrual basis, while cash flow represents cash received and paid. Read each report according to its purpose.",
+          "links": [
+            { "label": "Profit and loss", "path": "/reports/profit-loss" },
+            { "label": "Cash flow", "path": "/cash-flow" },
+            { "label": "Tax reports", "path": "/tax-reports" }
+          ]
+        },
+        {
+          "id": "modules",
+          "title": "Use optional modules and manage access",
+          "intro": "Some capabilities are optional modules and may need to be enabled or connected first.",
+          "steps": [
+            "Ask your administrator to confirm that the company has enabled the module you need.",
+            "Available application areas include POS, branches, members, food service, promotions, and e-commerce or delivery integrations.",
+            "Ask an administrator to assign appropriate access before inviting team members to work."
+          ],
+          "note": "Stock is not synchronized across branches in real time, and multi-currency operations are not supported.",
+          "links": [
+            { "label": "POS", "path": "/pos" },
+            { "label": "Branches", "path": "/branches" },
+            { "label": "Module settings", "path": "/admin/modules" }
+          ]
+        }
+      ]
+    },
+    "brochure": {
+      "kicker": "Product brochure",
+      "title": "Accounting and business work in one system",
+      "subtitle": "Manage sales documents, expenses, journal entries and reports, with optional modules for different business workflows.",
+      "imageAlt": "MBSuite application dashboard preview",
+      "trial": "14-day trial · 1 user",
+      "print": "Print / Save as PDF",
+      "open": "Open brochure",
+      "highlightsKicker": "The platform",
+      "highlightsTitle": "Tools for everyday business work",
+      "highlights": [
+        {
+          "label": "Documents",
+          "title": "Move sales documents forward",
+          "description": "Prepare quotations, invoices and receipts, and manage customer records."
+        },
+        {
+          "label": "Accounting",
+          "title": "Record business transactions",
+          "description": "Manage expenses, journal entries and information used for accounting review."
+        },
+        {
+          "label": "Reports",
+          "title": "Review income and expenses",
+          "description": "View profit and loss, cash flow and VAT/WHT summaries from recorded information."
+        },
+        {
+          "label": "Optional modules",
+          "title": "Choose tools for your workflow",
+          "description": "Application areas include POS, inventory, CRM and loyalty, branches, food service, promotions and selected integrations."
+        }
+      ],
+      "audiencesKicker": "Designed for",
+      "audiencesTitle": "Small businesses and SMEs",
+      "audiences": [
+        {
+          "label": "Services",
+          "title": "Service businesses and consultants",
+          "description": "Prepare quotations and invoices, and record expenses."
+        },
+        {
+          "label": "Retail",
+          "title": "Retail and wholesale",
+          "description": "Manage products and sales documents, with optional POS and sales reports."
+        },
+        {
+          "label": "Food",
+          "title": "Restaurants and cafes",
+          "description": "Use table, kitchen order, payment and sales document workflows."
+        }
+      ],
+      "noteTitle": "Before choosing MBSuite",
+      "noteText": "Tax reports provide information for review and preparation. Check source documents and current requirements before filing. External services require configuration, and branch stock is not synchronized in real time.",
+      "ctaKicker": "Start with a trial account",
+      "ctaTitle": "Explore MBSuite with your business information",
+      "ctaText": "Try the system for 14 days with one user, then contact the team to ask about continued access.",
+      "ctaButton": "Create a trial account"
+    }
   },
   "hero": {
     "eyebrow": "Accounting and business management for Thai SMEs",

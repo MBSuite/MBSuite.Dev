@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
           <div className="hero-actions">
             <a
-              href="https://micro-business-suite-mbs9-c3cc.vercel.app/register"
+              href="https://micro-business-suite.vercel.app/register"
               className="button-primary"
             >
               {t('hero.ctaPrimary')}

@@ -25,7 +25,7 @@ Last updated: 2026-10-08
 ### Project Info
 - Repo: MBSuite.Dev (Vite + React + TypeScript)
 - Deploy: Vercel (mbsuite.dev landing)
-- App (Production): https://micro-business-suite-mbs9-c3cc.vercel.app
+- App (Production): https://micro-business-suite.vercel.app
 
 ### Branding
 - Name: MBSuite
@@ -43,9 +43,9 @@ Last updated: 2026-10-08
 - PERPETUAL: One-time (Contact via Form + GitHub)
 
 ### CTA URLs
-- Subscription Monthly: https://micro-business-suite-mbs9-c3cc.vercel.app/checkout?plan=monthly
-- Subscription Yearly:  https://micro-business-suite-mbs9-c3cc.vercel.app/checkout?plan=yearly
-- Subscription Login (fallback): https://micro-business-suite-mbs9-c3cc.vercel.app/login?callbackUrl=%2F  (มีทดลองใช้ฟรี 14 วัน)
+- Subscription Monthly: https://micro-business-suite.vercel.app/checkout?plan=monthly
+- Subscription Yearly:  https://micro-business-suite.vercel.app/checkout?plan=yearly
+- Subscription Login (fallback): https://micro-business-suite.vercel.app/login?callbackUrl=%2F  (มีทดลองใช้ฟรี 14 วัน)
 - Perpetual Form: https://docs.google.com/forms/d/e/1FAIpQLScINJ7ZxkrgNqsXSsQ4mMOTNs0Q6uk46QBLuUcAJKWmx3_GjA/viewform?usp=publish-editor
 - Perpetual Repo:  https://github.com/MBSuite/Micro-Business-Suite-full
 
@@ -60,8 +60,8 @@ Last updated: 2026-10-08
 - STRIPE_WEBHOOK_SECRET: (เพิ่มภายหลังจากตั้ง Webhook)
 - STRIPE_PRICE_ID_MONTHLY: (สร้างใน Stripe Dashboard → Products/Prices)
 - STRIPE_PRICE_ID_YEARLY:  (สร้างใน Stripe Dashboard → Products/Prices)
-- CHECKOUT_SUCCESS_URL: https://micro-business-suite-mbs9-c3cc.vercel.app/billing/success
-- CHECKOUT_CANCEL_URL:  https://micro-business-suite-mbs9-c3cc.vercel.app/billing/cancel
+- CHECKOUT_SUCCESS_URL: https://micro-business-suite.vercel.app/billing/success
+- CHECKOUT_CANCEL_URL:  https://micro-business-suite.vercel.app/billing/cancel
 
 ### Mockups (4 files)
 - /public/mbsuite-hero-mockup.svg

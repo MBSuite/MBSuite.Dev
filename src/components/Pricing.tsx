@@ -26,7 +26,7 @@ export default function Pricing() {
               {subscriptionFeatures.map((feature) => <li key={feature}>{feature}</li>)}
             </ul>
             <a
-              href="https://micro-business-suite-mbs9-c3cc.vercel.app/checkout?plan=yearly"
+              href="https://micro-business-suite.vercel.app/checkout?plan=yearly"
               className="button-primary"
             >
               {t('pricing.ctaSubscribe')}

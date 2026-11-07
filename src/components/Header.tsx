@@ -12,6 +12,7 @@ export default function Header() {
     { href: isHome ? '#howitworks' : '/#howitworks', label: t('nav.howItWorks') },
     { href: isHome ? '#pricing' : '/#pricing', label: t('nav.pricing') },
     { href: '/articles', label: t('nav.articles') },
+    { href: '/documents', label: t('nav.documents') },
     { href: isHome ? '#faq' : '/#faq', label: t('nav.faq') },
   ]
 

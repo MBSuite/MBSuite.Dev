@@ -1,6 +1,18 @@
 {
   "rewrites": [
     {
+      "source": "/documents/:path*",
+      "destination": "/"
+    },
+    {
+      "source": "/guide/:path*",
+      "destination": "/"
+    },
+    {
+      "source": "/brochure/:path*",
+      "destination": "/"
+    },
+    {
       "source": "/articles/:path*",
       "destination": "/"
     }

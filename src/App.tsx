@@ -13,11 +13,14 @@ import CTA from './components/CTA'
 import InfoContent from './components/InfoContent'
 import ArticlesPreview from './components/ArticlesPreview'
 import ArticlesPage from './components/ArticlesPage'
+import DocumentsHome from './components/DocumentsHome'
+import UserGuide from './components/UserGuide'
+import Brochure from './components/Brochure'
 import Footer from './components/Footer'
 import { getArticleBySlug } from './data/articles'
 
 function App() {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const language = i18n.resolvedLanguage ?? i18n.language
   const pathname = window.location.pathname.replace(/\/+$/, '') || '/'
   const articleSlug = pathname.startsWith('/articles/') ? pathname.slice('/articles/'.length) : ''
@@ -30,9 +33,16 @@ function App() {
 
   return (
     <div className="site-shell">
+      <a className="skip-link" href="#main-content">{t('common.skipToContent')}</a>
       <Header />
-      <main>
-        {isArticleRoute ? (
+      <main id="main-content" tabIndex={-1}>
+        {pathname === '/documents' ? (
+          <DocumentsHome />
+        ) : pathname === '/guide' ? (
+          <UserGuide />
+        ) : pathname === '/brochure' ? (
+          <Brochure />
+        ) : isArticleRoute ? (
           <ArticlesPage article={article} notFound={Boolean(articleSlug) && !article} />
         ) : (
           <>
