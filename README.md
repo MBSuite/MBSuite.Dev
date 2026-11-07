@@ -9,6 +9,8 @@
 - แสดงแผนราคาและคำถามที่พบบ่อย
 - สลับภาษาไทย/อังกฤษได้จากเมนูภาษา
 - มีศูนย์เอกสารที่ `/documents` แยกคู่มือเริ่มต้น (`/guide`) กับโบรชัวร์สำหรับพิมพ์หรือบันทึกเป็น PDF (`/brochure`)
+- แสดงขอบเขตของ standalone business suites ทั้ง 6 โดยแยกจาก add-on ของ MBSuite Core
+- บันทึกเส้นทางและรายการตั้งค่าที่ต้องกลับมาตรวจหลัง deploy ไว้ที่ [docs/SUITES_DEPLOYMENT_CHECKLIST.md](./docs/SUITES_DEPLOYMENT_CHECKLIST.md)
 - ลิงก์ไปยัง source code บน [GitHub](https://github.com/MBSuite/Micro-Business-Suite)
 
 ## เทคโนโลยี

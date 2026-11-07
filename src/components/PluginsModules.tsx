@@ -1,10 +1,12 @@
 import { useTranslation } from 'react-i18next'
 
 type Pack = { name: string; desc: string }
+type Suite = { name: string; desc: string; status: string }
 
 export default function PluginsModules() {
   const { t } = useTranslation()
   const packs = t('plugins.packs', { returnObjects: true }) as Pack[]
+  const suites = t('plugins.suites', { returnObjects: true }) as Suite[]
 
   return (
     <section id="plugins" className="plugins-section section-pad">
@@ -19,6 +21,20 @@ export default function PluginsModules() {
             <article key={pack.name} className="plugin-pack-card">
               <h3>{pack.name}</h3>
               <p>{pack.desc}</p>
+            </article>
+          ))}
+        </div>
+        <div className="section-heading">
+          <span className="section-kicker">{t('plugins.suitesKicker')}</span>
+          <h2>{t('plugins.suitesTitle')}</h2>
+          <p>{t('plugins.suitesSubtitle')}</p>
+        </div>
+        <div className="info-grid">
+          {suites.map((suite) => (
+            <article key={suite.name} className="info-card">
+              <span className="info-label">{suite.status}</span>
+              <h3>{suite.name}</h3>
+              <p>{suite.desc}</p>
             </article>
           ))}
         </div>

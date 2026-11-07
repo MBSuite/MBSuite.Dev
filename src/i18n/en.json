@@ -425,29 +425,39 @@
   },
   "infoContent": {
     "kicker": "Who MBSuite is for",
-    "title": "Start with the work your business already does",
-    "subtitle": "MBSuite combines accounting tools with optional modules for different business workflows.",
-    "fitNote": "Designed for small businesses and SMEs. Multi-currency operations and real-time cross-branch stock synchronization are not supported.",
+    "title": "Choose a Suite for your business",
+    "subtitle": "MBSuite Core and the business-specific Suites are separate applications. These descriptions define their intended scope; they do not claim every feature is complete.",
+    "fitNote": "All six Suites have Vercel projects and deployments, but Vercel Authentication protects access and runtime environment variables are not configured. Login and database connectivity have not been verified. URLs are recorded in the deployment checklist. Multi-currency operations and real-time cross-branch stock synchronization are not supported.",
     "items": [
       {
-        "label": "Services",
+        "label": "Service Suite",
         "title": "Service businesses and consultants",
-        "desc": "Prepare quotations and invoices, record expenses and track withholding tax information."
+        "desc": "Intended scope: appointments, quotations and service management."
       },
       {
-        "label": "Retail",
+        "label": "Retail Suite",
         "title": "Retail and wholesale",
-        "desc": "Manage products, contacts and sales documents, with optional POS and sales reporting."
+        "desc": "Intended scope: POS, inventory, barcodes and promotions."
       },
       {
-        "label": "Food and beverage",
+        "label": "F&B Suite",
         "title": "Restaurants and cafes",
-        "desc": "Add table, kitchen order, payment and sales document workflows."
+        "desc": "Intended scope: tables, menus, KOT, and opening or merging bills."
       },
       {
-        "label": "Branches",
-        "title": "Businesses with multiple locations",
-        "desc": "Manage branch records and separate stock, with optional sales and loyalty tools."
+        "label": "Hotel/Booking Suite",
+        "title": "Room booking businesses",
+        "desc": "Intended scope: rooms, reservations, check-in/check-out and housekeeping."
+      },
+      {
+        "label": "Rental Suite",
+        "title": "Rental businesses",
+        "desc": "Intended scope: assets, rental contracts, rent and maintenance."
+      },
+      {
+        "label": "Pharmacy Suite",
+        "title": "Pharmacies",
+        "desc": "Intended scope: prescriptions, medicine inventory and expiry tracking."
       }
     ]
   },
@@ -668,6 +678,41 @@
       {
         "name": "delivery_integration",
         "desc": "GrabFood, LINE MAN, Foodpanda"
+      }
+    ],
+    "suitesKicker": "Standalone business applications",
+    "suitesTitle": "Six Business Suites",
+    "suitesSubtitle": "These standalone apps are separate from MBSuite Core add-ons. URLs are recorded in the deployment checklist. Vercel Authentication currently protects the deployments while runtime setup is pending.",
+    "suites": [
+      {
+        "name": "F&B Suite",
+        "status": "Vercel deployment exists — access protected",
+        "desc": "Restaurants/cafes — tables, menus, KOT, and opening or merging bills."
+      },
+      {
+        "name": "Service Suite",
+        "status": "Vercel deployment exists — access protected",
+        "desc": "Service businesses/consultants — appointments, quotations and services."
+      },
+      {
+        "name": "Hotel/Booking Suite",
+        "status": "Vercel deployment exists — access protected",
+        "desc": "Room bookings — rooms, reservations, check-in/check-out and housekeeping."
+      },
+      {
+        "name": "Rental Suite",
+        "status": "Vercel deployment exists — access protected",
+        "desc": "Rental businesses — assets, rental contracts, rent and maintenance."
+      },
+      {
+        "name": "Retail Suite",
+        "status": "Vercel deployment exists — access protected",
+        "desc": "Retail/wholesale — POS, inventory, barcodes and promotions."
+      },
+      {
+        "name": "Pharmacy Suite",
+        "status": "Vercel deployment exists — access protected",
+        "desc": "Pharmacies — prescriptions, medicine inventory and expiry tracking."
       }
     ],
     "howTo": "Enable/disable modules at /admin/modules or /admin/plugins (admin/superadmin required)"
