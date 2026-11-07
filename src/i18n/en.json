@@ -21,7 +21,8 @@
     "mainNavigation": "Main navigation",
     "mobileNavigation": "Mobile navigation",
     "openMenu": "Open navigation menu",
-    "closeMenu": "Close navigation menu"
+    "closeMenu": "Close navigation menu",
+    "marketplace": "Marketplace"
   },
   "documents": {
     "breadcrumbs": "Breadcrumb",
@@ -66,8 +67,14 @@
             "When the trial ends, contact the team to ask about continued access."
           ],
           "links": [
-            { "label": "Register for a trial", "path": "/register" },
-            { "label": "Sign in", "path": "/login" }
+            {
+              "label": "Register for a trial",
+              "path": "/register"
+            },
+            {
+              "label": "Sign in",
+              "path": "/login"
+            }
           ]
         },
         {
@@ -80,9 +87,18 @@
             "If you sell products, review product names, prices and opening stock before using inventory."
           ],
           "links": [
-            { "label": "Company settings", "path": "/settings" },
-            { "label": "Manage contacts", "path": "/contacts" },
-            { "label": "Manage inventory", "path": "/inventory" }
+            {
+              "label": "Company settings",
+              "path": "/settings"
+            },
+            {
+              "label": "Manage contacts",
+              "path": "/contacts"
+            },
+            {
+              "label": "Manage inventory",
+              "path": "/inventory"
+            }
           ]
         },
         {
@@ -95,9 +111,18 @@
             "Create an invoice for the sale, record the payment and issue a receipt through the relevant workflow."
           ],
           "links": [
-            { "label": "Quotations", "path": "/quotations" },
-            { "label": "Invoices", "path": "/invoices" },
-            { "label": "Payments", "path": "/payments" }
+            {
+              "label": "Quotations",
+              "path": "/quotations"
+            },
+            {
+              "label": "Invoices",
+              "path": "/invoices"
+            },
+            {
+              "label": "Payments",
+              "path": "/payments"
+            }
           ]
         },
         {
@@ -110,8 +135,14 @@
             "Check the amount, VAT and withholding tax against the source document before saving."
           ],
           "links": [
-            { "label": "Record expenses", "path": "/expenses" },
-            { "label": "Journal entries", "path": "/journals" }
+            {
+              "label": "Record expenses",
+              "path": "/expenses"
+            },
+            {
+              "label": "Journal entries",
+              "path": "/journals"
+            }
           ]
         },
         {
@@ -125,9 +156,18 @@
           ],
           "note": "Profit may be calculated on an accrual basis, while cash flow represents cash received and paid. Read each report according to its purpose.",
           "links": [
-            { "label": "Profit and loss", "path": "/reports/profit-loss" },
-            { "label": "Cash flow", "path": "/cash-flow" },
-            { "label": "Tax reports", "path": "/tax-reports" }
+            {
+              "label": "Profit and loss",
+              "path": "/reports/profit-loss"
+            },
+            {
+              "label": "Cash flow",
+              "path": "/cash-flow"
+            },
+            {
+              "label": "Tax reports",
+              "path": "/tax-reports"
+            }
           ]
         },
         {
@@ -141,9 +181,18 @@
           ],
           "note": "Stock is not synchronized across branches in real time, and multi-currency operations are not supported.",
           "links": [
-            { "label": "POS", "path": "/pos" },
-            { "label": "Branches", "path": "/branches" },
-            { "label": "Module settings", "path": "/admin/modules" }
+            {
+              "label": "POS",
+              "path": "/pos"
+            },
+            {
+              "label": "Branches",
+              "path": "/branches"
+            },
+            {
+              "label": "Module settings",
+              "path": "/admin/modules"
+            }
           ]
         }
       ]
@@ -153,7 +202,7 @@
       "title": "Accounting and business work in one system",
       "subtitle": "Manage sales documents, expenses, journal entries and reports, with optional modules for different business workflows.",
       "imageAlt": "MBSuite application dashboard preview",
-      "trial": "14-day trial · 1 user",
+      "trial": "30-day trial · 1 user",
       "print": "Print / Save as PDF",
       "open": "Open brochure",
       "highlightsKicker": "The platform",
@@ -461,5 +510,166 @@
     "copyright": "© {year} Microtronic Co., Ltd. All rights reserved",
     "company": "Microtronic (Thailand) Co., Ltd.",
     "license": "License"
+  },
+  "marketplace": {
+    "kicker": "Marketplace",
+    "title": "MBSuite Module & Plugin Center",
+    "subtitle": "Choose add-on modules by business type. Install/uninstall per company via Plugin Manager.",
+    "cta": "View all modules",
+    "categories": [
+      {
+        "name": "Core (MBSuite Core)",
+        "desc": "Core modules (cannot be disabled): accounting, tax, contacts, COA, members, groups, permissions"
+      },
+      {
+        "name": "Retail & Sales",
+        "desc": "POS, promotions, sales analytics, CRM/loyalty, multi-branch, inventory"
+      },
+      {
+        "name": "F&B",
+        "desc": "Table layout, open/merge bills, KOT, billing, payment"
+      },
+      {
+        "name": "Integrations",
+        "desc": "E-commerce (Shopee/Lazada/website), Delivery (GrabFood/LINE MAN/Foodpanda)"
+      },
+      {
+        "name": "Industry",
+        "desc": "Pharmacy, service business, offline mode"
+      }
+    ],
+    "items": [
+      {
+        "id": "core",
+        "name": "MBSuite Core",
+        "type": "Core",
+        "status": "Installed (cannot disable)",
+        "desc": "Accounting, tax, contacts, COA, members, groups, permissions"
+      },
+      {
+        "id": "pos_checkout",
+        "name": "POS Checkout",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Barcode/SKU scan, cart, multi-payment, auto stock deduction"
+      },
+      {
+        "id": "promotions",
+        "name": "Promotions/Discounts",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "percentage/fixed/bogo/bundle rules, auto-apply at POS"
+      },
+      {
+        "id": "sales_analytics",
+        "name": "Sales Analytics",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Daily/monthly summary, top products, peak hours, payment channels"
+      },
+      {
+        "id": "crm_loyalty",
+        "name": "CRM / Loyalty",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Purchase history, points (1 point/100 THB), member tiers"
+      },
+      {
+        "id": "multi_branch",
+        "name": "Multi-Branch",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Branch management + per-branch stock (branch_stock)"
+      },
+      {
+        "id": "inventory_variants",
+        "name": "Inventory (Variants)",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Stock and categories with QR Code + Barcode"
+      },
+      {
+        "id": "f_and_b",
+        "name": "F&B (Restaurant/Cafe)",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Table layout, open/merge bills, KOT, billing, payment"
+      },
+      {
+        "id": "ecommerce_integration",
+        "name": "E-commerce",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Shopee, Lazada, website"
+      },
+      {
+        "id": "delivery_integration",
+        "name": "Delivery",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "GrabFood, LINE MAN, Foodpanda"
+      },
+      {
+        "id": "employee_sales",
+        "name": "Employee Sales",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Sales report by employee"
+      },
+      {
+        "id": "offline_mode",
+        "name": "Offline Mode",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Use offline"
+      },
+      {
+        "id": "pharmacy",
+        "name": "Pharmacy",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Pharmacy-specific module"
+      },
+      {
+        "id": "service_business",
+        "name": "Service Business",
+        "type": "Add-on",
+        "status": "Installable",
+        "desc": "Service business module"
+      }
+    ],
+    "note": "Core = MBSuite Core (cannot disable); add-ons installable per company via /admin/plugins or /admin/modules"
+  },
+  "plugins": {
+    "kicker": "Plugin / Add-on",
+    "title": "Plugins and Add-on Modules",
+    "subtitle": "Install/uninstall module packs per company — core modules cannot be disabled",
+    "packs": [
+      {
+        "name": "retail_pos",
+        "desc": "POS + promotions + sales analytics + CRM/loyalty + multi-branch + inventory"
+      },
+      {
+        "name": "f_and_b",
+        "desc": "Table layout + KOT + billing + payment"
+      },
+      {
+        "name": "pharmacy",
+        "desc": "Pharmacy"
+      },
+      {
+        "name": "service_business",
+        "desc": "Service business"
+      },
+      {
+        "name": "ecommerce_integration",
+        "desc": "Shopee, Lazada, website"
+      },
+      {
+        "name": "delivery_integration",
+        "desc": "GrabFood, LINE MAN, Foodpanda"
+      }
+    ],
+    "howTo": "Enable/disable modules at /admin/modules or /admin/plugins (admin/superadmin required)"
   }
 }

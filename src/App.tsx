@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Benefits from './components/Benefits'
 import Features from './components/Features'
+import PluginsModules from './components/PluginsModules'
 import BusinessFlow from './components/BusinessFlow'
 import HowItWorks from './components/HowItWorks'
 import Pricing from './components/Pricing'
@@ -14,6 +15,7 @@ import InfoContent from './components/InfoContent'
 import ArticlesPreview from './components/ArticlesPreview'
 import ArticlesPage from './components/ArticlesPage'
 import DocumentsHome from './components/DocumentsHome'
+import Marketplace from './components/Marketplace'
 import UserGuide from './components/UserGuide'
 import Brochure from './components/Brochure'
 import Footer from './components/Footer'
@@ -36,7 +38,9 @@ function App() {
       <a className="skip-link" href="#main-content">{t('common.skipToContent')}</a>
       <Header />
       <main id="main-content" tabIndex={-1}>
-        {pathname === '/documents' ? (
+        {pathname === '/marketplace' ? (
+          <Marketplace />
+        ) : pathname === '/documents' ? (
           <DocumentsHome />
         ) : pathname === '/guide' ? (
           <UserGuide />
@@ -49,6 +53,7 @@ function App() {
             <Hero />
             <Benefits />
             <Features />
+            <PluginsModules />
             <BusinessFlow />
             <InfoContent />
             <ArticlesPreview />
