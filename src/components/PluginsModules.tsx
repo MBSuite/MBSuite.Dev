@@ -30,18 +30,27 @@ export default function PluginsModules() {
           <p>{t('plugins.suitesSubtitle')}</p>
         </div>
         <div className="info-grid">
-          {suites.map((suite) => (
-            <article key={suite.name} className="info-card">
-              <span className="info-label">{suite.status}</span>
-              <h3>{suite.name}</h3>
-              <p>{suite.desc}</p>
-            </article>
-          ))}
+          {suites.map((suite) => {
+            // Extract URL from status text like "Live - https://..."
+            const urlMatch = suite.status.match(/https:\/\/[^\s]+/)
+            const url = urlMatch ? urlMatch[0] : undefined
+            const statusLabel = suite.status.replace(urlMatch ? urlMatch[0] : '', '').replace(/\s*-\s*$/, '').trim()
+
+            return (
+              <article key={suite.name} className="info-card">
+                <span className="info-label">{statusLabel}</span>
+                <h3>{suite.name}</h3>
+                <p>{suite.desc}</p>
+                {url && (
+                  <a href={url} className="info-card-link" target="_blank" rel="noopener noreferrer">
+                    Open app <span aria-hidden="true">→</span>
+                  </a>
+                )}
+              </article>
+            )
+          })}
         </div>
         <p className="plugin-howto">{t('plugins.howTo')}</p>
-        <a className="article-read-link" href="/marketplace">
-          {t('marketplace.cta')} <span aria-hidden="true">→</span>
-        </a>
       </div>
     </section>
   )

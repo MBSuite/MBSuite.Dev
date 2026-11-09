@@ -1,12 +1,19 @@
 import { useTranslation } from 'react-i18next'
 
+interface InfoCard {
+  label: string
+  title: string
+  desc: string
+  url?: string
+}
+
 export default function InfoContent() {
   const { t } = useTranslation()
   const info = t('infoContent', { returnObjects: true }) as {
     title: string
     subtitle: string
     fitNote: string
-    items: Array<{ label: string; title: string; desc: string }>
+    items: InfoCard[]
   }
 
   return (
@@ -23,6 +30,11 @@ export default function InfoContent() {
               <span className="info-label">{card.label}</span>
               <h3>{card.title}</h3>
               <p>{card.desc}</p>
+              {card.url && (
+                <a href={card.url} className="info-card-link" target="_blank" rel="noopener noreferrer">
+                  Get started <span aria-hidden="true">→</span>
+                </a>
+              )}
             </article>
           ))}
         </div>

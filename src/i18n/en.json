@@ -426,38 +426,50 @@
   "infoContent": {
     "kicker": "Who MBSuite is for",
     "title": "Choose a Suite for your business",
-    "subtitle": "MBSuite Core and the business-specific Suites are separate applications. These descriptions define their intended scope; they do not claim every feature is complete.",
-    "fitNote": "All six Suites have Vercel projects and deployments, but Vercel Authentication protects access and runtime environment variables are not configured. Login and database connectivity have not been verified. URLs are recorded in the deployment checklist. Multi-currency operations and real-time cross-branch stock synchronization are not supported.",
+    "subtitle": "MBSuite Core and the six business-specific Suites are separate applications, each with their own workflows and deployments. These descriptions define their intended scope and current verified status.",
+    "fitNote": "All applications are deployed on Vercel. MBSuite Core is the central accounting and consolidation system. Each Suite operates independently for its domain. Multi-currency operations and real-time cross-branch stock synchronization are not supported.",
     "items": [
       {
+        "label": "Core",
+        "title": "MBSuite Core - Accounting & Business Management",
+        "desc": "Central accounting for Thai SMEs. Manage quotations, invoices, expenses, journal entries and reports. Multi-user access with role-based controls, optional add-on modules for different workflows.",
+        "url": "https://micro-business-suite.vercel.app/"
+      },
+      {
         "label": "Service Suite",
-        "title": "Service businesses and consultants",
-        "desc": "Intended scope: appointments, quotations and service management."
+        "title": "Service Businesses and Consultants",
+        "desc": "Manage service catalogs, appointment booking and scheduling, service contracts, job tracking and contract renewal reminders.",
+        "url": "https://micro-business-service.vercel.app/"
       },
       {
         "label": "Retail Suite",
-        "title": "Retail and wholesale",
-        "desc": "Intended scope: POS, inventory, barcodes and promotions."
+        "title": "Retail and Wholesale",
+        "desc": "Product catalogs with stock management, barcode and QR scanning at POS checkout, daily sales reports and low-stock alerts.",
+        "url": "https://micro-business-retail.vercel.app/"
       },
       {
         "label": "F&B Suite",
-        "title": "Restaurants and cafes",
-        "desc": "Intended scope: tables, menus, KOT, and opening or merging bills."
+        "title": "Restaurants and Cafes",
+        "desc": "QR ordering and table management, kitchen order tickets, bill management and payment processing with daily revenue operations.",
+        "url": "https://micro-business-fnb.vercel.app/"
       },
       {
-        "label": "Hotel/Booking Suite",
-        "title": "Room booking businesses",
-        "desc": "Intended scope: rooms, reservations, check-in/check-out and housekeeping."
+        "label": "Hotel Suite",
+        "title": "Room Booking and Accommodation",
+        "desc": "Daily room stays and reservations, guest check-in and check-out, housekeeping status tracking and daily revenue operations.",
+        "url": "https://micro-business-hotel.vercel.app/"
       },
       {
         "label": "Rental Suite",
-        "title": "Rental businesses",
-        "desc": "Intended scope: assets, rental contracts, rent and maintenance."
+        "title": "Rental Businesses and Property Management",
+        "desc": "Rental property and vehicle asset management, lease agreements, rent schedules and payment collection, renewal reminders and maintenance tracking.",
+        "url": "https://micro-business-rental.vercel.app/"
       },
       {
         "label": "Pharmacy Suite",
-        "title": "Pharmacies",
-        "desc": "Intended scope: prescriptions, medicine inventory and expiry tracking."
+        "title": "Pharmacies and Medicine Retailers",
+        "desc": "Medicine inventory with batch-level tracking, expiry date management, low-stock and near-expiry alerts, and auditable stock movements.",
+        "url": "https://micro-business-pharmacy.vercel.app/"
       }
     ]
   },
@@ -651,70 +663,79 @@
     "note": "Core = MBSuite Core (cannot disable); add-ons installable per company via /admin/plugins or /admin/modules"
   },
   "plugins": {
-    "kicker": "Plugin / Add-on",
-    "title": "Plugins and Add-on Modules",
-    "subtitle": "Install/uninstall module packs per company — core modules cannot be disabled",
+    "kicker": "Business Applications",
+    "title": "Seven standalone business applications",
+    "subtitle": "MBSuite Core is the central accounting system. Choose a Suite that matches your business type for specialized workflows and operations.",
     "packs": [
       {
-        "name": "retail_pos",
-        "desc": "POS + promotions + sales analytics + CRM/loyalty + multi-branch + inventory"
-      },
-      {
-        "name": "f_and_b",
-        "desc": "Table layout + KOT + billing + payment"
-      },
-      {
-        "name": "pharmacy",
-        "desc": "Pharmacy"
-      },
-      {
-        "name": "service_business",
-        "desc": "Service business"
-      },
-      {
-        "name": "ecommerce_integration",
-        "desc": "Shopee, Lazada, website"
-      },
-      {
-        "name": "delivery_integration",
-        "desc": "GrabFood, LINE MAN, Foodpanda"
-      }
-    ],
-    "suitesKicker": "Standalone business applications",
-    "suitesTitle": "Six Business Suites",
-    "suitesSubtitle": "These standalone apps are separate from MBSuite Core add-ons. URLs are recorded in the deployment checklist. Vercel Authentication currently protects the deployments while runtime setup is pending.",
-    "suites": [
-      {
-        "name": "F&B Suite",
-        "status": "Vercel deployment exists — access protected",
-        "desc": "Restaurants/cafes — tables, menus, KOT, and opening or merging bills."
+        "name": "Core Application",
+        "desc": "Central accounting, documents, expenses, journals and reports for all business types"
       },
       {
         "name": "Service Suite",
-        "status": "Vercel deployment exists — access protected",
-        "desc": "Service businesses/consultants — appointments, quotations and services."
-      },
-      {
-        "name": "Hotel/Booking Suite",
-        "status": "Vercel deployment exists — access protected",
-        "desc": "Room bookings — rooms, reservations, check-in/check-out and housekeeping."
-      },
-      {
-        "name": "Rental Suite",
-        "status": "Vercel deployment exists — access protected",
-        "desc": "Rental businesses — assets, rental contracts, rent and maintenance."
+        "desc": "Service businesses — appointments, quotations, service management and contracts"
       },
       {
         "name": "Retail Suite",
-        "status": "Vercel deployment exists — access protected",
-        "desc": "Retail/wholesale — POS, inventory, barcodes and promotions."
+        "desc": "Retail and wholesale — POS, inventory, barcode scanning and daily sales"
+      },
+      {
+        "name": "F&B Suite",
+        "desc": "Restaurants and cafes — QR ordering, tables, KOT, bills and payment"
+      },
+      {
+        "name": "Hotel Suite",
+        "desc": "Room bookings — reservations, check-in/out, housekeeping and daily revenue"
+      },
+      {
+        "name": "Rental Suite",
+        "desc": "Rental businesses — assets, leases, rent collection and maintenance"
       },
       {
         "name": "Pharmacy Suite",
-        "status": "Vercel deployment exists — access protected",
-        "desc": "Pharmacies — prescriptions, medicine inventory and expiry tracking."
+        "desc": "Pharmacies — medicine inventory, batches, expiry tracking and alerts"
       }
     ],
-    "howTo": "Enable/disable modules at /admin/modules or /admin/plugins (admin/superadmin required)"
+    "suitesKicker": "Live deployments",
+    "suitesTitle": "Access the applications",
+    "suitesSubtitle": "Each application operates independently on Vercel. Choose the URL that matches your business type.",
+    "suites": [
+      {
+        "name": "MBSuite Core",
+        "status": "Live - https://micro-business-suite.vercel.app/",
+        "desc": "Central accounting and document management for all business types."
+      },
+      {
+        "name": "Service Suite",
+        "status": "Live - https://micro-business-service.vercel.app/",
+        "desc": "Service businesses and consultants — appointment booking and service management."
+      },
+      {
+        "name": "Retail Suite",
+        "status": "Live - https://micro-business-retail.vercel.app/",
+        "desc": "Retail and wholesale — POS, inventory, barcode management and sales reports."
+      },
+      {
+        "name": "F&B Suite",
+        "status": "Live - https://micro-business-fnb.vercel.app/",
+        "desc": "Restaurants and cafes — table ordering, kitchen workflow and billing."
+      },
+      {
+        "name": "Hotel Suite",
+        "status": "Live - https://micro-business-hotel.vercel.app/",
+        "desc": "Room bookings and accommodation — reservations, check-in and housekeeping."
+      },
+      {
+        "name": "Rental Suite",
+        "status": "Live - https://micro-business-rental.vercel.app/",
+        "desc": "Rental businesses and property management — leases, payments and maintenance."
+      },
+      {
+        "name": "Pharmacy Suite",
+        "status": "Live - https://micro-business-pharmacy.vercel.app/",
+        "desc": "Pharmacies and medicine retailers — inventory, batches and expiry tracking."
+      }
+    ],
+    "howTo": "Visit the URL that matches your business type to create an account and get started"
   }
 }

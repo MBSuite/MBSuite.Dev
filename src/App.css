@@ -505,6 +505,25 @@
   margin-top: 14px;
 }
 
+.info-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  color: var(--blue);
+  font-size: 0.86rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.info-card-link span {
+  transition: transform 160ms ease;
+}
+
+.info-card-link:hover span {
+  transform: translateX(3px);
+}
+
 .info-fit-note {
   max-width: 760px;
   margin: 24px auto 0;
