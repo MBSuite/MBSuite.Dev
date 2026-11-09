@@ -29,7 +29,7 @@ export default function PluginsModules() {
           <h2>{t('plugins.suitesTitle')}</h2>
           <p>{t('plugins.suitesSubtitle')}</p>
         </div>
-        <div className="info-grid">
+        <div className="suites-grid">
           {suites.map((suite) => {
             // Extract URL from status text like "Live - https://..."
             const urlMatch = suite.status.match(/https:\/\/[^\s]+/)
@@ -37,13 +37,15 @@ export default function PluginsModules() {
             const statusLabel = suite.status.replace(urlMatch ? urlMatch[0] : '', '').replace(/\s*-\s*$/, '').trim()
 
             return (
-              <article key={suite.name} className="info-card">
-                <span className="info-label">{statusLabel}</span>
-                <h3>{suite.name}</h3>
-                <p>{suite.desc}</p>
+              <article key={suite.name} className="suite-showcase-card">
+                <div className="suite-header">
+                  <h3>{suite.name}</h3>
+                  <span className="suite-badge">{statusLabel}</span>
+                </div>
+                <p className="suite-desc">{suite.desc}</p>
                 {url && (
-                  <a href={url} className="info-card-link" target="_blank" rel="noopener noreferrer">
-                    Open app <span aria-hidden="true">→</span>
+                  <a href={url} className="suite-cta" target="_blank" rel="noopener noreferrer">
+                    Get started <span aria-hidden="true">→</span>
                   </a>
                 )}
               </article>
