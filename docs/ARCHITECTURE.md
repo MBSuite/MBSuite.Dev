@@ -3,7 +3,7 @@
 ## Stack
 
 - App: Next.js (App Router) + TypeScript
-- Database: PostgreSQL (Neon)
+- Database: PostgreSQL; Neon is used for Dev and Supabase for Production per owner confirmation
 - Auth: JWT (jose) + bcryptjs, httpOnly cookie, role-based (superadmin/admin/user)
 
 ## Core Modules
@@ -53,4 +53,3 @@
 - Preserve historical accounting evidence
 - Backward compatibility required
 - No destructive schema operations in production
-

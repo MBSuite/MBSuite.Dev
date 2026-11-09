@@ -1,78 +1,72 @@
-# Six Business Suites — Deployment and Login Checklist
+# Six Business Suites — Deployment and Login Check
 
-The six apps are separate standalone projects. Each has a Vercel project, a
-primary project domain, and an explicit Preview deployment. The first deployment
-for each new project was assigned to Vercel's `production` target, even though
-Preview was requested; those deployments are Ready. Separate Preview deployments
-were then created.
+Last live check: 2026-11-09 (Asia/Bangkok). The checks below were made against
+the public URLs, not inferred from older deployment notes.
 
-Vercel Authentication currently protects the deployments. No Vercel environment
-variables are configured for any Suite, so these URLs are not ready for public
-customer access, and database connectivity or login has not been verified.
+## Live deployment checks
 
-## Suite URLs and login routes
+| Suite | Primary URL | Preview URL checked | Home | Preview | Login | Readiness (`/api/health/ready`) | Anonymous `/api/auth/me` |
+|---|---|---|---:|---:|---:|---|---|
+| F&B | https://micro-business-fnb.vercel.app | https://micro-business-16gen1zsr-mbs9-c3cc.vercel.app | 200 | 200 | 200 | 200 — `{"status":"ok","db":"ok"}` | 200 — `{"user":null}` |
+| Service | https://micro-business-service.vercel.app | https://micro-business-service-naoqkvtx3-mbs9-c3cc.vercel.app | 200 | 200 | 200 | 200 — `{"status":"ok","db":"ok"}` | 200 — `{"user":null}` |
+| Hotel | https://micro-business-hotel.vercel.app | https://micro-business-hotel-mpt09ayva-mbs9-c3cc.vercel.app | 200 | 200 | 200 | 200 — `{"status":"ok","db":"ok"}` | 200 — `{"user":null}` |
+| Rental | https://micro-business-rental.vercel.app | https://micro-business-rental-fsy3xr50m-mbs9-c3cc.vercel.app | 200 | 200 | 200 | 200 — `{"status":"ok","db":"ok"}` | 200 — `{"user":null}` |
+| Retail | https://micro-business-retail.vercel.app | https://micro-business-retail-fccfuxbs0-mbs9-c3cc.vercel.app | 200 | 200 | 200 | 200 — `{"status":"ok","db":"ok"}` | 200 — `{"user":null}` |
+| Pharmacy | https://micro-business-pharmacy.vercel.app | https://micro-business-pharmacy-q6yemtyv6-mbs9-c3cc.vercel.app | 200 | 200 | 200 | 200 — `{"status":"ok","db":"ok"}` | 200 — `{"user":null}` |
 
-| Suite | Project directory | Primary Vercel domain | Preview deployment | Latest Preview status | App entry | Login page | Login API |
-|---|---|---|---|---|---|---|---|
-| F&B | `Micro-Business-FNB` | https://micro-business-fnb.vercel.app | https://micro-business-16gen1zsr-mbs9-c3cc.vercel.app | Ready | `/` | `/login` | `POST /api/auth/login` |
-| Service | `Micro-Business-Service` | https://micro-business-service.vercel.app | https://micro-business-service-naoqkvtx3-mbs9-c3cc.vercel.app | Ready | `/` | `/login` | `POST /api/auth/login` |
-| Hotel/Booking | `Micro-Business-Hotel` | https://micro-business-hotel.vercel.app | https://micro-business-hotel-mpt09ayva-mbs9-c3cc.vercel.app | Ready | `/` | `/login` | `POST /api/auth/login` |
-| Rental | `Micro-Business-Rental` | https://micro-business-rental.vercel.app | https://micro-business-rental-fsy3xr50m-mbs9-c3cc.vercel.app | Ready | `/` | `/login` | `POST /api/auth/login` |
-| Retail | `Micro-Business-Retail` | https://micro-business-retail.vercel.app | https://micro-business-retail-fccfuxbs0-mbs9-c3cc.vercel.app | Ready | `/` | `/login` | `POST /api/auth/login` |
-| Pharmacy | `Micro-Business-Pharmacy` | https://micro-business-pharmacy.vercel.app | https://micro-business-pharmacy-q6yemtyv6-mbs9-c3cc.vercel.app | Ready | `/` | `/login` | `POST /api/auth/login` |
+The primary and Preview home pages, primary `/login` pages, readiness endpoints,
+and anonymous session endpoints were requested over HTTPS. A readiness response
+with `db: ok` confirms that the module's readiness check reached its database at
+the time of this check. `/api/auth/me` returning `user: null` is the expected
+unauthenticated result; it does not verify a successful login or an authenticated
+session. HTTP 200 confirms these routes responded, not that every business
+workflow has been tested.
 
-The login page and API paths were verified in all six source trees. Deployment
-build status does not establish that the app can connect to its database or
-authenticate users. After configuring the required environment variables and
-Vercel access policy, test `/`, `/login`, a successful login, and authenticated
-`GET /api/auth/me` with approved test credentials. No login result is claimed.
+## Account registration
 
-## MBSuite Core connection
+The six modules do not expose separate registration routes. Their login pages
+link to the Core registration page:
+https://micro-business-suite.vercel.app/register
 
-- Current Core deployment recorded by the project: `https://micro-business-suite.vercel.app`
-- Bridge endpoint: `POST /api/bridge/sync`
-- Read-only endpoint check: `GET /api/bridge/sync` returns endpoint metadata and
-  allowed event names; it does not verify that a Suite can authenticate or sync.
-- Core currently accepts `order.paid` and `payment.received`; the six Suite
-  `lib/bridge-sync.ts` helpers send `order.paid`.
-- The bridge POST writes an invoice/payment journal and an idempotency record.
-  Do not use it as a production smoke test; verify it only with an explicitly
-  approved test company/database.
+The Core registration page returned HTTP 200 on 2026-11-09. Its form offers
+General, Retail, F&B, Pharmacy, and Service business types; it does not offer
+Rental or Hotel. The registration action creates a new 30-day trial company and
+user in the Core database, so submitting the form is a real database write.
 
-## Required Vercel environment variables
+The Core source has since been updated to offer Rental and Hotel and install
+their matching plugin packs. The live form observation above predates deploying
+that source change; recheck the production form after the next Core deployment.
 
-Vercel reported that none of the six projects has environment variables yet.
-Configure values only after confirming the intended deployment environment and
-database:
+No registration form was submitted and no account was created during this
+check. Consequently, successful registration, subsequent login, and module SSO
+for a newly registered account remain unverified. Do not use production
+registration as a test without an explicitly approved test identity and an
+isolated test database.
 
-1. `DATABASE_URL` — the correct Neon pooled URL for app runtime. Do not use a
-   localhost example or point a write/test command at a retained database.
-2. `SESSION_SECRET` — a unique random value of at least 32 characters per Suite.
-3. `NEXT_PUBLIC_APP_URL` — the Suite's primary Vercel domain listed above.
-4. `MBS_HUB_URL` — the verified MBSuite Core base URL, without the API path.
-5. `MBS_BRIDGE_TOKEN` — the matching server-side service token in both apps;
-   never record the value here or in a client-side variable.
-6. `MBS_COMPANY_ID` — the intended Core company ID. The Suite helper currently
-   defaults this value to `1` when unset, so set it explicitly and verify tenant
-   ownership before enabling sync.
+## Core / Bridge
 
-The Suite `.env.example` files leave `MBS_HUB_URL` blank. A missing
-`MBS_HUB_URL` or `MBS_BRIDGE_TOKEN` causes the Suite helper to skip sync.
-Do not run migrations, seed data, or send bridge events until the target Neon
-branch and test company are confirmed; production database writes require owner
-approval.
+- Core registration page: https://micro-business-suite.vercel.app/register —
+  HTTP 200.
+- Core `GET /api/health`: HTTP 200, `{"status":"ok","db":"ok"}`.
+- Core `GET /api/bridge/sync` without credentials: HTTP 401,
+  `{"error":"Unauthorized"}`. The updated Core route requires the matching
+  `MBS_BRIDGE_TOKEN` as a Bearer credential or an authenticated Core session to
+  return metadata. Verify the authenticated request after deploying the Core
+  change; no token value is stored here.
+- No Bridge `POST` was made. The endpoint can write invoice/payment journal and
+  idempotency records; do not use production as a Bridge test target.
 
-## Post-deployment test order
+## Next steps for an end-to-end account test
 
-1. Confirm Vercel Authentication is intentionally configured for the intended
-   users before sharing any URL.
-2. Verify each app's `/` and `/login` pages load over HTTPS.
-3. Sign in with approved test credentials; verify `GET /api/auth/me` returns the
-   expected test user and company. Do not test with guessed credentials.
-4. Confirm the Core bridge metadata endpoint is reachable with
-   `GET /api/bridge/sync`.
-5. Only after explicit approval and confirmation of an isolated test company and
-   database, send an idempotent test `order.paid` event and verify the Core
-   response and resulting test records.
-6. Record results, timestamps, tested URLs and any failures here. Do not store
-   credentials or tokens.
+1. Deploy the Core changes to a Dev/preview environment only, connected to the
+   Neon Dev database. Do not deploy these changes to Production before 2FA passes.
+2. Verify the Dev deployment exposes Rental and Hotel; then complete signup and
+   member deletion on the Dev database. Until this is done, the Dev gate remains
+   **not passed**. Do not use Supabase Production for this test.
+3. After the Dev signup/delete gate passes, implement and verify 2FA. Production
+   release remains blocked until 2FA passes and deployment is approved.
+4. Verify login and `/api/auth/me` on each intended module with an approved test
+   account. Record outcomes and timestamps, never passwords, cookies, or tokens.
+5. Test Bridge writes separately, only against an approved isolated test
+   company/database and with an idempotency key. Production database is Supabase;
+   do not direct test writes at it.

@@ -1,60 +1,153 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 export default function Pricing() {
   const { t } = useTranslation()
-  const subscriptionFeatures = t('pricing.subscriptionFeatures', { returnObjects: true }) as string[]
-  const perpetualFeatures = t('pricing.perpetualFeatures', { returnObjects: true }) as string[]
+  const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('yearly')
+  const pricing = t('pricing', { returnObjects: true }) as any
+  const tiers = pricing.tiers as Array<{
+    id: string
+    name: string
+    tagline: string
+    description: string
+    priceMonthly: number
+    priceYearly: number
+    pricePerpetual: number
+    currencySymbol: string
+    features: string[]
+    ctaText: string
+    ctaLink: string
+    highlighted: boolean
+    badge?: string
+  }>
 
   return (
     <section id="pricing" className="pricing-section section-pad">
       <div className="content-wrap">
         <div className="section-heading">
-          <span className="section-kicker">{t('pricing.kicker')}</span>
-          <h2>{t('pricing.title')}</h2>
-          <p>{t('pricing.subtitle')}</p>
+          <span className="section-kicker">{pricing.kicker}</span>
+          <h2>{pricing.title}</h2>
+          <p>{pricing.subtitle}</p>
         </div>
-        <p className="pricing-note">{t('pricing.compareNote')}</p>
 
+        {/* Billing Toggle */}
+        <div className="pricing-toggle">
+          <button
+            className={`toggle-btn ${billingCycle === 'monthly' ? 'active' : ''}`}
+            onClick={() => setBillingCycle('monthly')}
+          >
+            {pricing.billingToggle.monthly}
+          </button>
+          <button
+            className={`toggle-btn ${billingCycle === 'yearly' ? 'active' : ''}`}
+            onClick={() => setBillingCycle('yearly')}
+          >
+            {pricing.billingToggle.yearly}
+            <span className="toggle-badge">{pricing.billingToggle.saveBadge}</span>
+          </button>
+        </div>
+
+        {/* Pricing Cards Grid */}
         <div className="pricing-grid">
-          <article className="pricing-card">
-            <h3>{t('pricing.monthly')}</h3>
-            <p className="pricing-price">
-              5,750 <span>{t('pricing.perMonth')}</span>
-            </p>
-            <p className="pricing-detail">{t('pricing.freeTrial')}</p>
-            <ul className="pricing-list">
-              {subscriptionFeatures.map((feature) => <li key={feature}>{feature}</li>)}
-            </ul>
-            <a
-              href="https://micro-business-suite.vercel.app/checkout?plan=yearly"
-              className="button-primary"
-            >
-              {t('pricing.ctaSubscribe')}
-            </a>
-          </article>
+          {tiers.map((tier) => {
+            const currentPrice =
+              billingCycle === 'monthly'
+                ? tier.priceMonthly
+                : billingCycle === 'yearly'
+                  ? tier.priceYearly
+                  : tier.pricePerpetual
 
-          <article className="pricing-card pricing-card-featured">
-            <div className="pricing-badge">
-              {t('pricing.save')}
-            </div>
-            <h3>{t('pricing.yearly')}</h3>
-            <p className="pricing-price">
-              {t('pricing.contactForPrice')} <span>{t('pricing.perYear')}</span>
-            </p>
-            <p className="pricing-detail">{t('pricing.contactDesc')}</p>
-            <ul className="pricing-list">
-              {perpetualFeatures.map((feature) => <li key={feature}>{feature}</li>)}
-            </ul>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScINJ7ZxkrgNqsXSsQ4mMOTNs0Q6uk46QBLuUcAJKWmx3_GjA/viewform?usp=publish-editor"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-primary"
-            >
-              {t('pricing.ctaContact')}
-            </a>
-          </article>
+            return (
+              <article
+                key={tier.id}
+                className={`pricing-card ${tier.highlighted ? 'pricing-card-highlighted' : ''}`}
+              >
+                {tier.badge && (
+                  <div className="pricing-card-badge">
+                    <span className="badge-star">⭐</span>
+                    {tier.badge}
+                  </div>
+                )}
+
+                <div className="pricing-card-header">
+                  <h3>{tier.name}</h3>
+                  <p className="pricing-tagline">{tier.tagline}</p>
+                </div>
+
+                <p className="pricing-description">{tier.description}</p>
+
+                <div className="pricing-price-section">
+                  <div className="pricing-price">
+                    <span className="currency">{tier.currencySymbol}</span>
+                    <span className="amount">{currentPrice.toLocaleString()}</span>
+                    {billingCycle === 'monthly' && (
+                      <span className="period">/เดือน</span>
+                    )}
+                    {billingCycle === 'yearly' && <span className="period">/ปี</span>}
+                  </div>
+                  {tier.priceMonthly && (
+                    <p className="pricing-subtext">
+                      {billingCycle === 'yearly' && `≈ ${Math.round(tier.priceYearly / 12)} บาท/เดือน`}
+                    </p>
+                  )}
+                </div>
+
+                <p className="pricing-trial">{pricing.notes.trialNote}</p>
+
+                <ul className="pricing-features">
+                  {tier.features.map((feature) => (
+                    <li key={feature}>
+                      <span className="feature-check">✓</span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <a href={tier.ctaLink} className="pricing-cta">
+                  {tier.ctaText}
+                  <span aria-hidden="true">→</span>
+                </a>
+
+                {tier.id === 'complete' && (
+                  <p className="pricing-highlight-note">ทำให้ต่อเชื่อมยอดขายเข้าบัญชี</p>
+                )}
+              </article>
+            )
+          })}
         </div>
+
+        {/* Perpetual License Callout */}
+        <div className="perpetual-callout">
+          <div className="perpetual-content">
+            <h3>{pricing.perpetualCallout.title}</h3>
+            <p>{pricing.perpetualCallout.subtitle}</p>
+
+            <div className="perpetual-comparison">
+              {pricing.perpetualCallout.comparison.map(
+                (item: { label: string; cloud: string; perpetual: string }) => (
+                  <div key={item.label} className="comparison-row">
+                    <div className="comparison-label">{item.label}</div>
+                    <div className="comparison-item">
+                      <span className="label">Cloud</span>
+                      <span className="value">{item.cloud}</span>
+                    </div>
+                    <div className="comparison-item highlight">
+                      <span className="label">Perpetual</span>
+                      <span className="value">{item.perpetual}</span>
+                    </div>
+                  </div>
+                )
+              )}
+            </div>
+
+            <a href={pricing.perpetualCallout.ctaLink} className="perpetual-cta">
+              {pricing.perpetualCallout.cta}
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <p className="pricing-note">{pricing.notes.supportNote}</p>
       </div>
     </section>
   )

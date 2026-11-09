@@ -388,40 +388,116 @@
     ]
   },
   "pricing": {
-    "kicker": "Plans",
-    "title": "Choose the right way to use MBSuite",
-    "subtitle": "Choose an annual subscription or ask us about perpetual licensing.",
-    "monthly": "Annual subscription",
-    "yearly": "Perpetual license",
-    "save": "Built for long-term use",
-    "perMonth": "THB/year",
-    "perYear": "one-time",
-    "oneTime": "One-time",
-    "contact": "Perpetual license",
-    "contactDesc": "Contact our team for licensing and deployment details.",
-    "contactForPrice": "Contact for pricing",
-    "freeTrial": "14-day trial · 1 user",
-    "buyOut": "Ask about a perpetual license",
-    "buyOutDesc": "Fill out the form to request more information.",
-    "ctaSubscribe": "Choose annual subscription",
-    "ctaContact": "Ask about perpetual",
-    "compareNote": "Perpetual licensing excludes annual maintenance. Contact us for details.",
-    "subscriptionFeatures": [
-      "Business accounting and documents",
-      "AI Chat and AI Audit to help review entries",
-      "Profit and loss and cash flow reports",
-      "VAT/WHT summaries for review",
-      "Optional modules for different workflows",
-      "Google Drive connection after account setup"
+    "kicker": "Pricing Plans",
+    "title": "Simple, transparent pricing for every business",
+    "subtitle": "Choose the plan that fits your business model. All plans include a 14-day free trial.",
+    "billingToggle": {
+      "monthly": "Billed Monthly",
+      "yearly": "Billed Annually",
+      "saveBadge": "Save 17%"
+    },
+    "tiers": [
+      {
+        "id": "starter",
+        "name": "Starter",
+        "tagline": "For single-store businesses",
+        "description": "Perfect for independent shops and small service providers. One specialized suite tailored to your business type.",
+        "priceMonthly": 350,
+        "priceYearly": 3500,
+        "pricePerpetual": 9900,
+        "currencySymbol": "฿",
+        "features": [
+          "Complete single-suite module",
+          "Up to 10 staff accounts",
+          "Daily/Monthly sales reports",
+          "Google Drive auto-backup",
+          "Priority email support",
+          "Free updates & bug fixes"
+        ],
+        "ctaText": "Start Free Trial",
+        "ctaLink": "https://micro-business-suite.vercel.app/register?plan=starter",
+        "highlighted": false
+      },
+      {
+        "id": "professional",
+        "name": "Professional",
+        "tagline": "Complete accounting system",
+        "description": "Accounting and documents with AI tools. Perfect for freelancers, consultants, and accounting-focused businesses.",
+        "priceMonthly": 500,
+        "priceYearly": 4900,
+        "pricePerpetual": 14900,
+        "currencySymbol": "฿",
+        "features": [
+          "Core accounting system",
+          "AI Auditor + AI Chat",
+          "Quotations, invoices, receipts",
+          "Multi-GL journal entries",
+          "VAT/WHT tax reports",
+          "RD-API ready for tax filing",
+          "Google Workspace integration",
+          "Priority support"
+        ],
+        "ctaText": "Start Free Trial",
+        "ctaLink": "https://micro-business-suite.vercel.app/register?plan=professional",
+        "highlighted": false
+      },
+      {
+        "id": "complete",
+        "name": "Complete Bundle",
+        "tagline": "⭐ Best Value - Full business system",
+        "description": "Core accounting + one specialized suite. Connect store operations to accounting automatically. Perfect for growing businesses.",
+        "priceMonthly": 750,
+        "priceYearly": 7500,
+        "pricePerpetual": 19900,
+        "currencySymbol": "฿",
+        "features": [
+          "⭐ Everything in Professional",
+          "Plus one specialized suite (F&B, Retail, Hotel, Rental, Service, Pharmacy)",
+          "Automatic sales sync to accounting",
+          "AI daily profit summary",
+          "Multi-suite discount (-20% per additional suite)",
+          "Premium priority support",
+          "Quarterly strategy reviews"
+        ],
+        "ctaText": "Start Free Trial",
+        "ctaLink": "https://micro-business-suite.vercel.app/register?plan=complete",
+        "highlighted": true,
+        "badge": "Most Popular"
+      }
     ],
-    "perpetualFeatures": [
-      "Includes subscription capabilities",
-      "Perpetual usage license",
-      "Self-hosted deployment with Docker",
-      "No monthly renewal",
-      "Designed for long-term cost planning",
-      "Flexible deployment configuration"
-    ]
+    "perpetualCallout": {
+      "title": "💡 Own Your System - Perpetual License",
+      "subtitle": "Stop monthly payments. Own the software forever.",
+      "comparison": [
+        {
+          "label": "3-Year Cost",
+          "cloud": "27,000 THB",
+          "perpetual": "19,900 THB"
+        },
+        {
+          "label": "After 3 Years",
+          "cloud": "Keep paying forever",
+          "perpetual": "Use forever for free"
+        },
+        {
+          "label": "Data Location",
+          "cloud": "Provider's server",
+          "perpetual": "Your own server"
+        },
+        {
+          "label": "Best For",
+          "cloud": "Short-term use",
+          "perpetual": "Long-term security"
+        }
+      ],
+      "cta": "Ask about Perpetual License",
+      "ctaLink": "https://docs.google.com/forms/d/e/1FAIpQLScINJ7ZxkrgNqsXSsQ4mMOTNs0Q6uk46QBLuUcAJKWmx3_GjA/viewform"
+    },
+    "notes": {
+      "trialNote": "No credit card required. Full access to all features.",
+      "supportNote": "All plans include community support. Professional & Complete include priority support.",
+      "customNote": "Need something different? Contact our team to discuss custom solutions."
+    }
   },
   "infoContent": {
     "kicker": "Who MBSuite is for",

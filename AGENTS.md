@@ -19,6 +19,15 @@ compatibility: opencode
 - Before claiming frontend work is complete, run the project’s build command (`npm run build` unless otherwise required) and inspect warnings/errors.
 - Keep changes focused: do not change architecture, styling, or deployment config outside the requested task.
 
+## Owner-designated sample companies
+
+The owner identified these Core database records as sample-company references for ongoing planning and testing:
+- Company ID `1`: `Your Company`
+- Company ID `2`: `innovation`
+- Company ID `3`: `บริษัท ทดสอบ จำกัด`
+
+Use these as test identities without asking the owner again unless the records are unavailable or have changed. They are not confirmed production mappings for any module. Do not write test data to a retained/live database; use an isolated disposable test database for write tests, and do not copy additional customer or contact data into this repository.
+
 ## MBSUITE LANDING PAGE CONFIGURATION
 Last updated: 2026-10-08
 

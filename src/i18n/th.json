@@ -388,40 +388,116 @@
     ]
   },
   "pricing": {
-    "kicker": "แพ็กเกจ",
-    "title": "เลือกรูปแบบที่เหมาะกับธุรกิจคุณ",
-    "subtitle": "เลือก Subscription รายปี หรือสอบถามสิทธิ์ใช้งานแบบ Perpetual",
-    "monthly": "Subscription รายปี",
-    "yearly": "Perpetual ขายขาด",
-    "save": "สิทธิ์ใช้งานระยะยาว",
-    "perMonth": "บาท/ปี",
-    "perYear": "ชำระครั้งเดียว",
-    "oneTime": "ครั้งเดียว",
-    "contact": "Perpetual License",
-    "contactDesc": "ติดต่อทีมงานเพื่อสอบถามรายละเอียดสิทธิ์ใช้งานและการติดตั้ง",
-    "contactForPrice": "ติดต่อสอบถาม",
-    "freeTrial": "ทดลองใช้ 14 วัน · ผู้ใช้ 1 คน",
-    "buyOut": "สอบถาม Perpetual License",
-    "buyOutDesc": "กรอกแบบฟอร์มเพื่อขอข้อมูลเพิ่มเติม",
-    "ctaSubscribe": "สมัคร Subscription รายปี",
-    "ctaContact": "สอบถามสิทธิ์ขายขาด",
-    "compareNote": "สิทธิ์ Perpetual ไม่รวมค่าบำรุงรักษารายปี กรุณาติดต่อเพื่อสอบถามรายละเอียด",
-    "subscriptionFeatures": [
-      "ระบบบัญชีและเอกสารธุรกิจ",
-      "AI Chat และ AI Audit ช่วยทบทวนข้อมูล",
-      "รายงานกำไรขาดทุนและกระแสเงินสด",
-      "สรุป VAT/WHT เพื่อเตรียมตรวจทาน",
-      "เลือกโมดูลเสริมตามการใช้งาน",
-      "เชื่อม Google Drive เมื่อกำหนดค่าบัญชีแล้ว"
+    "kicker": "แพ็กเกจราคา",
+    "title": "ราคาแบบง่ายและชัดเจน สำหรับทุกธุรกิจ",
+    "subtitle": "เลือกแพ็กเกจที่เหมาะกับธุรกิจของคุณ ทุกแพ็กเกจมีทดลองใช้ฟรี 14 วัน",
+    "billingToggle": {
+      "monthly": "ชำระรายเดือน",
+      "yearly": "ชำระรายปี",
+      "saveBadge": "ประหยัด 17%"
+    },
+    "tiers": [
+      {
+        "id": "starter",
+        "name": "Starter",
+        "tagline": "สำหรับธุรกิจเดี่ยว",
+        "description": "เหมาะสำหรับร้านค้าเล็ก ๆ และร้านบริการอิสระ มีเฉพาะเสียว Suite เดียวตรงกับประเภทธุรกิจคุณ",
+        "priceMonthly": 350,
+        "priceYearly": 3500,
+        "pricePerpetual": 9900,
+        "currencySymbol": "฿",
+        "features": [
+          "โมดูล Suite เดียวแบบสมบูรณ์",
+          "สนับสนุนพนักงานได้ 10 คน",
+          "รายงานยอดขาย รายวัน/รายเดือน",
+          "백업อัตโนมัติ Google Drive",
+          "สนับสนุนทางอีเมล ให้ความสำคัญ",
+          "อัปเดตและแก้ไขข้อบกพร่องฟรี"
+        ],
+        "ctaText": "ทดลองใช้ฟรี",
+        "ctaLink": "https://micro-business-suite.vercel.app/register?plan=starter",
+        "highlighted": false
+      },
+      {
+        "id": "professional",
+        "name": "Professional",
+        "tagline": "ระบบบัญชีสมบูรณ์",
+        "description": "ระบบบัญชีและเอกสารพร้อม AI ช่วยเหลือ เหมาะสำหรับฟรีแลนซ์ ที่ปรึกษา และธุรกิจที่เน้นบัญชี",
+        "priceMonthly": 500,
+        "priceYearly": 4900,
+        "pricePerpetual": 14900,
+        "currencySymbol": "฿",
+        "features": [
+          "ระบบบัญชีส่วนกลาง (Core)",
+          "AI Auditor + AI Chat",
+          "ใบเสนอราคา ใบแจ้งหนี้ ใบเสร็จรับเงิน",
+          "บันทึกประมาณการหลายบัญชี",
+          "รายงานภาษี VAT/WHT",
+          "พร้อมสำหรับ RD-API ยื่นภาษี",
+          "เชื่อม Google Workspace",
+          "สนับสนุนฉุกเฉิน"
+        ],
+        "ctaText": "ทดลองใช้ฟรี",
+        "ctaLink": "https://micro-business-suite.vercel.app/register?plan=professional",
+        "highlighted": false
+      },
+      {
+        "id": "complete",
+        "name": "Complete Bundle",
+        "tagline": "⭐ คุ้มสุด - ระบบธุรกิจแบบสมบูรณ์",
+        "description": "ระบบบัญชี Core + เสียว Suite เดียว เชื่อมต่อการดำเนินงานร้านเข้ากับบัญชีอัตโนมัติ เหมาะสำหรับธุรกิจที่เติบโต",
+        "priceMonthly": 750,
+        "priceYearly": 7500,
+        "pricePerpetual": 19900,
+        "currencySymbol": "฿",
+        "features": [
+          "⭐ ทั้งหมดใน Professional",
+          "บวก เสียว Suite เดียว (F&B, Retail, Hotel, Rental, Service, Pharmacy)",
+          "ยอดขายซิงก์อัตโนมัติเข้าบัญชี",
+          "AI สรุปกำไรรายวัน",
+          "ส่วนลด Multi-suite (-20% ต่อ Suite เพิ่ม)",
+          "สนับสนุน Premium ฉุกเฉิน",
+          "บทวิจารณ์ยุทธศาสตร์รายปี"
+        ],
+        "ctaText": "ทดลองใช้ฟรี",
+        "ctaLink": "https://micro-business-suite.vercel.app/register?plan=complete",
+        "highlighted": true,
+        "badge": "นิยมสุด"
+      }
     ],
-    "perpetualFeatures": [
-      "รวมความสามารถใน Subscription",
-      "สิทธิ์ใช้งานแบบ Perpetual",
-      "รองรับการติดตั้งแบบ self-hosted ด้วย Docker",
-      "ไม่มีการต่ออายุรายเดือน",
-      "เหมาะกับการวางแผนต้นทุนระยะยาว",
-      "ปรับการติดตั้งให้เข้ากับธุรกิจได้"
-    ]
+    "perpetualCallout": {
+      "title": "💡 เป็นเจ้าของระบบ - Perpetual License",
+      "subtitle": "หยุดจ่ายรายเดือน เป็นเจ้าของซอฟต์แวร์ตลอดไป",
+      "comparison": [
+        {
+          "label": "ค่าใช้จ่าย 3 ปี",
+          "cloud": "27,000 บาท",
+          "perpetual": "19,900 บาท"
+        },
+        {
+          "label": "หลังจาก 3 ปี",
+          "cloud": "ยังคงจ่ายต่อไป",
+          "perpetual": "ใช้ฟรีตลอดไป"
+        },
+        {
+          "label": "ที่จัดเก็บข้อมูล",
+          "cloud": "เซิร์ฟเวอร์ผู้ให้บริการ",
+          "perpetual": "เซิร์ฟเวอร์ของคุณ"
+        },
+        {
+          "label": "เหมาะสำหรับ",
+          "cloud": "ใช้ระยะสั้น",
+          "perpetual": "ใช้ระยะยาว"
+        }
+      ],
+      "cta": "สอบถาม Perpetual License",
+      "ctaLink": "https://docs.google.com/forms/d/e/1FAIpQLScINJ7ZxkrgNqsXSsQ4mMOTNs0Q6uk46QBLuUcAJKWmx3_GjA/viewform"
+    },
+    "notes": {
+      "trialNote": "ไม่ต้องใส่บัตรเครดิต เข้าถึงฟีเจอร์ทั้งหมดได้",
+      "supportNote": "แทนแพ็กเกจทั้งหมดมี Community Support มี Professional & Complete มีสนับสนุนฉุกเฉิน",
+      "customNote": "ต้องการอะไรพิเศษ? ติดต่อทีมงานเพื่อพูดคุยเรื่องวิธีแก้ปัญหาที่กำหนดเอง"
+    }
   },
   "infoContent": {
     "kicker": "เหมาะกับธุรกิจแบบไหน",
