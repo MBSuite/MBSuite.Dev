@@ -415,7 +415,7 @@
           "อัปเดตและแก้ไขข้อบกพร่องฟรี"
         ],
         "ctaText": "ทดลองใช้ฟรี",
-        "ctaLink": "https://micro-business-suite.vercel.app/register?plan=starter",
+        "ctaLink": "https://micro-business-suite.vercel.app/register",
         "highlighted": false
       },
       {
@@ -438,7 +438,7 @@
           "สนับสนุนฉุกเฉิน"
         ],
         "ctaText": "ทดลองใช้ฟรี",
-        "ctaLink": "https://micro-business-suite.vercel.app/register?plan=professional",
+        "ctaLink": "https://micro-business-suite.vercel.app/register",
         "highlighted": false
       },
       {
@@ -460,7 +460,7 @@
           "ปรึกษาร่วมวางแผนธุรกิจรายปี"
         ],
         "ctaText": "ทดลองใช้ฟรี",
-        "ctaLink": "https://micro-business-suite.vercel.app/register?plan=complete",
+        "ctaLink": "https://micro-business-suite.vercel.app/register",
         "highlighted": true
       }
     ],
