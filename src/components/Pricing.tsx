@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 export default function Pricing() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('yearly')
   const pricing = t('pricing', { returnObjects: true }) as any
   const tiers = pricing.tiers as Array<{
@@ -20,6 +20,23 @@ export default function Pricing() {
     highlighted: boolean
     badge?: string
   }>
+
+  // Helper: Get localized period label
+  const getPeriodLabel = (cycle: 'monthly' | 'yearly'): string => {
+    if (i18n.language === 'th') {
+      return cycle === 'monthly' ? '/เดือน' : '/ปี'
+    }
+    return cycle === 'monthly' ? '/month' : '/year'
+  }
+
+  // Helper: Get monthly estimate for yearly billing
+  const getMonthlyEstimate = (yearlyPrice: number): string => {
+    const monthly = Math.round(yearlyPrice / 12)
+    if (i18n.language === 'th') {
+      return `≈ ${monthly} บาท/เดือน`
+    }
+    return `≈ ฿${monthly.toLocaleString()}/month`
+  }
 
   return (
     <section id="pricing" className="pricing-section section-pad">
@@ -80,14 +97,11 @@ export default function Pricing() {
                   <div className="pricing-price">
                     <span className="currency">{tier.currencySymbol}</span>
                     <span className="amount">{currentPrice.toLocaleString()}</span>
-                    {billingCycle === 'monthly' && (
-                      <span className="period">/เดือน</span>
-                    )}
-                    {billingCycle === 'yearly' && <span className="period">/ปี</span>}
+                    <span className="period">{getPeriodLabel(billingCycle)}</span>
                   </div>
                   {tier.priceMonthly && (
                     <p className="pricing-subtext">
-                      {billingCycle === 'yearly' && `≈ ${Math.round(tier.priceYearly / 12)} บาท/เดือน`}
+                      {billingCycle === 'yearly' && getMonthlyEstimate(tier.priceYearly)}
                     </p>
                   )}
                 </div>
@@ -109,7 +123,7 @@ export default function Pricing() {
                 </a>
 
                 {tier.id === 'complete' && (
-                  <p className="pricing-highlight-note">ทำให้ต่อเชื่อมยอดขายเข้าบัญชี</p>
+                  <p className="pricing-highlight-note">{t('pricing.completeHighlight')}</p>
                 )}
               </article>
             )

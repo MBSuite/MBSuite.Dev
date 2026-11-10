@@ -32,7 +32,7 @@ export default function InfoContent() {
               <p>{card.desc}</p>
               {card.url && (
                 <a href={card.url} className="info-card-link" target="_blank" rel="noopener noreferrer">
-                  Get started <span aria-hidden="true">→</span>
+                  {t('common.getStarted')} <span aria-hidden="true">→</span>
                 </a>
               )}
             </article>

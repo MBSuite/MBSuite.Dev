@@ -400,8 +400,8 @@
       {
         "id": "starter",
         "name": "Starter",
-        "tagline": "สำหรับธุรกิจเดี่ยว",
-        "description": "เหมาะสำหรับร้านค้าเล็ก ๆ และร้านบริการอิสระ มีเฉพาะเสียว Suite เดียวตรงกับประเภทธุรกิจคุณ",
+        "tagline": "เริ่มร้านเดียว ครบทุกงานหน้าร้าน",
+        "description": "เหมาะสำหรับร้านค้าเล็ก ๆ และร้านบริการอิสระ มีเฉพาะ Suite เดียวตรงกับประเภทธุรกิจคุณ",
         "priceMonthly": 350,
         "priceYearly": 3500,
         "pricePerpetual": 9900,
@@ -410,8 +410,8 @@
           "โมดูล Suite เดียวแบบสมบูรณ์",
           "สนับสนุนพนักงานได้ 10 คน",
           "รายงานยอดขาย รายวัน/รายเดือน",
-          "백업อัตโนมัติ Google Drive",
-          "สนับสนุนทางอีเมล ให้ความสำคัญ",
+          "สำรองข้อมูลอัตโนมัติ Google Drive",
+          "สนับสนุนอีเมล แบบรับไวก่อน",
           "อัปเดตและแก้ไขข้อบกพร่องฟรี"
         ],
         "ctaText": "ทดลองใช้ฟรี",
@@ -421,7 +421,7 @@
       {
         "id": "professional",
         "name": "Professional",
-        "tagline": "ระบบบัญชีสมบูรณ์",
+        "tagline": "ปิดบัญชีและเตรียมภาษีได้จบในระบบ",
         "description": "ระบบบัญชีและเอกสารพร้อม AI ช่วยเหลือ เหมาะสำหรับฟรีแลนซ์ ที่ปรึกษา และธุรกิจที่เน้นบัญชี",
         "priceMonthly": 500,
         "priceYearly": 4900,
@@ -431,7 +431,7 @@
           "ระบบบัญชีส่วนกลาง (Core)",
           "AI Auditor + AI Chat",
           "ใบเสนอราคา ใบแจ้งหนี้ ใบเสร็จรับเงิน",
-          "บันทึกประมาณการหลายบัญชี",
+          "บันทึกหลายบัญชี (Multi-GL)",
           "รายงานภาษี VAT/WHT",
           "พร้อมสำหรับ RD-API ยื่นภาษี",
           "เชื่อม Google Workspace",
@@ -444,30 +444,29 @@
       {
         "id": "complete",
         "name": "Complete Bundle",
-        "tagline": "⭐ คุ้มสุด - ระบบธุรกิจแบบสมบูรณ์",
-        "description": "ระบบบัญชี Core + เสียว Suite เดียว เชื่อมต่อการดำเนินงานร้านเข้ากับบัญชีอัตโนมัติ เหมาะสำหรับธุรกิจที่เติบโต",
+        "tagline": "ขายหน้าร้าน บัญชีเข้าเอง",
+        "description": "ระบบบัญชี Core + Suite เดียว เชื่อมต่อการดำเนินงานร้านเข้ากับบัญชีอัตโนมัติ เหมาะสำหรับธุรกิจที่เติบโต",
         "priceMonthly": 750,
         "priceYearly": 7500,
         "pricePerpetual": 19900,
         "currencySymbol": "฿",
         "features": [
           "⭐ ทั้งหมดใน Professional",
-          "บวก เสียว Suite เดียว (F&B, Retail, Hotel, Rental, Service, Pharmacy)",
-          "ยอดขายซิงก์อัตโนมัติเข้าบัญชี",
+          "บวก Suite เดียว (F&B, Retail, Hotel, Rental, Service, Pharmacy)",
+          "ยอดขายหน้าร้านลงบัญชีเอง ไม่ต้องคีย์ซ้ำ",
           "AI สรุปกำไรรายวัน",
           "ส่วนลด Multi-suite (-20% ต่อ Suite เพิ่ม)",
           "สนับสนุน Premium ฉุกเฉิน",
-          "บทวิจารณ์ยุทธศาสตร์รายปี"
+          "ปรึกษาร่วมวางแผนธุรกิจรายปี"
         ],
         "ctaText": "ทดลองใช้ฟรี",
         "ctaLink": "https://micro-business-suite.vercel.app/register?plan=complete",
-        "highlighted": true,
-        "badge": "นิยมสุด"
+        "highlighted": true
       }
     ],
     "perpetualCallout": {
       "title": "💡 เป็นเจ้าของระบบ - Perpetual License",
-      "subtitle": "หยุดจ่ายรายเดือน เป็นเจ้าของซอฟต์แวร์ตลอดไป",
+      "subtitle": "เทียบราคา Complete (750฿/เดือน) กับเจ้าของระบบตลอดไป",
       "comparison": [
         {
           "label": "ค่าใช้จ่าย 3 ปี",
@@ -495,9 +494,10 @@
     },
     "notes": {
       "trialNote": "ไม่ต้องใส่บัตรเครดิต เข้าถึงฟีเจอร์ทั้งหมดได้",
-      "supportNote": "แทนแพ็กเกจทั้งหมดมี Community Support มี Professional & Complete มีสนับสนุนฉุกเฉิน",
+      "supportNote": "ทุกแพ็กเกจมี Community Support มี Professional & Complete มีสนับสนุนฉุกเฉิน",
       "customNote": "ต้องการอะไรพิเศษ? ติดต่อทีมงานเพื่อพูดคุยเรื่องวิธีแก้ปัญหาที่กำหนดเอง"
-    }
+    },
+    "completeHighlight": "ทำให้ต่อเชื่อมยอดขายเข้าบัญชี"
   },
   "infoContent": {
     "kicker": "เหมาะกับธุรกิจแบบไหน",

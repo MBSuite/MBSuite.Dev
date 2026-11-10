@@ -45,7 +45,7 @@ export default function PluginsModules() {
                 <p className="suite-desc">{suite.desc}</p>
                 {url && (
                   <a href={url} className="suite-cta" target="_blank" rel="noopener noreferrer">
-                    Get started <span aria-hidden="true">→</span>
+                    {t('common.getStarted')} <span aria-hidden="true">→</span>
                   </a>
                 )}
               </article>
