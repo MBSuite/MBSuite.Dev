@@ -54,7 +54,7 @@ Last updated: 2026-10-08
 ### CTA URLs
 - Subscription Monthly: https://micro-business-suite.vercel.app/checkout?plan=monthly
 - Subscription Yearly:  https://micro-business-suite.vercel.app/checkout?plan=yearly
-- Subscription Login (fallback): https://micro-business-suite.vercel.app/login?callbackUrl=%2F  (มีทดลองใช้ฟรี 14 วัน)
+- Subscription Login (fallback): https://micro-business-suite.vercel.app/login?callbackUrl=%2F  (มีทดลองใช้ฟรี 30 วัน)
 - Perpetual Form: https://docs.google.com/forms/d/e/1FAIpQLScINJ7ZxkrgNqsXSsQ4mMOTNs0Q6uk46QBLuUcAJKWmx3_GjA/viewform?usp=publish-editor
 - Perpetual Repo:  https://github.com/MBSuite/Micro-Business-Suite-full
 
@@ -62,7 +62,7 @@ Last updated: 2026-10-08
 - Flow: Landing → App /checkout?plan=monthly|yearly → Create Stripe Checkout Session (Server) → Show "Processing/Waiting" page → Redirect to Stripe → Success /billing/success → Cancel /billing/cancel
 - Payment Method: Cards (via Stripe Checkout)
 - Billing: Auto-renew (Stripe Subscriptions) — ใช้ Price-based (recommended)
-- Trial: 14-day free trial (ระบุไว้ที่แอป)
+- Trial: 30-day free trial (ระบุไว้ที่แอป)
 
 ### Stripe Configuration (TO BE FILLED LATER)
 - STRIPE_SECRET_KEY: (เพิ่มภายหลังจากสมัคร Stripe)

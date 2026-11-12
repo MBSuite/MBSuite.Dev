@@ -2,9 +2,9 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import './App.css'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Benefits from './components/Benefits'
-import Features from './components/Features'
+import HeroCyber from './components/HeroCyber'
+import BenefitsShowcase from './components/BenefitsShowcase'
+import CapabilityShowcase from './components/CapabilityShowcase'
 import PluginsModules from './components/PluginsModules'
 import BusinessFlow from './components/BusinessFlow'
 import HowItWorks from './components/HowItWorks'
@@ -50,9 +50,9 @@ function App() {
           <ArticlesPage article={article} notFound={Boolean(articleSlug) && !article} />
         ) : (
           <>
-            <Hero />
-            <Benefits />
-            <Features />
+            <HeroCyber />
+            <BenefitsShowcase />
+            <CapabilityShowcase />
             <PluginsModules />
             <BusinessFlow />
             <InfoContent />

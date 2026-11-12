@@ -43,5 +43,5 @@
 
 - **ไม่แก้ไฟล์ใน repo `Micro-Business-Suite`** — งานทั้งหมดทำที่ `/home/neon13/workspace/services/next/00-MAIN-WEB/MBSuite.Dev` เท่านั้น
 - **ไม่สร้าง Blog/Articles ยาว** — ใช้ Info Content สั้น (ไม่ต้อง WordPress แบบ AccCloud)
-- **ไม่สร้าง Free Tier** — ถ้าไม่พร้อมรองรับ Scale — ใช้ Trial 14 วัน ที่มีอยู่แล้ว
+- **ไม่สร้าง Free Tier** — ถ้าไม่พร้อมรองรับ Scale — ใช้ Trial 30 วัน ที่มีอยู่แล้ว
 - **ไม่สร้าง Partner Program** — ถ้าไม่มีฐานลูกค้า 6,000+ — เน้น Self-service + Docker แทน

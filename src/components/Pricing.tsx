@@ -39,11 +39,11 @@ export default function Pricing() {
   }
 
   return (
-    <section id="pricing" className="pricing-section section-pad">
+    <section id="pricing" className="pricing-section section-pad neon-dark-section">
       <div className="content-wrap">
         <div className="section-heading">
-          <span className="section-kicker">{pricing.kicker}</span>
-          <h2>{pricing.title}</h2>
+          <span className="section-kicker neon-kicker">{pricing.kicker}</span>
+          <h2 className="neon-gradient-text">{pricing.title}</h2>
           <p>{pricing.subtitle}</p>
         </div>
 
@@ -77,7 +77,7 @@ export default function Pricing() {
             return (
               <article
                 key={tier.id}
-                className={`pricing-card ${tier.highlighted ? 'pricing-card-highlighted' : ''}`}
+                className={`pricing-card neon-glass-card ${tier.highlighted ? 'pricing-card-highlighted' : ''}`}
               >
                 {tier.badge && (
                   <div className="pricing-card-badge">
@@ -87,11 +87,11 @@ export default function Pricing() {
                 )}
 
                 <div className="pricing-card-header">
-                  <h3>{tier.name}</h3>
+                  <h3 className="neon-card-title">{tier.name}</h3>
                   <p className="pricing-tagline">{tier.tagline}</p>
                 </div>
 
-                <p className="pricing-description">{tier.description}</p>
+                <p className="pricing-description neon-card-text">{tier.description}</p>
 
                 <div className="pricing-price-section">
                   <div className="pricing-price">
@@ -108,7 +108,7 @@ export default function Pricing() {
 
                 <p className="pricing-trial">{pricing.notes.trialNote}</p>
 
-                <ul className="pricing-features">
+                <ul className="pricing-features neon-features">
                   {tier.features.map((feature) => (
                     <li key={feature}>
                       <span className="feature-check">✓</span>
@@ -117,7 +117,7 @@ export default function Pricing() {
                   ))}
                 </ul>
 
-                <a href={tier.ctaLink} className="pricing-cta">
+                <a href={tier.ctaLink} className="btn-neon btn-neon-fill">
                   {tier.ctaText}
                   <span aria-hidden="true">→</span>
                 </a>
@@ -131,10 +131,10 @@ export default function Pricing() {
         </div>
 
         {/* Perpetual License Callout */}
-        <div className="perpetual-callout">
+        <div className="perpetual-callout neon-perpetual">
           <div className="perpetual-content">
-            <h3>{pricing.perpetualCallout.title}</h3>
-            <p>{pricing.perpetualCallout.subtitle}</p>
+            <h3 className="neon-card-title">{pricing.perpetualCallout.title}</h3>
+            <p className="neon-subtitle">{pricing.perpetualCallout.subtitle}</p>
 
             <div className="perpetual-comparison">
               {pricing.perpetualCallout.comparison.map(
@@ -154,14 +154,14 @@ export default function Pricing() {
               )}
             </div>
 
-            <a href={pricing.perpetualCallout.ctaLink} className="perpetual-cta">
+            <a href={pricing.perpetualCallout.ctaLink} className="btn-neon btn-neon-fill">
               {pricing.perpetualCallout.cta}
               <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
 
-        <p className="pricing-note">{pricing.notes.supportNote}</p>
+        <p className="pricing-note neon-subtitle">{pricing.notes.supportNote}</p>
       </div>
     </section>
   )

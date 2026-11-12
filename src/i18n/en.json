@@ -62,7 +62,7 @@
           "title": "Create an account and company",
           "intro": "Start with a trial account to explore the system before choosing how to continue.",
           "steps": [
-            "Register with your user details and company name. The trial is 14 days for one user.",
+            "Register with your user details and company name. The trial is 30 days for one user.",
             "Sign in and review your company details before creating documents.",
             "When the trial ends, contact the team to ask about continued access."
           ],
@@ -202,7 +202,7 @@
       "title": "Accounting and business work in one system",
       "subtitle": "Manage sales documents, expenses, journal entries and reports, with optional modules for different business workflows.",
       "imageAlt": "MBSuite application dashboard preview",
-      "trial": "14-day trial · 1 user",
+      "trial": "30-day trial · 1 user",
       "print": "Print / Save as PDF",
       "open": "Open brochure",
       "highlightsKicker": "The platform",

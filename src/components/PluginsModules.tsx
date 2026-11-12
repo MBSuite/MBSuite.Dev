@@ -1,12 +1,21 @@
 import { useTranslation } from 'react-i18next'
 
-type Pack = { name: string; desc: string }
-type Suite = { name: string; desc: string; status: string }
+type Suite = { name: string; desc: string; status: string; logo?: string }
 
 export default function PluginsModules() {
   const { t } = useTranslation()
-  const packs = t('plugins.packs', { returnObjects: true }) as Pack[]
   const suites = t('plugins.suites', { returnObjects: true }) as Suite[]
+
+  // Module logos mapping
+  const moduleLogos: Record<string, string> = {
+    'MBSuite Core': '/favicon.png',
+    'Service Suite': '/Service.png',
+    'Retail Suite': '/Retail2.png',
+    'F&B Suite': '/F&B.png',
+    'Hotel Suite': '/Hotel.png',
+    'Rental Suite': '/Rental.png',
+    'Pharmacy Suite': '/Pharmacy.png',
+  }
 
   return (
     <section id="plugins" className="plugins-section section-pad">
@@ -16,28 +25,20 @@ export default function PluginsModules() {
           <h2>{t('plugins.title')}</h2>
           <p>{t('plugins.subtitle')}</p>
         </div>
-        <div className="plugin-pack-grid">
-          {packs.map((pack) => (
-            <article key={pack.name} className="plugin-pack-card">
-              <h3>{pack.name}</h3>
-              <p>{pack.desc}</p>
-            </article>
-          ))}
-        </div>
-        <div className="section-heading">
-          <span className="section-kicker">{t('plugins.suitesKicker')}</span>
-          <h2>{t('plugins.suitesTitle')}</h2>
-          <p>{t('plugins.suitesSubtitle')}</p>
-        </div>
         <div className="suites-grid">
           {suites.map((suite) => {
-            // Extract URL from status text like "Live - https://..."
             const urlMatch = suite.status.match(/https:\/\/[^\s]+/)
             const url = urlMatch ? urlMatch[0] : undefined
             const statusLabel = suite.status.replace(urlMatch ? urlMatch[0] : '', '').replace(/\s*-\s*$/, '').trim()
+            const logoUrl = moduleLogos[suite.name]
 
             return (
               <article key={suite.name} className="suite-showcase-card">
+                {logoUrl && (
+                  <div className="suite-logo-container">
+                    <img src={logoUrl} alt={`${suite.name} logo`} className="suite-logo" />
+                  </div>
+                )}
                 <div className="suite-header">
                   <h3>{suite.name}</h3>
                   <span className="suite-badge">{statusLabel}</span>
