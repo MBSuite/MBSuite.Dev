@@ -23,7 +23,6 @@ export default function BenefitsShowcase() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((benefit, idx) => (
             <article key={benefit.title} className="benefit-showcase-card group">
-              {/* Numbered badge */}
               <div style={{
                 display: 'flex',
                 height: '48px',
@@ -36,17 +35,12 @@ export default function BenefitsShowcase() {
                 fontWeight: 'bold',
                 fontSize: '1.125rem',
                 marginBottom: '24px',
-                boxShadow: '0 0 20px rgba(0, 240, 255, 0.3)',
-                transition: 'transform 300ms ease'
-              }} className="group-hover:scale-110">
+                boxShadow: '0 0 20px rgba(0, 240, 255, 0.3)'
+              }} className="group-hover:scale-110 transition-transform">
                 {String(idx + 1).padStart(2, '0')}
               </div>
-
-              {/* Content */}
               <h3>{benefit.title}</h3>
               <p>{benefit.desc}</p>
-
-              {/* Underline accent */}
               <div style={{
                 marginTop: '16px',
                 height: '2px',

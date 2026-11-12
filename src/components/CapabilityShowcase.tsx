@@ -12,7 +12,6 @@ export default function CapabilityShowcase() {
 
   if (!items || items.length === 0) return null
 
-  // Separate core features from add-ons
   const coreFeatures = items.filter(item => !item.title.includes('Add-on'))
   const addOns = items.filter(item => item.title.includes('Add-on') || item.title.includes('Inventory') || item.title.includes('ชำระเงิน') || item.title.includes('ปลักอิน') || item.title.includes('ความปลอดภัย'))
 
@@ -25,7 +24,6 @@ export default function CapabilityShowcase() {
           <p>{sectionData?.subtitle}</p>
         </div>
 
-        {/* Core Capabilities */}
         <div className="capabilities-group mb-16">
           <h3 className="group-title mb-8">เครื่องมือหลัก</h3>
           <div className="grid gap-6 sm:grid-cols-2">
@@ -54,7 +52,6 @@ export default function CapabilityShowcase() {
           </div>
         </div>
 
-        {/* Optional Add-ons */}
         <div className="capabilities-group">
           <h3 className="group-title mb-8">เครื่องมือเสริม (Add-ons)</h3>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
