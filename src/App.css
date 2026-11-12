@@ -1,12 +1,13 @@
 /* ===== NEON CYBER LANDING PAGE - UNIFIED FRAMEWORK ===== */
 
+@import "./variables.css";
+
 :root {
   --neon-cyan: #00f0ff;
   --neon-purple: #d000ff;
   --neon-pink: #ff006e;
   --neon-blue: #0080ff;
-  --dark-bg: #0a0a0a;
-  --dark-surface: #0f0f1e;
+  --dark-surface: #121212;
   --dark-accent: #1a0a2e;
 
   --text-primary: #e0e0ff;
@@ -14,8 +15,8 @@
   --text-tertiary: rgba(255, 255, 255, 0.6);
 
   --border-light: rgba(0, 240, 255, 0.1);
-  --border-medium: rgba(0, 240, 255, 0.2);
-  --border-strong: rgba(0, 240, 255, 0.3);
+  --border-medium-cyan: rgba(0, 240, 255, 0.2);
+  --border-strong-cyan: rgba(0, 240, 255, 0.3);
 
   --shadow-glow-sm: 0 0 20px rgba(0, 240, 255, 0.3);
   --shadow-glow-md: 0 0 40px rgba(0, 240, 255, 0.4);

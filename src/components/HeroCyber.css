@@ -19,11 +19,12 @@
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 20% 50%, rgba(0, 240, 255, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 80% 50%, rgba(208, 0, 255, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 20% 50%, rgba(var(--neon-cyan-rgb), 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(var(--neon-purple-rgb), 0.2) 0%, transparent 50%),
     radial-gradient(circle at 50% 20%, rgba(255, 0, 110, 0.15) 0%, transparent 50%);
   pointer-events: none;
   animation: blob-rotate 20s ease-in-out infinite;
+  z-index: -1;
 }
 
 .hero-cyber::after {
@@ -94,6 +95,12 @@
   .hero-cyber {
     min-height: 80vh;
     padding: 20px;
+  }
+
+  .hero-cyber::before {
+    background:
+      radial-gradient(circle at 20% 50%, rgba(var(--neon-cyan-rgb), 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 50%, rgba(var(--neon-purple-rgb), 0.1) 0%, transparent 50%);
   }
 
   .hero-cyber-title {

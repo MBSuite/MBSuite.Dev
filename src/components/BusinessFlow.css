@@ -14,10 +14,10 @@
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.1) 0%, transparent 40%);
+    radial-gradient(circle at 50% 50%, rgba(var(--neon-cyan-rgb), 0.1) 0%, transparent 40%);
   pointer-events: none;
   animation: blob-rotate 25s ease-in-out infinite;
-  z-index: 0;
+  z-index: -1;
 }
 
 .business-flow-section .section-heading {
@@ -35,7 +35,7 @@
 
 .business-flow-card {
   border: 2px solid rgba(0, 240, 255, 0.2);
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(var(--text-primary-rgb), 0.02);
   backdrop-filter: blur(10px);
   color: var(--text-primary);
   position: relative;
@@ -52,9 +52,10 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(0, 240, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(var(--neon-cyan-rgb), 0.1) 0%, transparent 70%);
   opacity: 0;
   transition: opacity 300ms ease;
+  z-index: -1;
 }
 
 .business-flow-card:hover {

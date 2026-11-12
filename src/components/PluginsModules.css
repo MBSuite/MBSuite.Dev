@@ -14,11 +14,11 @@
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 40% 40%, rgba(0, 240, 255, 0.08) 0%, transparent 35%),
-    radial-gradient(circle at 60% 60%, rgba(208, 0, 255, 0.08) 0%, transparent 35%);
+    radial-gradient(circle at 40% 40%, rgba(var(--neon-cyan-rgb), 0.08) 0%, transparent 35%),
+    radial-gradient(circle at 60% 60%, rgba(var(--neon-purple-rgb), 0.08) 0%, transparent 35%);
   pointer-events: none;
   animation: blob-rotate 20s ease-in-out infinite reverse;
-  z-index: 0;
+  z-index: -1;
 }
 
 .plugins-section .section-heading {
@@ -57,9 +57,10 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(0, 240, 255, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(var(--neon-cyan-rgb), 0.15) 0%, transparent 70%);
   opacity: 0;
   transition: opacity 300ms ease;
+  z-index: -1;
 }
 
 .suite-showcase-card:hover {

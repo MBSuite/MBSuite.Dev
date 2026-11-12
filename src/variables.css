@@ -1,0 +1,19 @@
+/* Theme Variables */
+
+:root {
+  --dark-bg: #0a0a0a;
+  --dark-surface: #121212;
+  --bg-surface: #1e1e1e;
+  --dark-accent: #1e1e2f;
+  --border-medium: #333333;
+  --border-strong: #444444;
+  --neon-cyan: #00f0ff;
+  --neon-purple: #d000ff;
+  --neon-pink: #ff79c6;
+  --neon-blue: #8be9fd;
+  --neon-cyan-rgb: 0, 240, 255;
+  --neon-purple-rgb: 208, 0, 255;
+  --shadow-glow-sm: 0 0 10px rgba(0, 240, 255, 0.4);
+  --text-primary-rgb: 224, 224, 255;
+  --text-secondary-rgb: 160, 160, 180;
+}

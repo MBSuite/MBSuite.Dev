@@ -14,8 +14,8 @@
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 25% 50%, rgba(208, 0, 255, 0.1) 0%, transparent 40%),
-    radial-gradient(circle at 75% 50%, rgba(0, 240, 255, 0.1) 0%, transparent 40%);
+    radial-gradient(circle at 25% 50%, rgba(var(--neon-purple-rgb), 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 75% 50%, rgba(var(--neon-cyan-rgb), 0.1) 0%, transparent 40%);
   pointer-events: none;
   animation: blob-rotate 25s ease-in-out infinite;
   z-index: 0;
@@ -39,7 +39,7 @@
   padding: 12px 24px;
   border: 2px solid var(--border-medium);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(var(--text-primary-rgb), 0.02);
   color: var(--text-secondary);
   font-weight: 600;
   cursor: pointer;
@@ -103,10 +103,11 @@
   bottom: 0;
   background: linear-gradient(135deg,
       transparent 0%,
-      rgba(0, 240, 255, 0.05) 50%,
+      rgba(var(--neon-cyan-rgb), 0.05) 50%,
       transparent 100%);
   opacity: 0;
   transition: opacity 300ms ease;
+  z-index: -1;
 }
 
 .pricing-card:hover {
