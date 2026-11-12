@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import './PluginsModules.css'
 
 type Suite = { name: string; desc: string; status: string; logo?: string }
 

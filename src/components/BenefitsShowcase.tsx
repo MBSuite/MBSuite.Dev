@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import './BenefitsShowcase.css'
 
 interface Benefit {
   title: string
@@ -22,32 +23,11 @@ export default function BenefitsShowcase() {
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((benefit, idx) => (
-            <article key={benefit.title} className="benefit-showcase-card group">
-              <div style={{
-                display: 'flex',
-                height: '48px',
-                width: '48px',
-                alignItems: 'center',
-                justifyContent: 'center',
-                borderRadius: '50%',
-                background: 'linear-gradient(135deg, #00f0ff, #0080ff)',
-                color: '#000',
-                fontWeight: 'bold',
-                fontSize: '1.125rem',
-                marginBottom: '24px',
-                boxShadow: '0 0 20px rgba(0, 240, 255, 0.3)'
-              }} className="group-hover:scale-110 transition-transform">
-                {String(idx + 1).padStart(2, '0')}
-              </div>
+            <article key={benefit.title} className="benefit-showcase-card">
+              <div className="benefit-badge">{String(idx + 1).padStart(2, '0')}</div>
               <h3>{benefit.title}</h3>
               <p>{benefit.desc}</p>
-              <div style={{
-                marginTop: '16px',
-                height: '2px',
-                width: '0',
-                background: 'linear-gradient(90deg, #00f0ff, #d000ff)',
-                transition: 'width 300ms ease'
-              }} className="group-hover:w-12" />
+              <div className="benefit-underline"></div>
             </article>
           ))}
         </div>

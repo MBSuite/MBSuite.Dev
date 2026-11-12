@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import './CapabilityShowcase.css'
 
 interface Feature {
   title: string
@@ -24,27 +25,12 @@ export default function CapabilityShowcase() {
           <p>{sectionData?.subtitle}</p>
         </div>
 
-        <div className="capabilities-group mb-16">
-          <h3 className="group-title mb-8">เครื่องมือหลัก</h3>
+        <div className="capabilities-group">
+          <h3 className="group-title">เครื่องมือหลัก</h3>
           <div className="grid gap-6 sm:grid-cols-2">
             {coreFeatures.slice(0, 2).map((feature, idx) => (
               <article key={feature.title} className="capability-card">
-                <div style={{
-                  display: 'inline-flex',
-                  height: '40px',
-                  width: '40px',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  borderRadius: '8px',
-                  background: 'linear-gradient(135deg, #00f0ff, #0080ff)',
-                  color: '#000',
-                  fontWeight: 'bold',
-                  fontSize: '0.875rem',
-                  marginBottom: '16px',
-                  boxShadow: '0 0 15px rgba(0, 240, 255, 0.3)'
-                }}>
-                  {String(idx + 1).padStart(2, '0')}
-                </div>
+                <div className="capability-badge">{String(idx + 1).padStart(2, '0')}</div>
                 <h4>{feature.title}</h4>
                 <p>{feature.desc}</p>
               </article>
@@ -53,7 +39,7 @@ export default function CapabilityShowcase() {
         </div>
 
         <div className="capabilities-group">
-          <h3 className="group-title mb-8">เครื่องมือเสริม (Add-ons)</h3>
+          <h3 className="group-title">เครื่องมือเสริม (Add-ons)</h3>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {addOns.map((addon) => (
               <article key={addon.title} className="addon-card">

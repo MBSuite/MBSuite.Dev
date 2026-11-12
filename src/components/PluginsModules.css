@@ -1,0 +1,199 @@
+/* PluginsModules Component Styles */
+
+.plugins-section {
+  background: linear-gradient(180deg, var(--dark-bg) 0%, var(--dark-surface) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.plugins-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 40% 40%, rgba(0, 240, 255, 0.08) 0%, transparent 35%),
+    radial-gradient(circle at 60% 60%, rgba(208, 0, 255, 0.08) 0%, transparent 35%);
+  pointer-events: none;
+  animation: blob-rotate 20s ease-in-out infinite reverse;
+  z-index: 0;
+}
+
+.plugins-section .section-heading {
+  position: relative;
+  z-index: 1;
+}
+
+.suites-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.suite-showcase-card {
+  border: 2px solid var(--border-strong);
+  background: linear-gradient(135deg, rgba(15, 15, 30, 0.8), rgba(26, 10, 46, 0.8));
+  backdrop-filter: blur(20px);
+  color: var(--text-primary);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 28px;
+  border-radius: 16px;
+  transition: all 300ms ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.suite-showcase-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.15) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.suite-showcase-card:hover {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 50px rgba(0, 240, 255, 0.4), inset 0 0 30px rgba(0, 240, 255, 0.05);
+  transform: translateY(-8px) scale(1.02);
+}
+
+.suite-showcase-card:hover::before {
+  opacity: 1;
+}
+
+.suite-logo-container {
+  margin-bottom: 16px;
+  filter: brightness(1.2);
+  animation: glow-pulse 2s ease-in-out infinite;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suite-logo-container img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.suite-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.suite-showcase-card h3 {
+  color: var(--neon-cyan);
+  font-size: 1.22rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.suite-badge {
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue));
+  box-shadow: var(--shadow-glow-sm);
+  color: #000;
+  font-weight: 900;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  animation: float 2s ease-in-out infinite;
+}
+
+.suite-desc {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.72;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 18px;
+  flex: 1;
+}
+
+.suite-cta {
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue));
+  border: 2px solid var(--neon-cyan);
+  color: #000;
+  font-weight: 800;
+  box-shadow: var(--shadow-glow-sm);
+  position: relative;
+  overflow: hidden;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.87rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 240ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+}
+
+.suite-cta:hover {
+  box-shadow: var(--shadow-glow-lg);
+  transform: translateY(-2px);
+}
+
+.plugin-howto {
+  max-width: 800px;
+  margin: 32px auto 0;
+  padding: 0 24px;
+  color: var(--text-secondary);
+  font-size: 0.89rem;
+  line-height: 1.7;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .suites-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .suites-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .suite-showcase-card {
+    padding: 20px;
+  }
+
+  .suite-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .suite-badge {
+    align-self: flex-start;
+  }
+
+  .suite-logo-container {
+    height: 60px;
+    margin-bottom: 12px;
+  }
+}

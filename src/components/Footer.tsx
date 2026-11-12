@@ -5,13 +5,13 @@ export default function Footer() {
   const { t } = useTranslation()
 
   return (
-    <footer className="site-footer neon-footer">
+    <footer className="site-footer">
       <div className="content-wrap footer-inner">
         <a className="brand-lockup" href="/" aria-label={`${t('common.brand')} — ${t('nav.home')}`}>
           <img src={logo} alt="" />
           <span>{t('common.brand')}</span>
         </a>
-        <div className="footer-links neon-footer-links">
+        <div className="footer-links">
           <div className="footer-socials">
             <a href="https://discord.gg/5WSDE2KsU" target="_blank" rel="noopener noreferrer" className="social-link" title="Discord">
               <span aria-hidden="true">💬</span> Discord

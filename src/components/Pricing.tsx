@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import './Pricing.css'
 
 export default function Pricing() {
   const { t, i18n } = useTranslation()
@@ -39,11 +40,11 @@ export default function Pricing() {
   }
 
   return (
-    <section id="pricing" className="pricing-section section-pad neon-dark-section">
+    <section id="pricing" className="pricing-section section-pad">
       <div className="content-wrap">
         <div className="section-heading">
-          <span className="section-kicker neon-kicker">{pricing.kicker}</span>
-          <h2 className="neon-gradient-text">{pricing.title}</h2>
+          <span className="section-kicker">{pricing.kicker}</span>
+          <h2>{pricing.title}</h2>
           <p>{pricing.subtitle}</p>
         </div>
 
@@ -87,11 +88,11 @@ export default function Pricing() {
                 )}
 
                 <div className="pricing-card-header">
-                  <h3 className="neon-card-title">{tier.name}</h3>
+                  <h3>{tier.name}</h3>
                   <p className="pricing-tagline">{tier.tagline}</p>
                 </div>
 
-                <p className="pricing-description neon-card-text">{tier.description}</p>
+                <p className="pricing-description">{tier.description}</p>
 
                 <div className="pricing-price-section">
                   <div className="pricing-price">
@@ -131,10 +132,10 @@ export default function Pricing() {
         </div>
 
         {/* Perpetual License Callout */}
-        <div className="perpetual-callout neon-perpetual">
+        <div className="perpetual-callout">
           <div className="perpetual-content">
-            <h3 className="neon-card-title">{pricing.perpetualCallout.title}</h3>
-            <p className="neon-subtitle">{pricing.perpetualCallout.subtitle}</p>
+            <h3>{pricing.perpetualCallout.title}</h3>
+            <p>{pricing.perpetualCallout.subtitle}</p>
 
             <div className="perpetual-comparison">
               {pricing.perpetualCallout.comparison.map(
@@ -161,7 +162,7 @@ export default function Pricing() {
           </div>
         </div>
 
-        <p className="pricing-note neon-subtitle">{pricing.notes.supportNote}</p>
+        <p className="pricing-note">{pricing.notes.supportNote}</p>
       </div>
     </section>
   )

@@ -1,0 +1,115 @@
+/* HowItWorks Component Styles */
+
+.steps-section {
+  background: var(--dark-surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.steps-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 60% 50%, rgba(208, 0, 255, 0.1) 0%, transparent 40%);
+  pointer-events: none;
+  animation: blob-rotate 28s ease-in-out infinite reverse;
+  z-index: 0;
+}
+
+.steps-section .section-heading {
+  position: relative;
+  z-index: 1;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.step-card {
+  border: 2px solid rgba(0, 240, 255, 0.2);
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  color: var(--text-primary);
+  position: relative;
+  z-index: 1;
+  padding: 28px;
+  border-radius: 12px;
+  transition: all 300ms ease;
+}
+
+.step-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.step-card:hover {
+  border-color: var(--neon-cyan);
+  background: rgba(0, 240, 255, 0.05);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.step-card:hover::before {
+  opacity: 1;
+}
+
+.step-number {
+  display: inline-flex;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue));
+  color: #000;
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-glow-sm);
+}
+
+.step-card h3 {
+  color: var(--neon-cyan);
+  font-weight: 700;
+  margin-bottom: 12px;
+  margin: 0 0 12px 0;
+}
+
+.step-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .step-card {
+    padding: 20px;
+  }
+}
