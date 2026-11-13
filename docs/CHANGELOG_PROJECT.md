@@ -12,6 +12,8 @@ Tracks meaningful behavior/architecture changes (not every small code diff).
 - Landing page (`MBSuite.Dev`) hero animation now Solana-style:
   - Replaced hero background animation (`blob-rotate`) with smooth `aurora-drift` keyframes for aurora gradient blobs (cyan/purple/pink)
   - Strengthened radial gradient opacities for visible animated aurora background
+- Landing page (`MBSuite.Dev`) pricing content repair:
+  - Restored missing `pricing.completeHighlight` translation key (en/th) used by the Complete tier highlight note (`t('pricing.completeHighlight')` in Pricing)
 
 ## [2026-09-21]
 
