@@ -122,10 +122,6 @@ export default function Pricing() {
                   {tier.ctaText}
                   <span aria-hidden="true">→</span>
                 </a>
-
-                {tier.id === 'complete' && (
-                  <p className="pricing-highlight-note">{t('pricing.completeHighlight')}</p>
-                )}
               </article>
             )
           })}

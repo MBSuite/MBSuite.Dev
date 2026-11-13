@@ -17,8 +17,15 @@
 
 - React 19 และ TypeScript
 - Vite
-- Tailwind CSS
+- CSS Variables (scoped per component)
 - i18next และ react-i18next
+
+## โครงสร้าง CSS
+
+- `src/variables.css` - ตัวแปรธีม (CSS Custom Properties)
+- `src/index.css` - Base styles
+- `src/App.css` - Shared framework (Header, Footer, Buttons, Animations)
+- `src/components/*.css` - Component-scoped styles (no conflicts)
 
 ## เริ่มต้นใช้งาน
 
@@ -59,9 +66,29 @@ MBSuite.Dev เป็น **ตัวอัปเดตเนื้อหาต�
 
 ```text
 src/
-├── components/   # ส่วนประกอบของหน้าเว็บไซต์
-├── i18n/         # ข้อความภาษาไทยและภาษาอังกฤษ
-├── assets/       # ภาพประกอบและ mockup
-├── App.tsx       # ประกอบส่วนต่าง ๆ ของหน้า
-└── main.tsx      # จุดเริ่มต้นของแอป
+├── components/        # Component-scoped CSS
+│   ├── *.tsx         # React components
+│   └── *.css         # Individual component styles
+├── i18n/             # ข้อความภาษาไทยและภาษาอังกฤษ
+├── assets/           # ภาพประกอบและ mockup
+├── App.tsx           # ประกอบส่วนต่าง ๆ
+├── App.css           # Shared framework styles
+├── variables.css     # CSS theme variables
+└── main.tsx          # จุดเริ่มต้น
 ```
+
+## ธีม (Theme)
+
+Landing page ใช้ **Neon Cyber aesthetic** (Solana-style):
+- สีพื้น: Dark (#0a0a0a, #121212)
+- สีหลัก: Neon cyan (#00f0ff), purple (#d000ff)
+- Animations: Rainbow gradient flow, blob rotate, glow pulse
+- Glassmorphism: backdrop-filter blur effects
+- Responsive: Mobile-first design
+
+## Pricing Tiers
+
+ระบบราคา 3 ชั้น:
+1. **Professional** - ฿5,750/ปี (Core + Features)
+2. **Complete Bundle** - ฿7,500/ปี (Core + 1 Suite)
+3. **Perpetual** - One-time purchase (Contact form)

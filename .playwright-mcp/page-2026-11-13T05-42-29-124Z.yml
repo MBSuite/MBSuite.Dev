@@ -1,0 +1,490 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e727]:
+    - paragraph [ref=f1e733]: This website uses cookies to offer you a better browsing experience. Find out more on how we use cookies.
+    - generic [ref=f1e734]:
+      - generic [ref=f1e735]:
+        - button "Opt-out" [ref=f1e736] [cursor=pointer]
+        - button "Accept" [ref=f1e737] [cursor=pointer]
+      - link "Details" [ref=f1e739] [cursor=pointer]:
+        - /url: /privacy-policy#collection-of-information
+  - banner [ref=f1e740]:
+    - navigation [ref=f1e741]:
+      - generic [ref=f1e742]:
+        - link "Solana" [ref=f1e743] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f1e748]:
+          - navigation "Main" [ref=f1e750]:
+            - list [ref=f1e752]:
+              - listitem [ref=f1e753]:
+                - button "Use Solana" [ref=f1e754] [cursor=pointer]
+              - listitem [ref=f1e759]:
+                - button "Build" [ref=f1e760] [cursor=pointer]
+              - listitem [ref=f1e765]:
+                - button "Enterprise" [ref=f1e766] [cursor=pointer]
+              - listitem [ref=f1e771]:
+                - button "Products" [ref=f1e772] [cursor=pointer]
+              - listitem [ref=f1e777]:
+                - button "Ecosystem" [ref=f1e778] [cursor=pointer]
+          - generic [ref=f1e783]:
+            - button "Search" [ref=f1e785] [cursor=pointer]:
+              - generic [aria-hidden] [ref=f1e788]: ⌘ K
+            - button "en" [ref=f1e790] [cursor=pointer]
+  - generic [ref=f1e796]:
+    - region "The capital market for every asset on earth." [ref=f1e797]:
+      - img "Scene" [ref=f1e799]
+      - generic [ref=f1e801]:
+        - generic [ref=f1e802]:
+          - heading "The capital market for every asset on earth." [level=1] [ref=f1e803]
+          - paragraph [ref=f1e804]: Solana is the leading high performance network powering internet capital markets, payments, and crypto applications.
+          - button "Get started" [ref=f1e806] [cursor=pointer]
+        - generic [ref=f1e812]:
+          - generic [ref=f1e813]:
+            - paragraph [ref=f1e814]: Breakpoint 2026
+            - paragraph [ref=f1e815]: Solana's flagship gathering returns to London, November 15-17, 2026.
+          - link "Buy Breakpoint tickets" [ref=f1e817] [cursor=pointer]:
+            - /url: https://luma.com/breakpoint2026
+    - generic [ref=f1e819]:
+      - img "Western Union" [ref=f1e821]
+      - img "Visa" [ref=f1e823]
+      - img "Worldpay" [ref=f1e825]
+      - img "Circle" [ref=f1e827]
+      - img "PayPal" [ref=f1e829]
+      - img "Fiserv" [ref=f1e831]
+    - separator [ref=f1e833]
+    - generic [ref=f1e835]:
+      - generic [ref=f1e836]:
+        - heading "Meet Solana IRL. Build connections." [level=2] [ref=f1e838]
+        - generic [ref=f1e839]:
+          - link "View all" [ref=f1e840] [cursor=pointer]:
+            - /url: /events
+          - generic [ref=f1e842]:
+            - button "Previous" [ref=f1e843] [cursor=pointer]
+            - button "Next" [disabled] [ref=f1e846]
+      - generic [ref=f1e852]:
+        - link "Solana Intelligence Summit Solana Intelligence Summit Fri, Nov 13 London" [ref=f1e855] [cursor=pointer]:
+          - /url: https://luma.com/intelligence-summit
+          - img "Solana Intelligence Summit" [ref=f1e857]
+          - heading "Solana Intelligence Summit" [level=3] [ref=f1e858]
+          - generic [ref=f1e859]:
+            - generic [ref=f1e860]: Fri, Nov 13
+            - generic [ref=f1e865]: London
+        - link "The Solana Ecosystem Call | London Special The Solana Ecosystem Call | London Special Sat, Nov 14" [ref=f1e871] [cursor=pointer]:
+          - /url: https://luma.com/0j8gx7i1
+          - img "The Solana Ecosystem Call | London Special" [ref=f1e873]
+          - heading "The Solana Ecosystem Call | London Special" [level=3] [ref=f1e874]
+          - generic [ref=f1e875]: Sat, Nov 14
+        - link "Scale or Die Scale or Die Sat, Nov 14 London" [ref=f1e883] [cursor=pointer]:
+          - /url: https://luma.com/scale-or-die-26
+          - img "Scale or Die" [ref=f1e885]
+          - heading "Scale or Die" [level=3] [ref=f1e886]
+          - generic [ref=f1e887]:
+            - generic [ref=f1e888]: Sat, Nov 14
+            - generic [ref=f1e893]: London
+        - link "Solana Breakpoint 2026 Solana Breakpoint 2026 Sun, Nov 15 London" [ref=f1e899] [cursor=pointer]:
+          - /url: https://luma.com/breakpoint2026
+          - img "Solana Breakpoint 2026" [ref=f1e901]
+          - heading "Solana Breakpoint 2026" [level=3] [ref=f1e902]
+          - generic [ref=f1e903]:
+            - generic [ref=f1e904]: Sun, Nov 15
+            - generic [ref=f1e909]: London
+        - link "Pr1me [London Series] - Exclusive Dinner for Web3 Finance Pr1me [London Series] - Exclusive Dinner for Web3 Finance Tue, Nov 17 London" [ref=f1e915] [cursor=pointer]:
+          - /url: https://luma.com/aqntywn2
+          - img "Pr1me [London Series] - Exclusive Dinner for Web3 Finance" [ref=f1e917]
+          - heading "Pr1me [London Series] - Exclusive Dinner for Web3 Finance" [level=3] [ref=f1e918]
+          - generic [ref=f1e919]:
+            - generic [ref=f1e920]: Tue, Nov 17
+            - generic [ref=f1e925]: London
+        - link "UBC Happy Hour UBC Happy Hour Sun, Nov 22 Austin" [ref=f1e931] [cursor=pointer]:
+          - /url: https://luma.com/ubc-hh
+          - img "UBC Happy Hour" [ref=f1e933]
+          - heading "UBC Happy Hour" [level=3] [ref=f1e934]
+          - generic [ref=f1e935]:
+            - generic [ref=f1e936]: Sun, Nov 22
+            - generic [ref=f1e941]: Austin
+    - separator [ref=f1e946]
+    - generic [ref=f1e947]:
+      - img "Scene" [ref=f1e949]
+      - generic [ref=f1e950]:
+        - generic [ref=f1e951]:
+          - generic [ref=f1e952]:
+            - heading "The fastest growing & leading financial platform" [level=2] [ref=f1e953]
+            - paragraph [ref=f1e954]: Network activity measured across independent data providers. Each figure links to its source and reporting period.
+          - generic [ref=f1e955]:
+            - generic [ref=f1e956]: Total transactions to date
+            - generic [ref=f1e966]: Transactions per second
+        - generic [ref=f1e978]:
+          - generic [ref=f1e979]:
+            - generic [ref=f1e981]:
+              - generic [ref=f1e982]: 2.6M
+              - generic [ref=f1e983]: Average daily active signers
+            - generic [ref=f1e985]:
+              - generic [ref=f1e986]: 3B
+              - generic [ref=f1e987]: Successful transactions
+            - generic [ref=f1e989]:
+              - generic [ref=f1e990]: $1.5T
+              - generic [ref=f1e991]: DEX volume
+            - generic [ref=f1e993]:
+              - generic [ref=f1e994]: $1.4B
+              - generic [ref=f1e995]: App revenue
+          - button "Sources" [ref=f1e996] [cursor=pointer]
+    - separator [ref=f1e1000]
+    - generic [ref=f1e1002]:
+      - generic [ref=f1e1004]:
+        - heading "What’s happening right now" [level=2] [ref=f1e1006]
+        - link "View all" [ref=f1e1008] [cursor=pointer]:
+          - /url: /news
+      - generic [ref=f1e1012]:
+        - generic [ref=f1e1013]: TERMINAL
+        - generic [ref=f1e1020]:
+          - generic [ref=f1e1021]: Explore
+          - text: Categories
+        - generic [ref=f1e1022]:
+          - button "All" [disabled] [ref=f1e1023]
+          - button "DeFi" [ref=f1e1031] [cursor=pointer]
+          - button "Institutions" [ref=f1e1035] [cursor=pointer]
+          - button "Consumer" [ref=f1e1040] [cursor=pointer]
+          - button "Developers" [ref=f1e1047] [cursor=pointer]
+          - button "Ecosystem" [ref=f1e1051] [cursor=pointer]
+    - separator [ref=f1e1058]
+    - generic [ref=f1e1060]:
+      - generic [ref=f1e1061]:
+        - heading "The world’s largest institutions and fintechs are building on Solana." [level=2] [ref=f1e1063]
+        - link "View all" [ref=f1e1065] [cursor=pointer]:
+          - /url: /solutions/tokenization
+      - generic [ref=f1e1067]:
+        - article "Western Union" [ref=f1e1068]:
+          - img "Western Union" [ref=f1e1071]
+          - generic [ref=f1e1072]:
+            - generic [ref=f1e1073]: Stablecoin launched May 2026
+            - generic [ref=f1e1074]: USDPT
+            - generic [ref=f1e1075]: Stablecoin launched May 2026
+        - article "Visa" [ref=f1e1076]:
+          - img "Visa" [ref=f1e1079]
+          - generic [ref=f1e1080]:
+            - generic [ref=f1e1081]: Settled in USDC
+            - generic [ref=f1e1082]: Millions
+            - generic [ref=f1e1083]: Settled in USDC
+        - article "Paypal" [ref=f1e1084]:
+          - img "Paypal" [ref=f1e1087]
+          - generic [ref=f1e1088]:
+            - generic [ref=f1e1089]: Stablecoin issued
+            - generic [ref=f1e1090]: PYUSD
+            - generic [ref=f1e1091]: Stablecoin issued
+        - article "Franklin Templeton" [ref=f1e1092]:
+          - img "Franklin Templeton" [ref=f1e1095]
+          - generic [ref=f1e1096]:
+            - generic [ref=f1e1097]: Monthly Onchain Asset Growth
+            - generic [ref=f1e1098]: 11%
+            - generic [ref=f1e1099]: Monthly Onchain Asset Growth
+        - article "r3" [ref=f1e1100]:
+          - img "r3" [ref=f1e1103]
+          - generic [ref=f1e1104]:
+            - generic [ref=f1e1105]: in Regulated Onchain Assets
+            - generic [ref=f1e1106]: $17B
+            - generic [ref=f1e1107]: in Regulated Onchain Assets
+        - article "Bullish" [ref=f1e1108]:
+          - img "Bullish" [ref=f1e1111]
+          - generic [ref=f1e1112]:
+            - generic [ref=f1e1113]: Average daily volume
+            - generic [ref=f1e1114]: $1.4B
+            - generic [ref=f1e1115]: Average daily volume
+      - button "Sources" [ref=f1e1116] [cursor=pointer]
+      - generic [ref=f1e1120]:
+        - generic:
+          - img "Hamilton Lane"
+        - generic:
+          - img "Blackrock"
+        - generic:
+          - img "Brevan Howard"
+        - generic:
+          - img "Societe Generale"
+        - generic:
+          - img "Vaneck"
+    - generic [ref=f1e1124]:
+      - generic [ref=f1e1125]:
+        - heading "Keep up with the latest on Solana" [level=2] [ref=f1e1127]
+        - generic [ref=f1e1130]:
+          - button "Previous" [disabled] [ref=f1e1131]
+          - button "Next" [ref=f1e1134] [cursor=pointer]
+      - generic [ref=f1e1140]:
+        - generic [ref=f1e1143]:
+          - img "DTCC Tokenization Service to Connect with Solana" [ref=f1e1145]
+          - generic [ref=f1e1146]:
+            - heading "DTCC Tokenization Service to Connect with Solana" [level=3] [ref=f1e1147]
+            - paragraph [ref=f1e1148]: DTCC will connect its Tokenization Service to Solana in H2 2027, letting eligible DTC-custodied assets be tokenized onchain with the same investor protections.
+            - link "DTCC Tokenization Service to Connect with Solana" [ref=f1e1150] [cursor=pointer]:
+              - /url: /news/dtcc-tokenization-service-to-connect-with-solana
+              - text: Learn more
+        - generic [ref=f1e1153]:
+          - img "Solana Privacy Rings Bring Programmable Privacy Onchain" [ref=f1e1155]
+          - generic [ref=f1e1156]:
+            - heading "Solana Privacy Rings Bring Programmable Privacy Onchain" [level=3] [ref=f1e1157]
+            - paragraph [ref=f1e1158]: Helius launches Solana Privacy Rings. It’s a permissionless privacy protocol with encrypted balances, private transfers and programmable privacy for DeFi.
+            - link "Solana Privacy Rings Bring Programmable Privacy Onchain" [ref=f1e1160] [cursor=pointer]:
+              - /url: /news/solana-privacy-rings-bring-programmable-privacy-onchain
+              - text: Learn more
+        - generic [ref=f1e1163]:
+          - 'img "Solana Ecosystem Roundup: October 2026" [ref=f1e1165]'
+          - generic [ref=f1e1166]:
+            - 'heading "Solana Ecosystem Roundup: October 2026" [level=3] [ref=f1e1167]'
+            - paragraph [ref=f1e1168]: Solana cut target slot times to 200 milliseconds, activated Alpenglow, and reached a record $5 billion in RWA value in October 2026.
+            - 'link "Solana Ecosystem Roundup: October 2026" [ref=f1e1170] [cursor=pointer]':
+              - /url: /news/solana-ecosystem-roundup-october-2026
+              - text: Learn more
+        - generic [ref=f1e1173]:
+          - 'img "Solana Changelog: November 5, 2026" [ref=f1e1175]'
+          - generic [ref=f1e1176]:
+            - 'heading "Solana Changelog: November 5, 2026" [level=3] [ref=f1e1177]'
+            - paragraph [ref=f1e1178]: Rolldown cuts Web3.js bundle time from 2 seconds to nearly zero, alongside updates to Agave, Firedancer, Anchor, and Surfpool.
+            - 'link "Solana Changelog: November 5, 2026" [ref=f1e1180] [cursor=pointer]':
+              - /url: /news/solana-changelog-november-5-2026
+              - text: Learn more
+        - generic [ref=f1e1183]:
+          - img "Stablecoin Account Goes Live in Samsung Wallet, Bringing USDC on Solana to Eligible U.S. Galaxy Users" [ref=f1e1185]
+          - generic [ref=f1e1186]:
+            - heading "Stablecoin Account Goes Live in Samsung Wallet, Bringing USDC on Solana to Eligible U.S. Galaxy Users" [level=3] [ref=f1e1187]
+            - paragraph [ref=f1e1188]: Eligible U.S. Galaxy users can now buy, hold, send, and receive USDC on Solana directly through Samsung Wallet.
+            - link "Stablecoin Account Goes Live in Samsung Wallet, Bringing USDC on Solana to Eligible U.S. Galaxy Users" [ref=f1e1190] [cursor=pointer]:
+              - /url: /news/samsung-wallet-solana
+              - text: Learn more
+        - generic [ref=f1e1193]:
+          - 'img "Solana Community Awards 2026: Meet the Finalists" [ref=f1e1195]'
+          - generic [ref=f1e1196]:
+            - 'heading "Solana Community Awards 2026: Meet the Finalists" [level=3] [ref=f1e1197]'
+            - paragraph [ref=f1e1198]: Meet 48 finalists across 12 community-voted awards, cast your vote by November 9, and watch the November 13 ceremony in London.
+            - 'link "Solana Community Awards 2026: Meet the Finalists" [ref=f1e1200] [cursor=pointer]':
+              - /url: /news/solana-community-awards-2026-meet-the-finalists
+              - text: Learn more
+        - generic [ref=f1e1203]:
+          - 'img "Solana Changelog: October 29, 2026" [ref=f1e1205]'
+          - generic [ref=f1e1206]:
+            - 'heading "Solana Changelog: October 29, 2026" [level=3] [ref=f1e1207]'
+            - paragraph [ref=f1e1208]: Solana CLI decouples cargo-build-sbf as offchain message signing ships, alongside new Agave, Firedancer, Superbank, Solana Kit, and Token-2022 releases.
+            - 'link "Solana Changelog: October 29, 2026" [ref=f1e1210] [cursor=pointer]':
+              - /url: /news/solana-changelog-october-29-2026
+              - text: Learn more
+        - generic [ref=f1e1213]:
+          - img "Solana Breakpoint 2026 Adds Revolut Chair, Former Prime Minister, Former Chancellor and City Leaders to London Lineup" [ref=f1e1215]
+          - generic [ref=f1e1216]:
+            - heading "Solana Breakpoint 2026 Adds Revolut Chair, Former Prime Minister, Former Chancellor and City Leaders to London Lineup" [level=3] [ref=f1e1217]
+            - paragraph [ref=f1e1218]: Breakpoint 2026 adds leaders from Revolut, Westminster, Zelle, DTCC, Mastercard, Backpack, and Bitwise to its London lineup.
+            - link "Solana Breakpoint 2026 Adds Revolut Chair, Former Prime Minister, Former Chancellor and City Leaders to London Lineup" [ref=f1e1220] [cursor=pointer]:
+              - /url: /news/breakpoint-london-lineup
+              - text: Learn more
+        - generic [ref=f1e1223]:
+          - 'img "Solana Changelog: October 22, 2026" [ref=f1e1225]'
+          - generic [ref=f1e1226]:
+            - 'heading "Solana Changelog: October 22, 2026" [level=3] [ref=f1e1227]'
+            - paragraph [ref=f1e1228]: Agave v4.3.2 and Firedancer v26.10.4 arrive with new program SDKs and work on Alpenglow, validator I/O, gossip, and Transaction V1.
+            - 'link "Solana Changelog: October 22, 2026" [ref=f1e1230] [cursor=pointer]':
+              - /url: /news/solana-changelog-october-22-2026
+              - text: Learn more
+        - generic [ref=f1e1233]:
+          - 'img "Breakpoint Bound: Getting Around London, Finding Scran, and Some Sights to See (Part 3)" [ref=f1e1235]'
+          - generic [ref=f1e1236]:
+            - 'heading "Breakpoint Bound: Getting Around London, Finding Scran, and Some Sights to See (Part 3)" [level=3] [ref=f1e1237]'
+            - paragraph [ref=f1e1238]: Get from Heathrow or Gatwick to Olympia efficiently, avoid fare mistakes, and make time for food and sights during Breakpoint London 2026.
+            - 'link "Breakpoint Bound: Getting Around London, Finding Scran, and Some Sights to See (Part 3)" [ref=f1e1240] [cursor=pointer]':
+              - /url: /news/breakpoint-bound-getting-around-london-finding-scran-and-some-sights-to-see-part-3
+              - text: Learn more
+    - separator [ref=f1e1242]
+    - generic [ref=f1e1244]:
+      - generic [ref=f1e1245]:
+        - generic [ref=f1e1246]:
+          - heading "How we built this" [level=2] [ref=f1e1247]
+          - paragraph [ref=f1e1248]: Hear from pioneers creating the future of global financial markets.
+        - generic [ref=f1e1251]:
+          - button "Previous" [disabled] [ref=f1e1252]
+          - button "Next" [ref=f1e1255] [cursor=pointer]
+      - generic [ref=f1e1261]:
+        - generic [ref=f1e1264]:
+          - generic [ref=f1e1265] [cursor=pointer]:
+            - 'img "Solana Stories: Collector Crypt" [ref=f1e1266]'
+            - 'button "Solana Stories: Collector Crypt" [ref=f1e1267]'
+          - 'heading "Solana Stories: Collector Crypt" [level=3] [ref=f1e1270]'
+        - generic [ref=f1e1273]:
+          - generic [ref=f1e1274] [cursor=pointer]:
+            - 'img "Solana Stories: Comic-Con meets Wall Street" [ref=f1e1275]'
+            - 'button "Solana Stories: Comic-Con meets Wall Street" [ref=f1e1276]'
+          - 'heading "Solana Stories: Comic-Con meets Wall Street" [level=3] [ref=f1e1279]'
+        - generic [ref=f1e1282]:
+          - generic [ref=f1e1283] [cursor=pointer]:
+            - 'img "Solana Stories: We Bought A Bank" [ref=f1e1284]'
+            - 'button "Solana Stories: We Bought A Bank" [ref=f1e1285]'
+          - 'heading "Solana Stories: We Bought A Bank" [level=3] [ref=f1e1288]'
+        - generic [ref=f1e1291]:
+          - generic [ref=f1e1292] [cursor=pointer]:
+            - 'img "Solana Stories: Crypto Never Sleeps" [ref=f1e1293]'
+            - 'button "Solana Stories: Crypto Never Sleeps" [ref=f1e1294]'
+          - 'heading "Solana Stories: Crypto Never Sleeps" [level=3] [ref=f1e1297]'
+        - generic [ref=f1e1300]:
+          - generic [ref=f1e1301] [cursor=pointer]:
+            - 'img "Solana Stories: The Agents Are Here" [ref=f1e1302]'
+            - 'button "Solana Stories: The Agents Are Here" [ref=f1e1303]'
+          - 'heading "Solana Stories: The Agents Are Here" [level=3] [ref=f1e1306]'
+    - generic [ref=f1e1308]:
+      - img "Scene" [ref=f1e1310]
+      - generic [ref=f1e1311]:
+        - generic [ref=f1e1317]:
+          - heading "Build alongside our global community." [level=2] [ref=f1e1318]
+          - paragraph [ref=f1e1319]: Whether you’re a builder, creator, validator, or supporter, there’s a place for you to help.
+        - generic [ref=f1e1320]:
+          - link [ref=f1e1321] [cursor=pointer]:
+            - /url: /validators
+            - generic [ref=f1e1325]:
+              - heading "Validate the network" [level=4] [ref=f1e1326]
+              - paragraph [ref=f1e1327]: Run a validator to help keep the network fast and secure for everyone.
+          - link [ref=f1e1328] [cursor=pointer]:
+            - /url: /staking
+            - generic [ref=f1e1333]:
+              - heading "Secure by staking" [level=4] [ref=f1e1334]
+              - paragraph [ref=f1e1335]: Stake SOL and earn rewards while supporting decentralization.
+          - link [ref=f1e1336] [cursor=pointer]:
+            - /url: /docs/intro/quick-start
+            - generic [ref=f1e1341]:
+              - heading "Build an app" [level=4] [ref=f1e1342]
+              - paragraph [ref=f1e1343]: Launch the next big idea on the network powering the biggest apps in crypto.
+          - link [ref=f1e1344] [cursor=pointer]:
+            - /url: https://solana.org/grants-funding
+            - generic [ref=f1e1348]:
+              - heading "Contribute with code" [level=4] [ref=f1e1349]
+              - paragraph [ref=f1e1350]: Write open source code and get paid through ecosystem grants.
+          - link [ref=f1e1351] [cursor=pointer]:
+            - /url: /solutions/tokenization
+            - generic [ref=f1e1355]:
+              - heading "Tokenize an asset" [level=4] [ref=f1e1356]
+              - paragraph [ref=f1e1357]: Turn real-world assets into tokens to make them easier to trade and access globally.
+  - generic [ref=f1e1359]:
+    - generic [ref=f1e1360]:
+      - link "Solana Foundation" [ref=f1e1361] [cursor=pointer]:
+        - /url: /
+      - button "en" [ref=f1e1367] [cursor=pointer]
+    - generic [ref=f1e1373]:
+      - generic [ref=f1e1374]:
+        - generic [ref=f1e1375]: Use Solana
+        - list [ref=f1e1376]:
+          - listitem [ref=f1e1377]:
+            - link "Use Solana" [ref=f1e1378] [cursor=pointer]:
+              - /url: /use-solana
+          - listitem [ref=f1e1379]:
+            - link "Wallets" [ref=f1e1380] [cursor=pointer]:
+              - /url: /wallets
+          - listitem [ref=f1e1381]:
+            - link "Learn" [ref=f1e1382] [cursor=pointer]:
+              - /url: /learn
+          - listitem [ref=f1e1383]:
+            - link "Staking" [ref=f1e1384] [cursor=pointer]:
+              - /url: /staking
+      - generic [ref=f1e1385]:
+        - generic [ref=f1e1386]: Build
+        - list [ref=f1e1387]:
+          - listitem [ref=f1e1388]:
+            - link "Developer hub" [ref=f1e1389] [cursor=pointer]:
+              - /url: /developers
+          - listitem [ref=f1e1390]:
+            - link "Docs" [ref=f1e1391] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=f1e1392]:
+            - link "Templates" [ref=f1e1393] [cursor=pointer]:
+              - /url: /developers/templates
+      - generic [ref=f1e1394]:
+        - generic [ref=f1e1395]: Enterprise
+        - list [ref=f1e1396]:
+          - listitem [ref=f1e1397]:
+            - link "Enterprise" [ref=f1e1398] [cursor=pointer]:
+              - /url: /enterprise
+          - listitem [ref=f1e1399]:
+            - link "Institutional payments" [ref=f1e1400] [cursor=pointer]:
+              - /url: /solutions/institutional-payments
+          - listitem [ref=f1e1401]:
+            - link "Tokenization" [ref=f1e1402] [cursor=pointer]:
+              - /url: /solutions/tokenization
+          - listitem [ref=f1e1403]:
+            - link "Reports" [ref=f1e1404] [cursor=pointer]:
+              - /url: /reports
+      - generic [ref=f1e1405]:
+        - generic [ref=f1e1406]: Products
+        - list [ref=f1e1407]:
+          - listitem [ref=f1e1408]:
+            - link "Products" [ref=f1e1409] [cursor=pointer]:
+              - /url: /products
+          - listitem [ref=f1e1410]:
+            - link "Solana Developer Platform" [ref=f1e1411] [cursor=pointer]:
+              - /url: /solutions/sdp
+          - listitem [ref=f1e1412]:
+            - link "x402" [ref=f1e1413] [cursor=pointer]:
+              - /url: /x402
+          - listitem [ref=f1e1414]:
+            - link "Agent Registry" [ref=f1e1415] [cursor=pointer]:
+              - /url: /agent-registry
+          - listitem [ref=f1e1416]:
+            - link "Skills" [ref=f1e1417] [cursor=pointer]:
+              - /url: /skills
+      - generic [ref=f1e1418]:
+        - generic [ref=f1e1419]: Ecosystem
+        - list [ref=f1e1420]:
+          - listitem [ref=f1e1421]:
+            - link "Ecosystem" [ref=f1e1422] [cursor=pointer]:
+              - /url: /ecosystem
+          - listitem [ref=f1e1423]:
+            - link "Network" [ref=f1e1424] [cursor=pointer]:
+              - /url: /network
+          - listitem [ref=f1e1425]:
+            - link "Events" [ref=f1e1426] [cursor=pointer]:
+              - /url: /events
+          - listitem [ref=f1e1427]:
+            - link "Community" [ref=f1e1428] [cursor=pointer]:
+              - /url: /community
+          - listitem [ref=f1e1429]:
+            - link "News" [ref=f1e1430] [cursor=pointer]:
+              - /url: /news
+          - listitem [ref=f1e1431]:
+            - link "Newsletter" [ref=f1e1432] [cursor=pointer]:
+              - /url: /newsletter
+      - generic [ref=f1e1433]:
+        - generic [ref=f1e1434]: AI agents
+        - list [ref=f1e1435]:
+          - listitem [ref=f1e1436]:
+            - link "llms.txt" [ref=f1e1437] [cursor=pointer]:
+              - /url: /llms.txt
+          - listitem [ref=f1e1438]:
+            - link "llms-full.txt" [ref=f1e1439] [cursor=pointer]:
+              - /url: /llms-full.txt
+          - listitem [ref=f1e1440]:
+            - link "SKILL.md" [ref=f1e1441] [cursor=pointer]:
+              - /url: /SKILL.md
+          - listitem [ref=f1e1442]:
+            - link "Agent skills" [ref=f1e1443] [cursor=pointer]:
+              - /url: /skills
+    - generic [ref=f1e1444]:
+      - generic [ref=f1e1445]:
+        - list [ref=f1e1446]:
+          - listitem [ref=f1e1447]:
+            - link "Grants" [ref=f1e1448] [cursor=pointer]:
+              - /url: https://solana.org/grants
+          - listitem [ref=f1e1449]:
+            - link "Media Kit" [ref=f1e1450] [cursor=pointer]:
+              - /url: /branding
+          - listitem [ref=f1e1451]:
+            - link "Careers" [ref=f1e1452] [cursor=pointer]:
+              - /url: https://jobs.solana.com/
+          - listitem [ref=f1e1453]:
+            - link "Disclaimer" [ref=f1e1454] [cursor=pointer]:
+              - /url: /tos
+          - listitem [ref=f1e1455]:
+            - link "Privacy Policy" [ref=f1e1456] [cursor=pointer]:
+              - /url: /privacy-policy
+        - generic [ref=f1e1457]:
+          - link "YouTube" [ref=f1e1458] [cursor=pointer]:
+            - /url: /youtube
+          - link "Twitter" [ref=f1e1461] [cursor=pointer]:
+            - /url: /twitter
+          - link "Discord" [ref=f1e1464] [cursor=pointer]:
+            - /url: /discord
+          - link "Reddit" [ref=f1e1467] [cursor=pointer]:
+            - /url: /reddit
+          - link "GitHub" [ref=f1e1470] [cursor=pointer]:
+            - /url: /github
+      - generic [ref=f1e1474]: © 2026 Solana Foundation. All rights reserved.
+  - button "Ask AI" [ref=f1e1476] [cursor=pointer]
+  - alert [ref=f1e1480]
