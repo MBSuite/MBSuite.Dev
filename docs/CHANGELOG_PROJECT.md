@@ -12,8 +12,19 @@ Tracks meaningful behavior/architecture changes (not every small code diff).
 - Landing page (`MBSuite.Dev`) hero animation now Solana-style:
   - Replaced hero background animation (`blob-rotate`) with smooth `aurora-drift` keyframes for aurora gradient blobs (cyan/purple/pink)
   - Strengthened radial gradient opacities for visible animated aurora background
+- Landing page (`MBSuite.Dev`) hero animation upgraded to 3D (`HeroCyber.css` only):
+  - `.hero-cyber` now sets `perspective: 1200px` + `transform-style: preserve-3d` (3D stage)
+  - `.hero-cyber::before` uses `aurora-3d` (12s) — rotateX/rotateY/translateZ depth drift, opacities cyan 0.6 / purple 0.55 / pink 0.5
+  - `.hero-cyber::after` uses `shimmer-3d` (8s) — 115deg gradient sweep with parallax depth, `background-size: 250% 100%`, `z-index: -2`
+  - `.hero-cyber-title` gradient cycle lengthened to `rainbow-flow 8s` with stronger glow (`drop-shadow 30px rgba(0,240,255,0.45)`)
+  - Mobile (`max-width: 768px`) aurora opacities reduced (0.28 / 0.26 / 0.22) to match the stronger base values
 - Landing page (`MBSuite.Dev`) pricing content repair:
   - Removed `pricing.completeHighlight` translation key (en/th) and the Complete-tier highlight note render (`tier.id === 'complete'`) so the extra text no longer displays on the pricing page
+
+- Landing page (`MBSuite.Dev`) step/flow grids now 3-column & mobile-first (`BusinessFlow.css`, `HowItWorks.css` only):
+  - Both sections render exactly 3 items, so `repeat(4, 1fr)` left an empty 4th column (off-center). Changed desktop to `repeat(3, 1fr)` so the cards center within `.content-wrap`
+  - Reworked breakpoints from desktop-first (`max-width: 1024px` → 2 col, `max-width: 768px` → 1 col) to mobile-first: base = 1 column, `@media (min-width: 768px)` = 3 columns
+  - Card padding is now mobile-first (20px base, 28px at ≥768px)
 
 ## [2026-09-21]
 

@@ -1,0 +1,546 @@
+- generic [ref=f2e3]:
+  - link "ข้ามไปยังเนื้อหาหลัก" [ref=f2e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f2e5]:
+    - generic [ref=f2e6]:
+      - link "MBSuite — หน้าหลัก" [ref=f2e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f2e8]: MBSuite
+      - generic [ref=f2e9]:
+        - link "ดูแพ็กเกจ" [ref=f2e10] [cursor=pointer]:
+          - /url: "#pricing"
+        - button "Switch language to English" [ref=f2e11] [cursor=pointer]: EN
+  - main [ref=f2e12]:
+    - generic [ref=f2e14]:
+      - heading "จัดการเอกสาร รายรับรายจ่าย และงานบัญชีในระบบเดียว" [level=1] [ref=f2e15]
+      - paragraph [ref=f2e16]: ทำงานต่อเนื่องตั้งแต่ใบเสนอราคา ใบแจ้งหนี้ และค่าใช้จ่าย ไปจนถึงสมุดรายวันและรายงาน เพื่อให้ทีมเห็นข้อมูลธุรกิจที่บันทึกไว้ในที่เดียว
+      - generic [ref=f2e17]:
+        - link "ดูแพ็กเกจ" [ref=f2e18] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "Learn More" [ref=f2e19] [cursor=pointer]:
+          - /url: "#capabilities"
+    - generic [ref=f2e21]:
+      - generic [ref=f2e22]:
+        - generic [ref=f2e23]: MBSuite ในภาพรวม
+        - heading "ครอบคลุมงานหลัก พร้อมเลือกเครื่องมือให้เหมาะกับธุรกิจ" [level=2] [ref=f2e24]
+      - generic [ref=f2e25]:
+        - article [ref=f2e26]:
+          - generic [ref=f2e27]: "01"
+          - heading "เอกสารและบัญชี" [level=3] [ref=f2e28]
+          - paragraph [ref=f2e29]: จัดการใบเสนอราคา ใบแจ้งหนี้ ใบเสร็จ ค่าใช้จ่าย และสมุดรายวันในระบบเดียว
+        - article [ref=f2e30]:
+          - generic [ref=f2e31]: "02"
+          - heading "รายงานเพื่อทบทวนข้อมูล" [level=3] [ref=f2e32]
+          - paragraph [ref=f2e33]: ดูงบกำไรขาดทุน กระแสเงินสด และสรุปข้อมูลภาษีจากรายการที่บันทึกไว้
+        - article [ref=f2e34]:
+          - generic [ref=f2e35]: "03"
+          - heading "เลือกโมดูลเสริม" [level=3] [ref=f2e36]
+          - paragraph [ref=f2e37]: เพิ่มเครื่องมือสำหรับ POS คลังสินค้า ลูกค้าสมาชิก หลายสาขา หรือร้านอาหารตามรูปแบบธุรกิจ
+        - article [ref=f2e38]:
+          - generic [ref=f2e39]: "04"
+          - heading "กำหนดสิทธิ์และบริษัท" [level=3] [ref=f2e40]
+          - paragraph [ref=f2e41]: แยกข้อมูลตามบริษัทและกำหนดสิทธิ์ผู้ใช้ตามบทบาท พร้อม AI ที่ช่วยตอบคำถามและทบทวนรายการ
+    - generic [ref=f2e43]:
+      - generic [ref=f2e44]:
+        - generic [ref=f2e45]: ความสามารถ
+        - heading "เครื่องมือบัญชีและงานปฏิบัติการสำหรับธุรกิจขนาดเล็ก" [level=2] [ref=f2e46]
+        - paragraph [ref=f2e47]: เริ่มจากงานเอกสารและรายจ่าย แล้วเพิ่มเครื่องมือขาย สต็อก หรือจัดการสาขาเมื่อธุรกิจต้องการ
+      - generic [ref=f2e48]:
+        - heading "เครื่องมือหลัก" [level=3] [ref=f2e49]
+        - generic [ref=f2e50]:
+          - article [ref=f2e51]:
+            - generic [ref=f2e52]: "01"
+            - heading "บัญชีและเอกสาร" [level=4] [ref=f2e53]
+            - paragraph [ref=f2e54]: สร้างใบเสนอราคา ใบแจ้งหนี้ ใบเสร็จ บันทึกสมุดรายวัน และตั้งรอบบิลที่ต้องการให้ระบบสร้างใบแจ้งหนี้
+          - article [ref=f2e55]:
+            - generic [ref=f2e56]: "02"
+            - heading "ภาษีและรายงาน" [level=4] [ref=f2e57]
+            - paragraph [ref=f2e58]: ดูงบกำไรขาดทุน กระแสเงินสด และสรุป VAT/WHT เพื่อเตรียมตรวจทานก่อนยื่นภาษี
+      - generic [ref=f2e59]:
+        - heading "เครื่องมือเสริม (Add-ons)" [level=3] [ref=f2e60]
+        - generic [ref=f2e61]:
+          - article [ref=f2e62]:
+            - heading "POS คิดเงินด่วน (Add-on)" [level=4] [ref=f2e63]
+            - paragraph [ref=f2e64]: คิดเงินด้วยบาร์โค้ด จัดการตะกร้า และบันทึกการชำระหลายรูปแบบ พร้อมปรับสต็อกจากรายการขาย
+          - article [ref=f2e65]:
+            - heading "วิเคราะห์ยอดขาย (Add-on)" [level=4] [ref=f2e66]
+            - paragraph [ref=f2e67]: สรุปรายวัน/รายเดือน สินค้าขายดี ช่วงเวลาขายดี ช่องทางชำระ
+          - article [ref=f2e68]:
+            - heading "CRM / สมาชิก / สะสมคะแนน (Add-on)" [level=4] [ref=f2e69]
+            - paragraph [ref=f2e70]: ประวัติการซื้อ สะสมคะแนน ระดับสมาชิก (bronze/silver/gold/platinum)
+          - article [ref=f2e71]:
+            - heading "หลายสาขา (Add-on)" [level=4] [ref=f2e72]
+            - paragraph [ref=f2e73]: จัดการข้อมูลสาขาและสต็อกแยกสาขา โดยยังไม่มีการซิงก์สต็อกข้ามสาขาแบบเรียลไทม์
+          - article [ref=f2e74]:
+            - heading "ร้านอาหาร/คาเฟ่ F&B (Add-on)" [level=4] [ref=f2e75]
+            - paragraph [ref=f2e76]: ผังโต๊ะ เปิด/รวมบิล ส่งออเดอร์เข้าครัว (KOT) ออกบิล
+          - article [ref=f2e77]:
+            - heading "เชื่อมต่อ E-commerce / Delivery (Add-on)" [level=4] [ref=f2e78]
+            - paragraph [ref=f2e79]: เชื่อมต่อ Shopee, Lazada, เว็บไซต์ร้าน และบริการเดลิเวอรี เมื่อกำหนดค่าการเชื่อมต่อแล้ว
+          - article [ref=f2e80]:
+            - heading "ปลักอิน / Add-on (Plugin Manager)" [level=4] [ref=f2e81]
+            - paragraph [ref=f2e82]: ติดตั้งหรือถอนกลุ่มโมดูลเสริมแยกตามบริษัท โดยโมดูลหลักยังคงทำงาน
+          - article [ref=f2e83]:
+            - heading "คลังสินค้า (Inventory)" [level=4] [ref=f2e84]
+            - paragraph [ref=f2e85]: สต็อกสินค้าและหมวดหมู่ พร้อม QR Code + Barcode
+          - article [ref=f2e86]:
+            - heading "การชำระเงินและใบเสร็จ" [level=4] [ref=f2e87]
+            - paragraph [ref=f2e88]: เงินสด QR Code บัตรเครดิต/เดบิต พิมพ์ใบเสร็จ/ใบกำกับภาษี
+          - article [ref=f2e89]:
+            - heading "ความปลอดภัยและสิทธิ์" [level=4] [ref=f2e90]
+            - paragraph [ref=f2e91]: แยกข้อมูลแต่ละบริษัทและกำหนดสิทธิ์ผู้ใช้ตามบทบาท รองรับสิทธิ์ใช้งานแบบ Subscription หรือ Perpetual
+    - generic [ref=f2e93]:
+      - generic [ref=f2e94]:
+        - generic [ref=f2e95]: แอปพลิเคชันธุรกิจ
+        - heading "เจ็ดแอปพลิเคชันธุรกิจแยกตามประเภท" [level=2] [ref=f2e96]
+        - paragraph [ref=f2e97]: MBSuite Core เป็นระบบบัญชีส่วนกลาง เลือก Suite ที่ตรงกับประเภทธุรกิจของคุณสำหรับ workflow และการดำเนินงานเฉพาะ
+      - generic [ref=f2e98]:
+        - article [ref=f2e99]:
+          - img "MBSuite Core logo" [ref=f2e101]
+          - generic [ref=f2e102]:
+            - heading "MBSuite Core" [level=3] [ref=f2e103]
+            - generic [ref=f2e104]: ใช้งานได้
+          - paragraph [ref=f2e105]: ระบบบัญชีส่วนกลางและการจัดการเอกสารสำหรับธุรกิจทุกประเภท
+          - link "ดูแพ็กเกจ" [ref=f2e106] [cursor=pointer]:
+            - /url: https://micro-business-suite.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e107]: →
+        - article [ref=f2e108]:
+          - img "Service Suite logo" [ref=f2e110]
+          - generic [ref=f2e111]:
+            - heading "Service Suite" [level=3] [ref=f2e112]
+            - generic [ref=f2e113]: ใช้งานได้
+          - paragraph [ref=f2e114]: ร้านบริการและที่ปรึกษา — จองคิวและการจัดการบริการ
+          - link "ดูแพ็กเกจ" [ref=f2e115] [cursor=pointer]:
+            - /url: https://micro-business-service.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e116]: →
+        - article [ref=f2e117]:
+          - img "Retail Suite logo" [ref=f2e119]
+          - generic [ref=f2e120]:
+            - heading "Retail Suite" [level=3] [ref=f2e121]
+            - generic [ref=f2e122]: ใช้งานได้
+          - paragraph [ref=f2e123]: ร้านค้าและค้าส่ง — POS จัดการสต็อก บาร์โค้ด และรายงานยอดขาย
+          - link "ดูแพ็กเกจ" [ref=f2e124] [cursor=pointer]:
+            - /url: https://micro-business-retail.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e125]: →
+        - article [ref=f2e126]:
+          - img "F&B Suite logo" [ref=f2e128]
+          - generic [ref=f2e129]:
+            - heading "F&B Suite" [level=3] [ref=f2e130]
+            - generic [ref=f2e131]: ใช้งานได้
+          - paragraph [ref=f2e132]: ร้านอาหารและคาเฟ่ — สั่งอาหารผ่าน QR ห้องครัว และการออกบิล
+          - link "ดูแพ็กเกจ" [ref=f2e133] [cursor=pointer]:
+            - /url: https://micro-business-fnb.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e134]: →
+        - article [ref=f2e135]:
+          - img "Hotel Suite logo" [ref=f2e137]
+          - generic [ref=f2e138]:
+            - heading "Hotel Suite" [level=3] [ref=f2e139]
+            - generic [ref=f2e140]: ใช้งานได้
+          - paragraph [ref=f2e141]: จองห้องพักและที่พัก — การจอง check-in และแม่บ้าน
+          - link "ดูแพ็กเกจ" [ref=f2e142] [cursor=pointer]:
+            - /url: https://micro-business-hotel.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e143]: →
+        - article [ref=f2e144]:
+          - img "Rental Suite logo" [ref=f2e146]
+          - generic [ref=f2e147]:
+            - heading "Rental Suite" [level=3] [ref=f2e148]
+            - generic [ref=f2e149]: ใช้งานได้
+          - paragraph [ref=f2e150]: ธุรกิจเช่าและการจัดการทรัพย์สิน — สัญญา การเก็บค่าเช่า และบำรุงรักษา
+          - link "ดูแพ็กเกจ" [ref=f2e151] [cursor=pointer]:
+            - /url: https://micro-business-rental.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e152]: →
+        - article [ref=f2e153]:
+          - img "Pharmacy Suite logo" [ref=f2e155]
+          - generic [ref=f2e156]:
+            - heading "Pharmacy Suite" [level=3] [ref=f2e157]
+            - generic [ref=f2e158]: ใช้งานได้
+          - paragraph [ref=f2e159]: ร้านขายยาและร้านค้าเภสัชกรรม — สต็อก แบตช์ และการติดตามหมดอายุ
+          - link "ดูแพ็กเกจ" [ref=f2e160] [cursor=pointer]:
+            - /url: https://micro-business-pharmacy.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e161]: →
+      - paragraph [ref=f2e162]: เยี่ยมชม URL ที่ตรงกับประเภทธุรกิจของคุณเพื่อสร้างบัญชีและเริ่มต้น
+    - generic [ref=f2e164]:
+      - generic [ref=f2e165]:
+        - generic [ref=f2e166]: จากงานประจำวันสู่ภาพรวม
+        - heading "เห็นเส้นทางงาน ตั้งแต่ขายจนถึงสรุปผล" [level=2] [ref=f2e167]
+        - paragraph [ref=f2e168]: เชื่อมเอกสาร รายการทางการเงิน และรายงานเข้าด้วยกัน เพื่อให้ทบทวนข้อมูลที่บันทึกไว้ได้ต่อเนื่อง
+      - generic [ref=f2e169]:
+        - article [ref=f2e170]:
+          - generic [ref=f2e171]: "01"
+          - heading "ออกเอกสารให้ลูกค้า" [level=3] [ref=f2e172]
+          - paragraph [ref=f2e173]: สร้างใบเสนอราคา ใบแจ้งหนี้ และใบเสร็จ พร้อมจัดการเอกสารการขายในระบบ
+        - article [ref=f2e174]:
+          - generic [ref=f2e175]: "02"
+          - heading "ติดตามรายรับและรายจ่าย" [level=3] [ref=f2e176]
+          - paragraph [ref=f2e177]: บันทึกรายการทางการเงินและค่าใช้จ่าย เพื่อให้ข้อมูลประกอบงานบัญชีอยู่ในที่เดียว
+        - article [ref=f2e178]:
+          - generic [ref=f2e179]: "03"
+          - heading "ทบทวนรายงานธุรกิจ" [level=3] [ref=f2e180]
+          - paragraph [ref=f2e181]: ดูงบกำไรขาดทุน กระแสเงินสด และรายงานภาษีจากข้อมูลที่บันทึกไว้
+    - generic [ref=f2e183]:
+      - generic [ref=f2e184]:
+        - generic [ref=f2e185]: เหมาะกับธุรกิจแบบไหน
+        - heading "เลือก Suite ให้ตรงกับประเภทธุรกิจของคุณ" [level=2] [ref=f2e186]
+        - paragraph [ref=f2e187]: MBSuite Core และ Suite เฉพาะธุรกิจ 6 ตัวเป็นแอปพลิเคชันแยกกัน โดยแต่ละตัวมี workflow และ deployment ของตัวเอง ข้อมูลด้านล่างอธิบายขอบเขตงานและสถานะที่ยืนยันแล้ว
+      - generic [ref=f2e188]:
+        - article [ref=f2e189]:
+          - generic [ref=f2e190]: Core
+          - heading "MBSuite Core - บัญชีและการจัดการธุรกิจ" [level=3] [ref=f2e191]
+          - paragraph [ref=f2e192]: ระบบบัญชีส่วนกลางสำหรับ SME ไทย จัดการเอกสารการขาย ค่าใช้จ่าย รายการประมาณการ และรายงาน พร้อมการควบคุมการเข้าถึงตามบทบาท และเพิ่มเติมโมดูลตามความต้องการ
+          - link "ดูแพ็กเกจ" [ref=f2e193] [cursor=pointer]:
+            - /url: https://micro-business-suite.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e194]: →
+        - article [ref=f2e195]:
+          - generic [ref=f2e196]: Service Suite
+          - heading "ร้านบริการและที่ปรึกษา" [level=3] [ref=f2e197]
+          - paragraph [ref=f2e198]: จัดการแคตตาล็อกบริการ จองคิวและกำหนดการ สัญญาบริการ ติดตามงาน และการแจ้งเตือนการต่ออายุสัญญา
+          - link "ดูแพ็กเกจ" [ref=f2e199] [cursor=pointer]:
+            - /url: https://micro-business-service.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e200]: →
+        - article [ref=f2e201]:
+          - generic [ref=f2e202]: Retail Suite
+          - heading "ร้านค้าและค้าส่ง" [level=3] [ref=f2e203]
+          - paragraph [ref=f2e204]: แคตตาล็อกสินค้าพร้อมการจัดการสต็อก สแกนบาร์โค้ด QR ที่จุดชำระเงิน รายงานยอดขายรายวัน และการแจ้งเตือนสต็อกต่ำ
+          - link "ดูแพ็กเกจ" [ref=f2e205] [cursor=pointer]:
+            - /url: https://micro-business-retail.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e206]: →
+        - article [ref=f2e207]:
+          - generic [ref=f2e208]: F&B Suite
+          - heading "ร้านอาหารและคาเฟ่" [level=3] [ref=f2e209]
+          - paragraph [ref=f2e210]: การสั่งอาหารผ่าน QR code จัดการโต๊ะและบิล ใบสั่งห้องครัว (KOT) จัดการการชำระเงินและการดำเนินงานรายได้รายวัน
+          - link "ดูแพ็กเกจ" [ref=f2e211] [cursor=pointer]:
+            - /url: https://micro-business-fnb.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e212]: →
+        - article [ref=f2e213]:
+          - generic [ref=f2e214]: Hotel Suite
+          - heading "ธุรกิจจองห้องพักและที่พัก" [level=3] [ref=f2e215]
+          - paragraph [ref=f2e216]: การจองห้องพักรายวัน การจองห้องพัก check-in และ check-out ติดตามสถานะงานแม่บ้าน และติดตามรายได้รายวัน
+          - link "ดูแพ็กเกจ" [ref=f2e217] [cursor=pointer]:
+            - /url: https://micro-business-hotel.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e218]: →
+        - article [ref=f2e219]:
+          - generic [ref=f2e220]: Rental Suite
+          - heading "ธุรกิจให้เช่าและการจัดการทรัพย์สิน" [level=3] [ref=f2e221]
+          - paragraph [ref=f2e222]: จัดการทรัพย์สินให้เช่า สัญญาเช่า กำหนดการค่าเช่าและรับชำระเงิน การแจ้งเตือนการต่ออายุและค้างชำระ และติดตามการบำรุงรักษา
+          - link "ดูแพ็กเกจ" [ref=f2e223] [cursor=pointer]:
+            - /url: https://micro-business-rental.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e224]: →
+        - article [ref=f2e225]:
+          - generic [ref=f2e226]: Pharmacy Suite
+          - heading "ร้านขายยาและร้านค้าเภสัชกรรม" [level=3] [ref=f2e227]
+          - paragraph [ref=f2e228]: จัดการสินค้าด้วยการติดตามระดับแบตช์ การจัดการวันหมดอายุ การแจ้งเตือนสต็อกต่ำและใกล้หมดอายุ และการติดตามการเคลื่อนไหวสต็อกที่สามารถตรวจสอบได้
+          - link "ดูแพ็กเกจ" [ref=f2e229] [cursor=pointer]:
+            - /url: https://micro-business-pharmacy.vercel.app/
+            - text: ดูแพ็กเกจ
+            - generic [aria-hidden] [ref=f2e230]: →
+      - paragraph [ref=f2e231]: ทั้ง 7 แอปพลิเคชันทั้งหมด deployed บน Vercel แล้ว MBSuite Core เป็นระบบบัญชีส่วนกลางและรวมบัญชี Suite แต่ละตัวทำงานแยกกันตามโดเมนของตัวเอง ระบบยังไม่รองรับหลายสกุลเงินหรือการซิงก์สต็อกข้ามสาขาแบบเรียลไทม์
+    - generic [ref=f2e233]:
+      - generic [ref=f2e234]:
+        - generic [ref=f2e235]: บทความ MBSuite
+        - heading "บทความเรื่องบัญชีและภาษีที่ควรรู้ สำหรับทุกธุรกิจ" [level=2] [ref=f2e236]
+        - paragraph [ref=f2e237]: บทความน่ารู้เกี่ยวกับงานบัญชี ภาษี และโปรแกรมบัญชีออนไลน์ เพื่อนำความรู้ไปปรับใช้กับธุรกิจ ให้สามารถบริหารจัดการการเงินและบัญชีได้อย่างมีประสิทธิภาพและถูกต้อง
+      - generic [ref=f2e238]:
+        - article [ref=f2e239]:
+          - generic [ref=f2e241]: ต้นทุนงานบริการ
+          - generic [ref=f2e242]:
+            - generic [ref=f2e243]:
+              - generic [ref=f2e244]: ต้นทุนงานบริการ
+              - generic [ref=f2e245]: ·อ่าน 4 นาที
+            - heading [level=3] [ref=f2e246]:
+              - link "งานซ่อมมีกำไรจริงไหม? วิธีแยกค่าอะไหล่ ค่าแรง และค่าใช้จ่าย" [ref=f2e247] [cursor=pointer]:
+                - /url: /articles/repair-job-profit-costs
+            - paragraph [ref=f2e248]: เห็นต้นทุนของแต่ละงานชัดขึ้น ด้วยการบันทึกอะไหล่ ค่าแรง และค่าใช้จ่ายให้ครบตั้งแต่รับงานจนส่งมอบ
+            - link "อ่านบทความ" [ref=f2e249] [cursor=pointer]:
+              - /url: /articles/repair-job-profit-costs
+              - text: อ่านบทความ
+              - generic [aria-hidden] [ref=f2e250]: →
+        - article [ref=f2e251]:
+          - generic [ref=f2e253]: บริหารโครงการ
+          - generic [ref=f2e254]:
+            - generic [ref=f2e255]:
+              - generic [ref=f2e256]: บริหารโครงการ
+              - generic [ref=f2e257]: ·อ่าน 5 นาที
+            - heading [level=3] [ref=f2e258]:
+              - link "ติดตามต้นทุนโครงการก่อสร้างให้ทัน ด้วยงบประมาณและข้อมูลหน้างาน" [ref=f2e259] [cursor=pointer]:
+                - /url: /articles/construction-project-cost-control
+            - paragraph [ref=f2e260]: วางแผนเทียบงบกับต้นทุนจริง ติดตามการเบิกวัสดุ และบันทึกการเปลี่ยนแปลงก่อนกระทบผลประกอบการ
+            - link "อ่านบทความ" [ref=f2e261] [cursor=pointer]:
+              - /url: /articles/construction-project-cost-control
+              - text: อ่านบทความ
+              - generic [aria-hidden] [ref=f2e262]: →
+        - article [ref=f2e263]:
+          - generic [ref=f2e265]: เงินเดือนและบุคลากร
+          - generic [ref=f2e266]:
+            - generic [ref=f2e267]:
+              - generic [ref=f2e268]: เงินเดือนและบุคลากร
+              - generic [ref=f2e269]: ·อ่าน 4 นาที
+            - heading [level=3] [ref=f2e270]:
+              - link "เตรียมข้อมูลเงินเดือนให้พร้อม ก่อนถึงรอบจ่ายจริง" [ref=f2e271] [cursor=pointer]:
+                - /url: /articles/payroll-month-end-checklist
+            - paragraph [ref=f2e272]: จัดข้อมูลเวลาเข้างาน การลา และรายการปรับปรุงให้เป็นรอบ ลดการแก้ไขซ้ำในช่วงปิดเงินเดือน
+            - link "อ่านบทความ" [ref=f2e273] [cursor=pointer]:
+              - /url: /articles/payroll-month-end-checklist
+              - text: อ่านบทความ
+              - generic [aria-hidden] [ref=f2e274]: →
+      - link "ดูบทความทั้งหมด" [ref=f2e276] [cursor=pointer]:
+        - /url: /articles
+    - generic [ref=f2e278]:
+      - generic [ref=f2e279]:
+        - generic [ref=f2e280]: เริ่มต้นใช้งาน
+        - heading "เริ่มทดลอง แล้วค่อยตั้งค่าตามงานของคุณ" [level=2] [ref=f2e281]
+        - paragraph [ref=f2e282]: เริ่มจากบัญชีทดลองและบริษัทของคุณ จากนั้นค่อยเลือกเครื่องมือที่ต้องใช้
+      - generic [ref=f2e283]:
+        - article [ref=f2e284]:
+          - generic [ref=f2e285]: "01"
+          - heading "สร้างบัญชีทดลอง" [level=3] [ref=f2e286]
+          - paragraph [ref=f2e287]: ลงทะเบียนเพื่อทดลองใช้ 30 วันสำหรับผู้ใช้ 1 คน แล้วสร้างบริษัทของคุณ
+        - article [ref=f2e288]:
+          - generic [ref=f2e289]: "02"
+          - heading "ตั้งค่าข้อมูลบริษัท" [level=3] [ref=f2e290]
+          - paragraph [ref=f2e291]: กำหนดข้อมูลบริษัท ผู้ใช้ และรายการพื้นฐานก่อนเริ่มบันทึกเอกสาร
+        - article [ref=f2e292]:
+          - generic [ref=f2e293]: "03"
+          - heading "เลือกวิธีใช้งานต่อ" [level=3] [ref=f2e294]
+          - paragraph [ref=f2e295]: เลือก Subscription รายปี หรือสอบถามทีมงานเรื่องสิทธิ์ Perpetual และโมดูลเสริม
+    - generic [ref=f2e297]:
+      - generic [ref=f2e298]:
+        - generic [ref=f2e299]: แพ็กเกจราคา
+        - heading "ราคาแบบง่ายและชัดเจน สำหรับทุกธุรกิจ" [level=2] [ref=f2e300]
+        - paragraph [ref=f2e301]: เลือกแพ็กเกจที่เหมาะกับธุรกิจของคุณ ทุกแพ็กเกจมีทดลองใช้ฟรี 30 วัน
+      - generic [ref=f2e302]:
+        - button "ชำระรายเดือน" [ref=f2e303] [cursor=pointer]
+        - button "ชำระรายปี ประหยัด 17%" [ref=f2e304] [cursor=pointer]:
+          - text: ชำระรายปี
+          - generic [ref=f2e305]: ประหยัด 17%
+      - generic [ref=f2e306]:
+        - article [ref=f2e307]:
+          - generic [ref=f2e308]:
+            - heading "Starter" [level=3] [ref=f2e309]
+            - paragraph [ref=f2e310]: เริ่มร้านเดียว ครบทุกงานหน้าร้าน
+          - paragraph [ref=f2e311]: เหมาะสำหรับร้านค้าเล็ก ๆ และร้านบริการอิสระ มีเฉพาะ Suite เดียวตรงกับประเภทธุรกิจคุณ
+          - generic [ref=f2e312]:
+            - generic [ref=f2e313]:
+              - generic [ref=f2e314]: ฿
+              - generic [ref=f2e315]: 3,500
+              - generic [ref=f2e316]: /ปี
+            - paragraph [ref=f2e317]: ≈ 292 บาท/เดือน
+          - paragraph [ref=f2e318]: ไม่ต้องใส่บัตรเครดิต เข้าถึงฟีเจอร์ทั้งหมดได้
+          - list [ref=f2e319]:
+            - listitem [ref=f2e320]:
+              - generic [ref=f2e321]: ✓
+              - text: โมดูล Suite เดียวแบบสมบูรณ์
+            - listitem [ref=f2e322]:
+              - generic [ref=f2e323]: ✓
+              - text: สนับสนุนพนักงานได้ 10 คน
+            - listitem [ref=f2e324]:
+              - generic [ref=f2e325]: ✓
+              - text: รายงานยอดขาย รายวัน/รายเดือน
+            - listitem [ref=f2e326]:
+              - generic [ref=f2e327]: ✓
+              - text: สำรองข้อมูลอัตโนมัติ Google Drive
+            - listitem [ref=f2e328]:
+              - generic [ref=f2e329]: ✓
+              - text: สนับสนุนอีเมล แบบรับไวก่อน
+            - listitem [ref=f2e330]:
+              - generic [ref=f2e331]: ✓
+              - text: อัปเดตและแก้ไขข้อบกพร่องฟรี
+          - link "ทดลองใช้ฟรี" [ref=f2e332] [cursor=pointer]:
+            - /url: https://micro-business-suite.vercel.app/register
+            - text: ทดลองใช้ฟรี
+            - generic [aria-hidden] [ref=f2e333]: →
+        - article [ref=f2e334]:
+          - generic [ref=f2e335]:
+            - heading "Professional" [level=3] [ref=f2e336]
+            - paragraph [ref=f2e337]: ปิดบัญชีและเตรียมภาษีได้จบในระบบ
+          - paragraph [ref=f2e338]: ระบบบัญชีและเอกสารพร้อม AI ช่วยเหลือ เหมาะสำหรับฟรีแลนซ์ ที่ปรึกษา และธุรกิจที่เน้นบัญชี
+          - generic [ref=f2e339]:
+            - generic [ref=f2e340]:
+              - generic [ref=f2e341]: ฿
+              - generic [ref=f2e342]: 4,900
+              - generic [ref=f2e343]: /ปี
+            - paragraph [ref=f2e344]: ≈ 408 บาท/เดือน
+          - paragraph [ref=f2e345]: ไม่ต้องใส่บัตรเครดิต เข้าถึงฟีเจอร์ทั้งหมดได้
+          - list [ref=f2e346]:
+            - listitem [ref=f2e347]:
+              - generic [ref=f2e348]: ✓
+              - text: ระบบบัญชีส่วนกลาง (Core)
+            - listitem [ref=f2e349]:
+              - generic [ref=f2e350]: ✓
+              - text: AI Auditor + AI Chat
+            - listitem [ref=f2e351]:
+              - generic [ref=f2e352]: ✓
+              - text: ใบเสนอราคา ใบแจ้งหนี้ ใบเสร็จรับเงิน
+            - listitem [ref=f2e353]:
+              - generic [ref=f2e354]: ✓
+              - text: บันทึกหลายบัญชี (Multi-GL)
+            - listitem [ref=f2e355]:
+              - generic [ref=f2e356]: ✓
+              - text: รายงานภาษี VAT/WHT
+            - listitem [ref=f2e357]:
+              - generic [ref=f2e358]: ✓
+              - text: พร้อมสำหรับ RD-API ยื่นภาษี
+            - listitem [ref=f2e359]:
+              - generic [ref=f2e360]: ✓
+              - text: เชื่อม Google Workspace
+            - listitem [ref=f2e361]:
+              - generic [ref=f2e362]: ✓
+              - text: สนับสนุนฉุกเฉิน
+          - link "ทดลองใช้ฟรี" [ref=f2e363] [cursor=pointer]:
+            - /url: https://micro-business-suite.vercel.app/register
+            - text: ทดลองใช้ฟรี
+            - generic [aria-hidden] [ref=f2e364]: →
+        - article [ref=f2e365]:
+          - generic [ref=f2e366]:
+            - heading "Complete Bundle" [level=3] [ref=f2e367]
+            - paragraph [ref=f2e368]: ขายหน้าร้าน บัญชีเข้าเอง
+          - paragraph [ref=f2e369]: ระบบบัญชี Core + Suite เดียว เชื่อมต่อการดำเนินงานร้านเข้ากับบัญชีอัตโนมัติ เหมาะสำหรับธุรกิจที่เติบโต
+          - generic [ref=f2e370]:
+            - generic [ref=f2e371]:
+              - generic [ref=f2e372]: ฿
+              - generic [ref=f2e373]: 7,500
+              - generic [ref=f2e374]: /ปี
+            - paragraph [ref=f2e375]: ≈ 625 บาท/เดือน
+          - paragraph [ref=f2e376]: ไม่ต้องใส่บัตรเครดิต เข้าถึงฟีเจอร์ทั้งหมดได้
+          - list [ref=f2e377]:
+            - listitem [ref=f2e378]:
+              - generic [ref=f2e379]: ✓
+              - text: ⭐ ทั้งหมดใน Professional
+            - listitem [ref=f2e380]:
+              - generic [ref=f2e381]: ✓
+              - text: บวก Suite เดียว (F&B, Retail, Hotel, Rental, Service, Pharmacy)
+            - listitem [ref=f2e382]:
+              - generic [ref=f2e383]: ✓
+              - text: ยอดขายหน้าร้านลงบัญชีเอง ไม่ต้องคีย์ซ้ำ
+            - listitem [ref=f2e384]:
+              - generic [ref=f2e385]: ✓
+              - text: AI สรุปกำไรรายวัน
+            - listitem [ref=f2e386]:
+              - generic [ref=f2e387]: ✓
+              - text: ส่วนลด Multi-suite (-20% ต่อ Suite เพิ่ม)
+            - listitem [ref=f2e388]:
+              - generic [ref=f2e389]: ✓
+              - text: สนับสนุน Premium ฉุกเฉิน
+            - listitem [ref=f2e390]:
+              - generic [ref=f2e391]: ✓
+              - text: ปรึกษาร่วมวางแผนธุรกิจรายปี
+          - link "ทดลองใช้ฟรี" [ref=f2e392] [cursor=pointer]:
+            - /url: https://micro-business-suite.vercel.app/register
+            - text: ทดลองใช้ฟรี
+            - generic [aria-hidden] [ref=f2e393]: →
+      - generic [ref=f2e395]:
+        - heading "💡 เป็นเจ้าของระบบ - Perpetual License" [level=3] [ref=f2e396]
+        - paragraph [ref=f2e397]: เทียบราคา Complete (750฿/เดือน) กับเจ้าของระบบตลอดไป
+        - generic [ref=f2e398]:
+          - generic [ref=f2e399]:
+            - generic [ref=f2e400]: ค่าใช้จ่าย 3 ปี
+            - generic [ref=f2e401]:
+              - generic [ref=f2e402]: Cloud
+              - generic [ref=f2e403]: 27,000 บาท
+            - generic [ref=f2e404]:
+              - generic [ref=f2e405]: Perpetual
+              - generic [ref=f2e406]: 19,900 บาท
+          - generic [ref=f2e407]:
+            - generic [ref=f2e408]: หลังจาก 3 ปี
+            - generic [ref=f2e409]:
+              - generic [ref=f2e410]: Cloud
+              - generic [ref=f2e411]: ยังคงจ่ายต่อไป
+            - generic [ref=f2e412]:
+              - generic [ref=f2e413]: Perpetual
+              - generic [ref=f2e414]: ใช้ฟรีตลอดไป
+          - generic [ref=f2e415]:
+            - generic [ref=f2e416]: ที่จัดเก็บข้อมูล
+            - generic [ref=f2e417]:
+              - generic [ref=f2e418]: Cloud
+              - generic [ref=f2e419]: เซิร์ฟเวอร์ผู้ให้บริการ
+            - generic [ref=f2e420]:
+              - generic [ref=f2e421]: Perpetual
+              - generic [ref=f2e422]: เซิร์ฟเวอร์ของคุณ
+          - generic [ref=f2e423]:
+            - generic [ref=f2e424]: เหมาะสำหรับ
+            - generic [ref=f2e425]:
+              - generic [ref=f2e426]: Cloud
+              - generic [ref=f2e427]: ใช้ระยะสั้น
+            - generic [ref=f2e428]:
+              - generic [ref=f2e429]: Perpetual
+              - generic [ref=f2e430]: ใช้ระยะยาว
+        - link "สอบถาม Perpetual License" [ref=f2e431] [cursor=pointer]:
+          - /url: https://docs.google.com/forms/d/e/1FAIpQLScINJ7ZxkrgNqsXSsQ4mMOTNs0Q6uk46QBLuUcAJKWmx3_GjA/viewform
+          - text: สอบถาม Perpetual License
+          - generic [aria-hidden] [ref=f2e432]: →
+      - paragraph [ref=f2e433]: ทุกแพ็กเกจมี Community Support มี Professional & Complete มีสนับสนุนฉุกเฉิน
+    - generic [ref=f2e435]:
+      - generic [ref=f2e436]:
+        - generic [ref=f2e437]: คำถามที่พบบ่อย
+        - heading "มีข้อสงสัยเกี่ยวกับ MBSuite?" [level=2] [ref=f2e438]
+        - paragraph [ref=f2e439]: คำตอบเบื้องต้นเกี่ยวกับระบบ การติดตั้ง และรูปแบบสิทธิ์ใช้งาน
+      - generic [ref=f2e440]:
+        - group [ref=f2e441] [cursor=pointer]:
+          - generic "MBSuite รองรับงานบัญชีและภาษีไทยหรือไม่? ›" [ref=f2e442]
+        - group [ref=f2e443] [cursor=pointer]:
+          - generic "มี AI ช่วยงานด้านบัญชีหรือไม่? ›" [ref=f2e444]
+        - group [ref=f2e445] [cursor=pointer]:
+          - generic "ต้องสมัคร Subscription เท่านั้นหรือไม่? ›" [ref=f2e446]
+        - group [ref=f2e447] [cursor=pointer]:
+          - generic "สามารถติดตั้งระบบเองได้หรือไม่? ›" [ref=f2e448]
+        - group [ref=f2e449] [cursor=pointer]:
+          - generic "การสำรองข้อมูลไป Google Drive ทำงานอย่างไร? ›" [ref=f2e450]
+        - group [ref=f2e451] [cursor=pointer]:
+          - generic "เลือกเปิดใช้เฉพาะบางโมดูลได้หรือไม่? ›" [ref=f2e452]
+        - group [ref=f2e453] [cursor=pointer]:
+          - generic "รองรับหลายสกุลเงินหรือสต็อกข้ามสาขาแบบเรียลไทม์หรือไม่? ›" [ref=f2e454]
+    - generic [ref=f2e456]:
+      - heading "เริ่มจัดระเบียบงานบัญชีของธุรกิจคุณ" [level=2] [ref=f2e457]
+      - paragraph [ref=f2e458]: ทดลองสร้างบริษัท บันทึกเอกสารและรายการธุรกิจ แล้วเลือกโมดูลที่เหมาะกับวิธีทำงานของทีม
+      - link "เริ่มทดลองใช้ฟรี 30 วัน" [ref=f2e460] [cursor=pointer]:
+        - /url: https://micro-business-suite.vercel.app/register
+  - contentinfo [ref=f2e461]:
+    - generic [ref=f2e462]:
+      - generic [ref=f2e463]:
+        - link "MBSuite — หน้าหลัก" [ref=f2e464] [cursor=pointer]:
+          - /url: /
+          - generic [ref=f2e465]: MBSuite
+        - paragraph [ref=f2e466]: Premium business management suite for Thai enterprises. Simple, powerful, affordable.
+      - generic [ref=f2e467]:
+        - generic [ref=f2e468]:
+          - heading "Product" [level=3] [ref=f2e469]
+          - link "Features" [ref=f2e470] [cursor=pointer]:
+            - /url: /#capabilities
+          - link "Pricing" [ref=f2e471] [cursor=pointer]:
+            - /url: /#pricing
+          - link "How It Works" [ref=f2e472] [cursor=pointer]:
+            - /url: /#howitworks
+        - generic [ref=f2e473]:
+          - heading "Resources" [level=3] [ref=f2e474]
+          - link "Documentation" [ref=f2e475] [cursor=pointer]:
+            - /url: /docs
+          - link "User Guide" [ref=f2e476] [cursor=pointer]:
+            - /url: /guide
+          - link "Marketplace" [ref=f2e477] [cursor=pointer]:
+            - /url: /marketplace
+      - generic [ref=f2e478]:
+        - link "Discord" [ref=f2e479] [cursor=pointer]:
+          - /url: https://discord.gg/5WSDE2KsU
+          - generic [aria-hidden] [ref=f2e480]: 💬
+          - text: Discord
+        - link "Facebook" [ref=f2e481] [cursor=pointer]:
+          - /url: https://www.facebook.com/MicrotronicTH
+          - generic [aria-hidden] [ref=f2e482]: f
+          - text: Facebook
+        - link [ref=f2e483] [cursor=pointer]:
+          - /url: https://lin.ee/pg0Cn6v
+          - img "QR Code" [ref=f2e484]
+      - link "© 2026 Microtronic Co., Ltd. All rights reserved. | Powered by MBSuite" [ref=f2e485] [cursor=pointer]:
+        - /url: https://microtronic.biz/
