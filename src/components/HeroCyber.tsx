@@ -10,8 +10,8 @@ export default function HeroCyber() {
         <h1 className="hero-cyber-title">{t('hero.title')}</h1>
         <p className="hero-cyber-subtitle">{t('hero.subtitle')}</p>
         <div className="hero-cyber-cta">
-          <button className="btn-neon btn-neon-fill">{t('common.getStarted')}</button>
-          <button className="btn-neon">Learn More</button>
+          <a href="#pricing" className="btn-neon btn-neon-fill">{t('common.getStarted')}</a>
+          <a href="#capabilities" className="btn-neon">Learn More</a>
         </div>
       </div>
     </section>

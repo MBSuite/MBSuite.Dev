@@ -2,6 +2,14 @@
 
 Tracks meaningful behavior/architecture changes (not every small code diff).
 
+## [2026-11-13]
+
+- Landing page (`MBSuite.Dev`) interaction & SEO repairs:
+  - Fixed broken in-page anchor links: `#features` → `#capabilities` (Header nav + Footer link target)
+  - Wired hero CTA buttons to real anchors (converted dead `<button>` to `<a>`): Get Started → `#pricing`, Learn More → `#capabilities`
+  - Fixed heading-order skip in footer: group headings changed from `h4` to `h3` (sequential order after page sections ending at `h2`)
+  - Added missing `public/robots.txt` (`User-agent: * / Allow: /`) for crawlability
+
 ## [2026-09-21]
 
 - Added FX Rate Monitor: `GET /api/fx-rate` serves latest USD/THB (BOT reference via frankfurter.dev) with 30d series + trend; invoice creation page shows a live FX widget and "Use Latest Rate" button to prefill the markup calculator's exchange rate (FX-based billing)

@@ -8,7 +8,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const isHome = window.location.pathname === '/'
   const navItems = [
-    { href: isHome ? '#features' : '/#features', label: t('nav.features') },
+    { href: isHome ? '#capabilities' : '/#capabilities', label: t('nav.features') },
     { href: isHome ? '#howitworks' : '/#howitworks', label: t('nav.howItWorks') },
     { href: isHome ? '#pricing' : '/#pricing', label: t('nav.pricing') },
     { href: '/articles', label: t('nav.articles') },
