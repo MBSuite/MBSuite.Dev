@@ -9,6 +9,9 @@ Tracks meaningful behavior/architecture changes (not every small code diff).
   - Wired hero CTA buttons to real anchors (converted dead `<button>` to `<a>`): Get Started → `#pricing`, Learn More → `#capabilities`
   - Fixed heading-order skip in footer: group headings changed from `h4` to `h3` (sequential order after page sections ending at `h2`)
   - Added missing `public/robots.txt` (`User-agent: * / Allow: /`) for crawlability
+- Landing page (`MBSuite.Dev`) hero animation now Solana-style:
+  - Replaced hero background animation (`blob-rotate`) with smooth `aurora-drift` keyframes for aurora gradient blobs (cyan/purple/pink)
+  - Strengthened radial gradient opacities for visible animated aurora background
 
 ## [2026-09-21]
 

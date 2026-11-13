@@ -19,12 +19,30 @@
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 20% 50%, rgba(var(--neon-cyan-rgb), 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 80% 50%, rgba(var(--neon-purple-rgb), 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 50% 20%, rgba(255, 0, 110, 0.15) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(var(--neon-cyan-rgb), 0.35) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(var(--neon-purple-rgb), 0.35) 0%, transparent 50%),
+    radial-gradient(circle at 50% 20%, rgba(255, 0, 110, 0.25) 0%, transparent 50%);
   pointer-events: none;
-  animation: blob-rotate 20s ease-in-out infinite;
+  animation: aurora-drift 22s ease-in-out infinite;
   z-index: -1;
+}
+
+@keyframes aurora-drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate3d(60px, -50px, 0) scale(1.18);
+  }
+
+  66% {
+    transform: translate3d(-60px, 40px, 0) scale(0.92);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
 }
 
 .hero-cyber::after {
@@ -37,13 +55,13 @@
   background:
     linear-gradient(45deg,
       transparent 0%,
-      rgba(0, 240, 255, 0.03) 25%,
+      rgba(0, 240, 255, 0.05) 25%,
       transparent 50%,
-      rgba(208, 0, 255, 0.03) 75%,
+      rgba(208, 0, 255, 0.05) 75%,
       transparent 100%);
   background-size: 400% 400%;
   pointer-events: none;
-  animation: rainbow-flow 8s ease-in-out infinite;
+  animation: aurora-drift 30s ease-in-out infinite reverse;
 }
 
 .hero-cyber-content {
