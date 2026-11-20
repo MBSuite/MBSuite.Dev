@@ -45,6 +45,13 @@
           "description": "A concise overview of accounting work, core features, intended business types and important limitations, with print support.",
           "action": "View the brochure",
           "href": "/brochure"
+        },
+        {
+          "label": "For customers",
+          "title": "Guides for all 7 programs (Thai)",
+          "description": "Plain-language Thai guides for owners and accountants: Core, hotel, pharmacy, rental, service, retail and food & beverage.",
+          "action": "Open the guides",
+          "href": "/documents/products"
         }
       ]
     },

@@ -15,11 +15,14 @@ import InfoContent from './components/InfoContent'
 import ArticlesPreview from './components/ArticlesPreview'
 import ArticlesPage from './components/ArticlesPage'
 import DocumentsHome from './components/DocumentsHome'
+import CustomerDocsHome from './components/CustomerDocsHome'
+import CustomerDocPage from './components/CustomerDocPage'
 import Marketplace from './components/Marketplace'
 import UserGuide from './components/UserGuide'
 import Brochure from './components/Brochure'
 import Footer from './components/Footer'
 import { getArticleBySlug } from './data/articles'
+import { getCustomerDocBySlug } from './data/customerDocs'
 
 function App() {
   const { i18n, t } = useTranslation()
@@ -28,6 +31,10 @@ function App() {
   const articleSlug = pathname.startsWith('/articles/') ? pathname.slice('/articles/'.length) : ''
   const article = articleSlug ? getArticleBySlug(articleSlug, language) : undefined
   const isArticleRoute = pathname === '/articles' || pathname.startsWith('/articles/')
+  const productDocSlug = pathname.startsWith('/documents/products/')
+    ? pathname.slice('/documents/products/'.length)
+    : ''
+  const productDoc = productDocSlug ? getCustomerDocBySlug(productDocSlug) : undefined
 
   useEffect(() => {
     document.documentElement.lang = language
@@ -42,6 +49,10 @@ function App() {
           <Marketplace />
         ) : pathname === '/documents' ? (
           <DocumentsHome />
+        ) : pathname === '/documents/products' ? (
+          <CustomerDocsHome />
+        ) : pathname.startsWith('/documents/products/') ? (
+          productDoc ? <CustomerDocPage doc={productDoc} /> : <DocumentsHome />
         ) : pathname === '/guide' ? (
           <UserGuide />
         ) : pathname === '/brochure' ? (

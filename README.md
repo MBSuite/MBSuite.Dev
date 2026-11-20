@@ -9,6 +9,8 @@
 - แสดงแผนราคาและคำถามที่พบบ่อย
 - สลับภาษาไทย/อังกฤษได้จากเมนูภาษา
 - มีศูนย์เอกสารที่ `/documents` แยกคู่มือเริ่มต้น (`/guide`) กับโบรชัวร์สำหรับพิมพ์หรือบันทึกเป็น PDF (`/brochure`)
+- มีคู่มือสำหรับลูกค้าที่ `/documents/products` และแยกหน้าตามโปรแกรม `/documents/products/<slug>` (เขียนสำหรับนักบัญชี/เจ้าของกิจการ ไม่ใช้ศัพท์เทคนิค)
+- ไฟล์สำหรับพิมพ์/ส่งลูกค้าอยู่ใน [`docs/CUSTOMER/`](./docs/CUSTOMER/) — เนื้อหาคู่กับหน้าเว็บ (แก้ที่ใดให้แก้ทั้งสองที่)
 - แสดงขอบเขตของ standalone business suites ทั้ง 6 โดยแยกจาก add-on ของ MBSuite Core
 - บันทึกเส้นทางและรายการตั้งค่าที่ต้องกลับมาตรวจหลัง deploy ไว้ที่ [docs/SUITES_DEPLOYMENT_CHECKLIST.md](./docs/SUITES_DEPLOYMENT_CHECKLIST.md)
 - ลิงก์ไปยัง source code บน [GitHub](https://github.com/MBSuite/Micro-Business-Suite)
@@ -76,6 +78,23 @@ src/
 ├── variables.css     # CSS theme variables
 └── main.tsx          # จุดเริ่มต้น
 ```
+
+## เอกสารสำหรับลูกค้า (Customer guides)
+
+ชุดเอกสารภาษาไทยสำหรับลูกค้าที่กำลังจะทดลองใช้งาน เขียนให้เข้าใจง่ายสำหรับนักบัญชีและเจ้าของกิจการ
+
+| โปรแกรม | หน้าเว็บ | ไฟล์พิมพ์ |
+|---|---|---|
+| Micro-Business-Suite (Core) | `/documents/products/micro-business-suite` | `docs/CUSTOMER/01-micro-business-suite.md` |
+| Micro-Business-Hotel | `/documents/products/micro-business-hotel` | `docs/CUSTOMER/02-micro-business-hotel.md` |
+| Micro-Business-Pharmacy | `/documents/products/micro-business-pharmacy` | `docs/CUSTOMER/03-micro-business-pharmacy.md` |
+| Micro-Business-Rental | `/documents/products/micro-business-rental` | `docs/CUSTOMER/04-micro-business-rental.md` |
+| Micro-Business-Service | `/documents/products/micro-business-service` | `docs/CUSTOMER/05-micro-business-service.md` |
+| Micro-Business-Retail | `/documents/products/micro-business-retail` | `docs/CUSTOMER/06-micro-business-retail.md` |
+| Micro-Business-FNB | `/documents/products/micro-business-fnb` | `docs/CUSTOMER/07-micro-business-fnb.md` |
+
+เนื้อหาหน้าเว็บอยู่ที่ `src/data/customerDocs.ts` และแสดงผลโดย `CustomerDocsHome.tsx` / `CustomerDocPage.tsx`
+ข้อความในแต่ละเล่มอิงกับสิ่งที่โปรแกรมทำได้จริงตามที่ตรวจสอบจาก repository ของแต่ละโปรแกรม (รวมข้อจำกัดที่ยังทำผ่านหน้าจอไม่ได้)
 
 ## ธีม (Theme)
 
