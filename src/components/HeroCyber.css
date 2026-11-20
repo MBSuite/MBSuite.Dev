@@ -1,153 +1,171 @@
-/* HeroCyber Component Styles */
+/* HeroCyber — บรรยากาศสงบ น่าเชื่อถือ เคลื่อนไหวช้าและมีจุดมุ่งหมาย */
 
 .hero-cyber {
   position: relative;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-surface) 50%, var(--dark-accent) 100%);
+  min-height: 100vh;
+  padding: 60px 24px;
   overflow: hidden;
-  padding: 40px;
-  /* 3D stage: children transform in perspective for a dimensional look */
-  perspective: 1200px;
-  transform-style: preserve-3d;
+  isolation: isolate;
+  background: radial-gradient(ellipse 120% 80% at 50% -10%, #132631 0%, var(--dark-bg) 62%);
 }
 
-/* --- Layer 1: aurora blobs, 3D drift in depth --- */
-.hero-cyber::before {
-  content: '';
+/* --- ชั้นหลัง: ตารางเส้นบาง ๆ ละเลื่อนช้า ๆ --- */
+.hero-cyber-backdrop {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(circle at 20% 50%, rgba(var(--neon-cyan-rgb), 0.6) 0%, transparent 50%),
-    radial-gradient(circle at 80% 50%, rgba(var(--neon-purple-rgb), 0.55) 0%, transparent 50%),
-    radial-gradient(circle at 50% 20%, rgba(255, 0, 110, 0.5) 0%, transparent 50%);
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
   pointer-events: none;
-  animation: aurora-3d 12s ease-in-out infinite;
-  transform-style: preserve-3d;
-  z-index: -1;
 }
 
-@keyframes aurora-3d {
-  0% {
-    transform: rotateX(-20deg) rotateY(0deg) translateZ(0) scale(1);
-  }
-
-  33% {
-    transform: rotateX(-35deg) rotateY(25deg) translateZ(80px) scale(1.15);
-  }
-
-  66% {
-    transform: rotateX(-10deg) rotateY(-30deg) translateZ(-70px) scale(0.92);
-  }
-
-  100% {
-    transform: rotateX(-20deg) rotateY(0deg) translateZ(0) scale(1);
-  }
-}
-
-/* --- Layer 2: shimmer sweep, 3D parallax --- */
-.hero-cyber::after {
-  content: '';
+.hero-cyber-grid {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    linear-gradient(115deg,
-      transparent 0%,
-      rgba(0, 240, 255, 0.12) 40%,
-      rgba(208, 0, 255, 0.12) 60%,
-      transparent 100%);
-  background-size: 250% 100%;
-  pointer-events: none;
-  animation: shimmer-3d 8s ease-in-out infinite;
-  transform-style: preserve-3d;
-  z-index: -2;
+  inset: -8%;
+  background-image:
+    linear-gradient(to right, rgba(226, 240, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 240, 255, 0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 42%, #000 0%, transparent 72%);
+  mask-image: radial-gradient(ellipse at 50% 42%, #000 0%, transparent 72%);
+  opacity: 0.75;
+  animation: hero-grid-drift 32s linear infinite;
 }
 
-@keyframes shimmer-3d {
-  0% {
-    transform: rotateX(-20deg) rotateY(0deg) translateZ(-40px) scale(1);
-    background-position: 150% 0;
-  }
-
-  50% {
-    transform: rotateX(-30deg) rotateY(15deg) translateZ(40px) scale(1.05);
-    background-position: 0% 0;
-  }
-
-  100% {
-    transform: rotateX(-20deg) rotateY(0deg) translateZ(-40px) scale(1);
-    background-position: -150% 0;
-  }
+@keyframes hero-grid-drift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-72px, -72px, 0); }
 }
 
+/* --- แสงนุ่ม ๆ กลางจอ หายใจช้า ๆ --- */
+.hero-cyber-glow {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  width: min(1080px, 120vw);
+  aspect-ratio: 1.7;
+  border-radius: 50%;
+  background: radial-gradient(ellipse,
+      rgba(0, 240, 255, 0.11) 0%,
+      rgba(0, 128, 255, 0.06) 38%,
+      transparent 70%);
+  filter: blur(28px);
+  animation: hero-glow-breathe 18s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
+@keyframes hero-glow-breathe {
+  0%, 100% { opacity: 0.55; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.85; transform: translate(-50%, -50%) scale(1.06); }
+}
+
+.hero-cyber-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 45%, transparent 38%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+/* --- เนื้อหา: เข้าสู่จอครั้งเดียว เรียงลำดับอย่างสุภาพ --- */
 .hero-cyber-content {
   position: relative;
-  z-index: 10;
-  max-width: 1200px;
+  z-index: 1;
   width: 100%;
+  max-width: 1100px;
   text-align: center;
 }
 
 .hero-cyber-title {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 900;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-  background: linear-gradient(90deg,
-      var(--neon-cyan) 0%,
-      var(--neon-purple) 25%,
-      var(--neon-pink) 50%,
-      var(--neon-blue) 75%,
-      var(--neon-cyan) 100%);
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: rainbow-flow 8s ease-in-out infinite;
-  margin: 0 0 24px;
-  filter: drop-shadow(0 0 30px rgba(0, 240, 255, 0.45));
+  margin: 0 0 20px;
+  color: #f4f8ff;
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+  font-weight: 800;
+  line-height: 1.14;
+  letter-spacing: -0.035em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.06), 0 18px 48px rgba(0, 0, 0, 0.45);
+  animation: hero-rise 900ms cubic-bezier(0.16, 1, 0.3, 1) 60ms both;
+}
+
+.hero-cyber-rule {
+  display: block;
+  width: 72px;
+  height: 2px;
+  margin: 0 auto 26px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.9), transparent);
+  transform-origin: center;
+  animation: hero-rule-in 1s cubic-bezier(0.16, 1, 0.3, 1) 320ms both;
+}
+
+@keyframes hero-rule-in {
+  from { opacity: 0; transform: scaleX(0); }
+  to { opacity: 1; transform: scaleX(1); }
 }
 
 .hero-cyber-subtitle {
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: var(--text-secondary);
-  margin: 0 0 40px;
-  font-weight: 300;
-  letter-spacing: 0.05em;
-  animation: fade-in-up 1s ease-out 0.3s both;
+  max-width: 760px;
+  margin: 0 auto 36px;
+  color: rgba(226, 234, 247, 0.8);
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 400;
+  line-height: 1.8;
+  animation: hero-rise 900ms cubic-bezier(0.16, 1, 0.3, 1) 200ms both;
 }
 
 .hero-cyber-cta {
   display: inline-flex;
-  gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
-  animation: fade-in-up 1s ease-out 0.5s both;
+  gap: 14px;
+  animation: hero-rise 900ms cubic-bezier(0.16, 1, 0.3, 1) 360ms both;
+}
+
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- ปุ่มใน Hero: ลดความแสบ ตัดเงาแรง ๆ ออก --- */
+.hero-cyber .btn-neon {
+  padding: 13px 26px;
+  border: 1px solid rgba(0, 240, 255, 0.45);
+  border-radius: 10px;
+  font-size: 0.98rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.hero-cyber .btn-neon-fill {
+  border-color: transparent;
+  background: linear-gradient(135deg, #dffaff, #8fd9e8);
+  color: #07222b;
+  font-weight: 750;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.hero-cyber .btn-neon:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 240, 255, 0.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.hero-cyber .btn-neon-fill:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #eafdff, #a5e6f1);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.38);
 }
 
 @media (max-width: 768px) {
   .hero-cyber {
     min-height: 80vh;
-    padding: 20px;
-  }
-
-  .hero-cyber::before {
-    background:
-      radial-gradient(circle at 20% 50%, rgba(var(--neon-cyan-rgb), 0.28) 0%, transparent 50%),
-      radial-gradient(circle at 80% 50%, rgba(var(--neon-purple-rgb), 0.26) 0%, transparent 50%),
-      radial-gradient(circle at 50% 20%, rgba(255, 0, 110, 0.22) 0%, transparent 50%);
+    padding: 40px 20px;
   }
 
   .hero-cyber-title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
   .hero-cyber-subtitle {
@@ -162,5 +180,30 @@
 
   .hero-cyber-cta .btn-neon {
     width: 100%;
+  }
+}
+
+/* เคารพการตั้งค่าลดการเคลื่อนไหวของระบบ */
+@media (prefers-reduced-motion: reduce) {
+  .hero-cyber-grid,
+  .hero-cyber-glow,
+  .hero-cyber-title,
+  .hero-cyber-rule,
+  .hero-cyber-subtitle,
+  .hero-cyber-cta {
+    animation: none;
+  }
+
+  .hero-cyber-glow {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .hero-cyber-title,
+  .hero-cyber-rule,
+  .hero-cyber-subtitle,
+  .hero-cyber-cta {
+    opacity: 1;
+    transform: none;
   }
 }

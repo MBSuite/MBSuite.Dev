@@ -101,7 +101,7 @@ src/
 Landing page ใช้ **Neon Cyber aesthetic** (Solana-style):
 - สีพื้น: Dark (#0a0a0a, #121212)
 - สีหลัก: Neon cyan (#00f0ff), purple (#d000ff)
-- Animations: Rainbow gradient flow, blob rotate, glow pulse
+- Animations: ส่วน Hero ใช้แสงนุ่ม หายใจช้า ตารางเส้นบางเลื่อนช้า และข้อความเข้าสู่จอครั้งเดียว (รองรับ `prefers-reduced-motion`); ส่วนอื่นยังใช้gradientเดิมตามเดิม
 - Glassmorphism: backdrop-filter blur effects
 - Responsive: Mobile-first design
 

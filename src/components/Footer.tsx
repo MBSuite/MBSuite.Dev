@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
           <div className="footer-link-group">
             <h3>Resources</h3>
-            <a href="/docs">Documentation</a>
+            <a href="/documents">Documentation</a>
             <a href="/guide">User Guide</a>
             <a href="/marketplace">Marketplace</a>
           </div>
@@ -48,7 +48,7 @@ export default function Footer() {
 
         {/* Credit */}
         <a className="footer-credit" href="https://microtronic.biz/" target="_blank" rel="noopener noreferrer">
-          © 2026 Microtronic Co., Ltd. All rights reserved. | Powered by MBSuite
+          Powered by Microtronic © 2026 Microtronic Co., Ltd.
         </a>
       </div>
     </footer>
