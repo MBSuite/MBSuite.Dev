@@ -2,6 +2,16 @@
 
 เว็บไซต์แนะนำ Micro-Business Suite ระบบบัญชีและจัดการธุรกิจสำหรับร้านค้าและ SMEs ไทย สร้างด้วย React และ Vite รองรับเนื้อหาภาษาไทยและภาษาอังกฤษ
 
+## เว็บในเครือ
+
+- https://micro-business-suite.vercel.app/
+- https://micro-business-service.vercel.app/
+- https://micro-business-retail.vercel.app/
+- https://micro-business-rental.vercel.app/
+- https://micro-business-pharmacy.vercel.app/
+- https://micro-business-hotel.vercel.app/
+- https://micro-business-fnb.vercel.app/
+
 ## ภายในเว็บไซต์
 
 - แนะนำประโยชน์และฟีเจอร์ของ MBSuite
