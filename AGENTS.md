@@ -46,10 +46,22 @@ Last updated: 2026-10-08
 - Default: th (Thai)
 - Supported: th, en (English)
 
-### Pricing (THB)
-- MONTHLY: 500 THB/month
-- YEARLY: 5,750 THB/year (best value)
-- PERPETUAL: One-time (Contact via Form + GitHub)
+### Pricing (THB) — อัปเดต 2026-11-21 ตาม `docs/PRICING-PLAN-2026-11-21.md`
+ค่าเดิม `MONTHLY 500 / YEARLY 5,750` ถูกแทนที่ด้วยตาราง tier ด้านล่าง (ราคายังไม่รวม VAT 7%)
+โหมดปล่อยครั้งนี้คือ **subscription** — ต้องตั้ง `PRODUCT_MODE=subscription` ใน Core Vercel
+(ถ้าเป็น `perpetual` subscription key จะ verify ไม่ผ่าน)
+
+| Tier | ผู้ใช้ | ธุรกรรม/เดือน | รายเดือน | รายปี (ลด ~17%) |
+|---|---|---|---|---|
+| `TRIAL` | 1 | 30 | ฟรี 30 วัน | — |
+| `STANDARD` | 3 | 500 | ฿299 | ฿2,990 (~฿249/ด.) |
+| `PROFESSIONAL` ⭐ แนะนำ | 5 | 2,000 | ฿699 | ฿6,990 (~฿582/ด.) |
+| `ENTERPRISE` | 20 | 10,000 | ฿1,499 | ฿14,990 (~฿1,249/ด.) |
+| `AUDIT` | — | — | superadmin-only, ขายไม่ได้ | — |
+
+- Founding pilot: `PROFESSIONAL` ฿499/ด. หรือ ฿5,490/ปี **ล็อก 12 เดือน** เฉพาะ 10 รายแรกที่จ่ายในเดือนแรก
+- PERPETUAL: One-time (Contact via Form + GitHub) — **ต้องแยก deployment/domain** ห้ามขายร่วม subscription ใน deployment เดียว
+- ราคาในระบบถูกเขียนผ่าน `price_amount` / `price_currency` ตอนออก license ใน micro-admin (อัตโนมัติตาม tier, แก้ได้)
 
 ### CTA URLs
 - Subscription Monthly: https://micro-business-suite.vercel.app/checkout?plan=monthly
