@@ -27,10 +27,11 @@
 
 ## เทคโนโลยี
 
-- React 19 และ TypeScript
-- Vite
+- React 19.3.1 และ TypeScript 7.0.2
+- Vite 8.3.8
 - CSS Variables (scoped per component)
-- i18next และ react-i18next
+- i18next 27.2.2 และ react-i18next 18.0.3
+- ทุก dependency ล็อกเป็นเวอร์ชันล่าสุด ณ 21 พ.ย. 2569 (ตรวจด้วย `pnpm outdated`)
 
 ## โครงสร้าง CSS
 
@@ -41,7 +42,7 @@
 
 ## เริ่มต้นใช้งาน
 
-ต้องติดตั้ง Node.js และ pnpm ก่อน
+ต้องติดตั้ง **Node.js 24 ขึ้นไป** (`engines.node: >=24`) และ pnpm ก่อน — vercel.json ต้องระบุ Node 24 ด้วยหาก deploy ผ่าน Vercel (พี่ฆังทำใน Dashboard)
 
 ```bash
 pnpm install
