@@ -61,7 +61,7 @@ Last updated: 2026-10-08
 
 - Founding pilot: `PROFESSIONAL` ฿499/ด. หรือ ฿5,490/ปี **ล็อก 12 เดือน** เฉพาะ 10 รายแรกที่จ่ายในเดือนแรก
 - PERPETUAL: One-time (Contact via Form + GitHub) — **ต้องแยก deployment/domain** ห้ามขายร่วม subscription ใน deployment เดียว
-- ราคาในระบบถูกเขียนผ่าน `price_amount` / `price_currency` ตอนออก license ใน micro-admin (อัตโนมัติตาม tier, แก้ได้)
+- ราคาในระบบถูกเขียนผ่าน `price_amount` / `price_currency` ตอนออก license ใน Micro-Business-Admin (internal admin — ใช้เอง ไม่ได้ขาย; อัตโนมัติตาม tier, แก้ได้)
 
 ### CTA URLs
 - Subscription Monthly: https://micro-business-suite.vercel.app/checkout?plan=monthly
